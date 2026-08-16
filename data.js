@@ -5,6 +5,7 @@ const HEROES = [
   // ================= SỨC MẠNH =================
   {
     id: "axe",
+    icon: "🪓",
     ten: "Axe",
     danhHieu: "Mogul Khan",
     he: "str",
@@ -31,6 +32,7 @@ const HEROES = [
   },
   {
     id: "sven",
+    icon: "⚔️",
     ten: "Sven",
     danhHieu: "Rogue Knight",
     he: "str",
@@ -57,6 +59,7 @@ const HEROES = [
   },
   {
     id: "tiny",
+    icon: "🗿",
     ten: "Tiny",
     danhHieu: "Stone Giant",
     he: "str",
@@ -83,6 +86,7 @@ const HEROES = [
   },
   {
     id: "centaur",
+    icon: "🐎",
     ten: "Centaur Warrunner",
     danhHieu: "—",
     he: "str",
@@ -109,6 +113,7 @@ const HEROES = [
   },
   {
     id: "tidehunter",
+    icon: "🐙",
     ten: "Tidehunter",
     danhHieu: "Leviathan",
     he: "str",
@@ -135,6 +140,7 @@ const HEROES = [
   },
   {
     id: "pudge",
+    icon: "🪝",
     ten: "Pudge",
     danhHieu: "Butcher",
     he: "str",
@@ -163,6 +169,7 @@ const HEROES = [
   // ================= NHANH NHẸN =================
   {
     id: "antimage",
+    icon: "🔷",
     ten: "Anti-Mage",
     danhHieu: "Magina",
     he: "agi",
@@ -189,6 +196,7 @@ const HEROES = [
   },
   {
     id: "phantomassassin",
+    icon: "🔪",
     ten: "Phantom Assassin",
     danhHieu: "Mortred",
     he: "agi",
@@ -215,6 +223,7 @@ const HEROES = [
   },
   {
     id: "juggernaut",
+    icon: "🌀",
     ten: "Juggernaut",
     danhHieu: "Yurnero",
     he: "agi",
@@ -241,6 +250,7 @@ const HEROES = [
   },
   {
     id: "facelessvoid",
+    icon: "⏳",
     ten: "Faceless Void",
     danhHieu: "Darkterror",
     he: "agi",
@@ -267,6 +277,7 @@ const HEROES = [
   },
   {
     id: "riki",
+    icon: "🥷",
     ten: "Riki",
     danhHieu: "Stealth Assassin",
     he: "agi",
@@ -293,6 +304,7 @@ const HEROES = [
   },
   {
     id: "sniper",
+    icon: "🎯",
     ten: "Sniper",
     danhHieu: "Gondar",
     he: "agi",
@@ -321,6 +333,7 @@ const HEROES = [
   // ================= PHÉP THUẬT =================
   {
     id: "invoker",
+    icon: "🔮",
     ten: "Invoker",
     danhHieu: "Kael, Carl",
     he: "int",
@@ -345,6 +358,7 @@ const HEROES = [
   },
   {
     id: "lina",
+    icon: "🔥",
     ten: "Lina",
     danhHieu: "Slayer",
     he: "int",
@@ -371,6 +385,7 @@ const HEROES = [
   },
   {
     id: "lion",
+    icon: "🦁",
     ten: "Lion",
     danhHieu: "Demon Witch",
     he: "int",
@@ -397,6 +412,7 @@ const HEROES = [
   },
   {
     id: "crystalmaiden",
+    icon: "❄️",
     ten: "Crystal Maiden",
     danhHieu: "Rylai",
     he: "int",
@@ -423,6 +439,7 @@ const HEROES = [
   },
   {
     id: "zeus",
+    icon: "⚡",
     ten: "Zeus",
     danhHieu: "Lord of Olympia",
     he: "int",
@@ -449,6 +466,7 @@ const HEROES = [
   },
   {
     id: "lich",
+    icon: "☠️",
     ten: "Lich",
     danhHieu: "Ethreain",
     he: "int",
@@ -477,3 +495,49 @@ const HEROES = [
 
 const NHAN_HE = { str: "Sức mạnh", agi: "Nhanh nhẹn", int: "Phép thuật" };
 const MAU_HE = { str: "#c0392b", agi: "#27ae60", int: "#2980b9" };
+
+// Icon minh hoạ cho item — biểu tượng tự chọn, không dùng ảnh gốc trong game.
+const ITEM_ICONS = {
+  "Quelling Blade": "🪓",
+  "Tangoes": "🥭",
+  "Branch": "🌿",
+  "Boots of Speed": "👢",
+  "Magic Wand": "🪄",
+  "Vanguard": "🧱",
+  "Blink Dagger": "🗡️",
+  "Black King Bar": "🖤",
+  "Blade Mail": "🪞",
+  "Assault Cuirass": "🛡️",
+  "Heart of Tarrasque": "❤️",
+  "Power Treads": "👟",
+  "Armlet of Mordiggian": "🦾",
+  "Satanic": "🩸",
+  "Daedalus": "💥",
+  "Aghanim's Scepter": "👑",
+  "Ring of Protection": "💍",
+  "Phase Boots": "💨",
+  "Shiva's Guard": "❄️",
+  "Soul Ring": "🔵",
+  "Refresher Orb": "🔄",
+  "Clarity": "🧪",
+  "Arcane Boots": "💧",
+  "Urn of Shadows": "⚱️",
+  "Battle Fury": "🌊",
+  "Manta Style": "👥",
+  "Butterfly": "🦋",
+  "Abyssal Blade": "⛓️",
+  "Slippers of Agility": "🩰",
+  "Bracer": "🔗",
+  "Desolator": "💀",
+  "Skadi": "🧊",
+  "Mantle of Intelligence": "📘",
+  "Null Talisman": "🔷",
+  "Kaya": "🟢",
+  "Scythe of Vyse": "🔱",
+  "Octarine Core": "💫",
+  "Kaya and Sange": "🌗",
+  "Sentry Ward": "👁️",
+  "Glimmer Cape": "🧥",
+  "Force Staff": "➡️",
+  "Aeon Disk": "⏱️"
+};

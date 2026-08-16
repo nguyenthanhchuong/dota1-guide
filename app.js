@@ -3,10 +3,6 @@ const $ = id => document.getElementById(id);
 let heSelected = "all";
 let tuKhoa = "";
 
-function chuHoaDau(ten) {
-  return ten.split(" ").map(w => w[0]).join("").slice(0, 2).toUpperCase();
-}
-
 function locTuong() {
   return HEROES.filter(h => {
     if (heSelected !== "all" && h.he !== heSelected) return false;
@@ -40,7 +36,7 @@ function renderGrid() {
   }
   box.innerHTML = ds.map(h => `
     <div class="hero-card" data-id="${h.id}">
-      <div class="avatar" style="background:${MAU_HE[h.he]}">${chuHoaDau(h.ten)}</div>
+      <div class="avatar" style="background:${MAU_HE[h.he]}">${h.icon}</div>
       <div class="ten">${h.ten}</div>
       <div class="danh-hieu">${h.danhHieu}</div>
     </div>
@@ -72,7 +68,7 @@ function moChiTiet(id) {
   const buildTier = (nhan, items) => `
     <div class="build-tier">
       <div class="nhan">${nhan}</div>
-      <div class="item-list">${items.map(it => `<span class="item-chip">${it}</span>`).join("")}</div>
+      <div class="item-list">${items.map(it => `<span class="item-chip"><span class="item-icon">${ITEM_ICONS[it] || "❔"}</span>${it}</span>`).join("")}</div>
     </div>
   `;
 
@@ -80,7 +76,7 @@ function moChiTiet(id) {
     <div class="sheet-backdrop" id="sheet-backdrop">
       <div class="sheet">
         <div class="sheet-head">
-          <div class="avatar" style="background:${MAU_HE[h.he]}">${chuHoaDau(h.ten)}</div>
+          <div class="avatar" style="background:${MAU_HE[h.he]}">${h.icon}</div>
           <div>
             <h2>${h.ten}</h2>
             <div class="danh-hieu">${h.danhHieu} · ${NHAN_HE[h.he]}</div>
