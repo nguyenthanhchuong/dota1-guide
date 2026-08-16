@@ -6,6 +6,7 @@ const HEROES = [
   {
     id: "axe",
     icon: "🪓",
+    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/axe.png",
     ten: "Axe",
     danhHieu: "Mogul Khan",
     he: "str",
@@ -33,6 +34,7 @@ const HEROES = [
   {
     id: "sven",
     icon: "⚔️",
+    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/sven.png",
     ten: "Sven",
     danhHieu: "Rogue Knight",
     he: "str",
@@ -60,6 +62,7 @@ const HEROES = [
   {
     id: "tiny",
     icon: "🗿",
+    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/tiny.png",
     ten: "Tiny",
     danhHieu: "Stone Giant",
     he: "str",
@@ -87,6 +90,7 @@ const HEROES = [
   {
     id: "centaur",
     icon: "🐎",
+    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/centaur.png",
     ten: "Centaur Warrunner",
     danhHieu: "—",
     he: "str",
@@ -114,6 +118,7 @@ const HEROES = [
   {
     id: "tidehunter",
     icon: "🐙",
+    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/tidehunter.png",
     ten: "Tidehunter",
     danhHieu: "Leviathan",
     he: "str",
@@ -141,6 +146,7 @@ const HEROES = [
   {
     id: "pudge",
     icon: "🪝",
+    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/pudge.png",
     ten: "Pudge",
     danhHieu: "Butcher",
     he: "str",
@@ -170,6 +176,7 @@ const HEROES = [
   {
     id: "antimage",
     icon: "🔷",
+    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/antimage.png",
     ten: "Anti-Mage",
     danhHieu: "Magina",
     he: "agi",
@@ -197,6 +204,7 @@ const HEROES = [
   {
     id: "phantomassassin",
     icon: "🔪",
+    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/phantom_assassin.png",
     ten: "Phantom Assassin",
     danhHieu: "Mortred",
     he: "agi",
@@ -224,6 +232,7 @@ const HEROES = [
   {
     id: "juggernaut",
     icon: "🌀",
+    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/juggernaut.png",
     ten: "Juggernaut",
     danhHieu: "Yurnero",
     he: "agi",
@@ -251,6 +260,7 @@ const HEROES = [
   {
     id: "facelessvoid",
     icon: "⏳",
+    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/faceless_void.png",
     ten: "Faceless Void",
     danhHieu: "Darkterror",
     he: "agi",
@@ -278,6 +288,7 @@ const HEROES = [
   {
     id: "riki",
     icon: "🥷",
+    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/riki.png",
     ten: "Riki",
     danhHieu: "Stealth Assassin",
     he: "agi",
@@ -305,6 +316,7 @@ const HEROES = [
   {
     id: "sniper",
     icon: "🎯",
+    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/sniper.png",
     ten: "Sniper",
     danhHieu: "Gondar",
     he: "agi",
@@ -334,6 +346,7 @@ const HEROES = [
   {
     id: "invoker",
     icon: "🔮",
+    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/invoker.png",
     ten: "Invoker",
     danhHieu: "Kael, Carl",
     he: "int",
@@ -359,6 +372,7 @@ const HEROES = [
   {
     id: "lina",
     icon: "🔥",
+    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lina.png",
     ten: "Lina",
     danhHieu: "Slayer",
     he: "int",
@@ -386,6 +400,7 @@ const HEROES = [
   {
     id: "lion",
     icon: "🦁",
+    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lion.png",
     ten: "Lion",
     danhHieu: "Demon Witch",
     he: "int",
@@ -413,6 +428,7 @@ const HEROES = [
   {
     id: "crystalmaiden",
     icon: "❄️",
+    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crystal_maiden.png",
     ten: "Crystal Maiden",
     danhHieu: "Rylai",
     he: "int",
@@ -440,6 +456,7 @@ const HEROES = [
   {
     id: "zeus",
     icon: "⚡",
+    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/zuus.png",
     ten: "Zeus",
     danhHieu: "Lord of Olympia",
     he: "int",
@@ -467,6 +484,7 @@ const HEROES = [
   {
     id: "lich",
     icon: "☠️",
+    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lich.png",
     ten: "Lich",
     danhHieu: "Ethreain",
     he: "int",
@@ -540,4 +558,52 @@ const ITEM_ICONS = {
   "Glimmer Cape": "🧥",
   "Force Staff": "➡️",
   "Aeon Disk": "⏱️"
+};
+
+// Ảnh item thật, dẫn link thẳng tới CDN chính thức của Valve (không tải về/host lại).
+// Mỗi URL đã được kiểm tra tồn tại (HTTP 200) trước khi đưa vào.
+const ITEM_IMG_BASE = "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items";
+const ITEM_IMG = {
+  "Quelling Blade": `${ITEM_IMG_BASE}/quelling_blade.png`,
+  "Tangoes": `${ITEM_IMG_BASE}/tango.png`,
+  "Branch": `${ITEM_IMG_BASE}/branches.png`,
+  "Boots of Speed": `${ITEM_IMG_BASE}/boots.png`,
+  "Magic Wand": `${ITEM_IMG_BASE}/magic_wand.png`,
+  "Vanguard": `${ITEM_IMG_BASE}/vanguard.png`,
+  "Blink Dagger": `${ITEM_IMG_BASE}/blink.png`,
+  "Black King Bar": `${ITEM_IMG_BASE}/black_king_bar.png`,
+  "Blade Mail": `${ITEM_IMG_BASE}/blade_mail.png`,
+  "Assault Cuirass": `${ITEM_IMG_BASE}/assault.png`,
+  "Heart of Tarrasque": `${ITEM_IMG_BASE}/heart.png`,
+  "Power Treads": `${ITEM_IMG_BASE}/power_treads.png`,
+  "Armlet of Mordiggian": `${ITEM_IMG_BASE}/armlet.png`,
+  "Satanic": `${ITEM_IMG_BASE}/satanic.png`,
+  "Daedalus": `${ITEM_IMG_BASE}/greater_crit.png`,
+  "Aghanim's Scepter": `${ITEM_IMG_BASE}/ultimate_scepter.png`,
+  "Ring of Protection": `${ITEM_IMG_BASE}/ring_of_protection.png`,
+  "Phase Boots": `${ITEM_IMG_BASE}/phase_boots.png`,
+  "Shiva's Guard": `${ITEM_IMG_BASE}/shivas_guard.png`,
+  "Soul Ring": `${ITEM_IMG_BASE}/soul_ring.png`,
+  "Refresher Orb": `${ITEM_IMG_BASE}/refresher.png`,
+  "Clarity": `${ITEM_IMG_BASE}/clarity.png`,
+  "Arcane Boots": `${ITEM_IMG_BASE}/arcane_boots.png`,
+  "Urn of Shadows": `${ITEM_IMG_BASE}/urn_of_shadows.png`,
+  "Battle Fury": `${ITEM_IMG_BASE}/bfury.png`,
+  "Manta Style": `${ITEM_IMG_BASE}/manta.png`,
+  "Butterfly": `${ITEM_IMG_BASE}/butterfly.png`,
+  "Abyssal Blade": `${ITEM_IMG_BASE}/abyssal_blade.png`,
+  "Slippers of Agility": `${ITEM_IMG_BASE}/slippers.png`,
+  "Bracer": `${ITEM_IMG_BASE}/bracer.png`,
+  "Desolator": `${ITEM_IMG_BASE}/desolator.png`,
+  "Skadi": `${ITEM_IMG_BASE}/skadi.png`,
+  "Mantle of Intelligence": `${ITEM_IMG_BASE}/mantle.png`,
+  "Null Talisman": `${ITEM_IMG_BASE}/null_talisman.png`,
+  "Kaya": `${ITEM_IMG_BASE}/kaya.png`,
+  "Scythe of Vyse": `${ITEM_IMG_BASE}/sheepstick.png`,
+  "Octarine Core": `${ITEM_IMG_BASE}/octarine_core.png`,
+  "Kaya and Sange": `${ITEM_IMG_BASE}/kaya_and_sange.png`,
+  "Sentry Ward": `${ITEM_IMG_BASE}/ward_sentry.png`,
+  "Glimmer Cape": `${ITEM_IMG_BASE}/glimmer_cape.png`,
+  "Force Staff": `${ITEM_IMG_BASE}/force_staff.png`,
+  "Aeon Disk": `${ITEM_IMG_BASE}/aeon_disk.png`
 };
