@@ -36,7 +36,7 @@ function renderGrid() {
   }
   box.innerHTML = ds.map(h => `
     <div class="hero-card" data-id="${h.id}">
-      <div class="avatar" style="background:${MAU_HE[h.he]}">${h.icon}<img src="${h.img}" alt="" loading="lazy" onerror="this.remove()"></div>
+      <div class="avatar" style="background:${MAU_HE[h.he]}">${h.icon}<img src="${h.img}" alt="" onerror="this.remove()"></div>
       <div class="ten">${h.ten}</div>
       <div class="danh-hieu">${h.danhHieu}</div>
     </div>
@@ -72,7 +72,7 @@ function moChiTiet(id) {
         <span class="item-chip">
           <span class="item-icon-wrap">
             <span class="item-icon">${ITEM_ICONS[it] || "❔"}</span>
-            <img src="${ITEM_IMG[it] || ""}" alt="" loading="lazy" onerror="this.remove()">
+            <img src="${ITEM_IMG[it] || ""}" alt="" onerror="this.remove()">
           </span>${it}
         </span>
       `).join("")}</div>
@@ -83,7 +83,7 @@ function moChiTiet(id) {
     <div class="sheet-backdrop" id="sheet-backdrop">
       <div class="sheet">
         <div class="sheet-head">
-          <div class="avatar" style="background:${MAU_HE[h.he]}">${h.icon}<img src="${h.img}" alt="" loading="lazy" onerror="this.remove()"></div>
+          <div class="avatar" style="background:${MAU_HE[h.he]}">${h.icon}<img src="${h.img}" alt="" onerror="this.remove()"></div>
           <div>
             <h2>${h.ten}</h2>
             <div class="danh-hieu">${h.danhHieu} · ${NHAN_HE[h.he]}</div>
