@@ -89,6 +89,15 @@ header.top p {
 .chip[data-he="agi"].on { background: var(--agi); }
 .chip[data-he="int"].on { background: var(--int); }
 .chip[data-he="all"].on { background: var(--gold); color: #1a1410; }
+.chip.guide.on { background: var(--gold); color: #1a1410; }
+
+.dem-tuong {
+  margin-top: 10px;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.sao { color: var(--gold); font-size: 0.8rem; }
 
 .grid {
   max-width: 900px;
@@ -210,6 +219,55 @@ header.top p {
   border-radius: 999px;
   background: var(--gold-soft);
   color: var(--gold);
+}
+
+.thongso {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.ts {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 10px;
+  text-align: center;
+}
+
+.ts-nhan {
+  display: block;
+  font-size: 0.68rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 2px;
+}
+
+.ts-gt {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.chua-co {
+  margin-top: 18px;
+  padding: 14px;
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.chua-co p { margin: 0; }
+
+.chua-co-title {
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 6px !important;
 }
 
 .sheet h3 {
