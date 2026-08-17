@@ -7,10 +7,14 @@ let chiHuongDan = false;
 // Ghép danh sách đầy đủ (HERO_BASE) với phần hướng dẫn chi tiết đã viết (HEROES).
 // Chỉ lấy các trường hướng dẫn từ HEROES, còn thông tin cơ bản luôn dùng của HERO_BASE
 // để mọi tướng hiển thị nhất quán theo đúng số liệu từ nguồn.
-const TRUONG_HUONG_DAN = ["icon", "danhHieu", "skills", "lenSkill", "doBuild", "chienThuat", "khacChe"];
+const TRUONG_HUONG_DAN = ["icon", "danhHieu", "skills", "lenSkill", "doBuild", "chienThuat", "khacChe", "chuaChac"];
+
+const HUONG_DAN = []
+  .concat(typeof HEROES !== "undefined" ? HEROES : [])
+  .concat(typeof HEROES_THEM !== "undefined" ? HEROES_THEM : []);
 
 const DS_TUONG = HERO_BASE.map(base => {
-  const ct = (typeof HEROES !== "undefined" ? HEROES : []).find(h => h.id === base.id);
+  const ct = HUONG_DAN.find(h => h.id === base.id);
   const gop = Object.assign({}, base);
   if (ct) TRUONG_HUONG_DAN.forEach(k => { if (ct[k] !== undefined) gop[k] = ct[k]; });
   gop.coHuongDan = !!(ct && ct.skills);
@@ -103,25 +107,31 @@ function moChiTiet(id) {
     const buildTier = (nhan, items) => `
       <div class="build-tier">
         <div class="nhan">${nhan}</div>
-        ${items.map(it => `
+        ${items.map(ten => {
+          const it = timItem(ten);
+          const gia = it && it.mua !== null
+            ? `<span class="gia"><span class="gia-mua">${it.mua}</span>${it.ban !== null ? `<span class="gia-ban">bán ${it.ban}</span>` : ""}</span>`
+            : "";
+          return `
           <div class="item-row">
             <span class="item-icon-wrap">
-              <span class="item-icon">${ITEM_ICONS[it] || "❔"}</span>
-              <img src="${ITEM_IMG[it] || ""}" alt="" onerror="this.remove()">
+              <span class="item-icon">${it ? it.icon : "❔"}</span>
+              <img src="${anhItem(ten)}" alt="" onerror="this.remove()">
             </span>
             <div class="item-body">
               <div class="ten-gia">
-                <span class="ten">${it}</span>
-                ${ITEM_PRICE[it] ? `<span class="gia"><span class="gia-mua">${ITEM_PRICE[it].mua}</span><span class="gia-ban">bán ${ITEM_PRICE[it].ban}</span></span>` : ""}
+                <span class="ten">${ten}${it && it.tenGoc ? ` <span class="ten-goc">${it.tenGoc}</span>` : ""}</span>
+                ${gia}
               </div>
-              <div class="mota">${ITEM_DESC[it] || ""}</div>
+              <div class="mota">${it ? it.mota : ""}</div>
             </div>
-          </div>
-        `).join("")}
+          </div>`;
+        }).join("")}
       </div>
     `;
 
     phanHuongDan = `
+      ${h.chuaChac ? `<div class="canh-bao">⚠️ Phần hướng dẫn của tướng này em chưa chắc chắn hoàn toàn — anh nên đối chiếu lại trong game trước khi tin.</div>` : ""}
       <h3>Kỹ năng</h3>
       ${skillsHtml}
       <p class="len-skill">${h.lenSkill}</p>

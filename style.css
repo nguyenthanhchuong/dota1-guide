@@ -251,6 +251,23 @@ header.top p {
   font-weight: 600;
 }
 
+.canh-bao {
+  margin: 14px 0 4px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #3a2c15;
+  border: 1px solid #6b5220;
+  color: #e8c26a;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.ten-goc {
+  font-weight: 400;
+  font-size: 0.74rem;
+  color: var(--muted);
+}
+
 .chua-co {
   margin-top: 18px;
   padding: 14px;
