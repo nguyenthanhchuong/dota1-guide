@@ -606,6 +606,47 @@ const ITEM_DESC = {
   "Aeon Disk": "Bị động: khi máu xuống quá thấp sẽ tự kích hoạt một lá chắn phép ngắn, miễn nhiễm sát thương và hiệu ứng xấu."
 };
 
+// Giá mua/bán (vàng) theo đúng DotA Allstars bản 1, đối chiếu từ gaming-tools.com/warcraft-3/dota-items/.
+// Vài item không có trong bảng này vì chỉ tồn tại ở Dota 2, chưa từng có ở Dota 1 (xem ghi chú cuối file).
+const ITEM_PRICE = {
+  "Quelling Blade": { mua: 225, ban: 0 },
+  "Tangoes": { mua: 90, ban: 45 },
+  "Branch": { mua: 57, ban: 28 },
+  "Boots of Speed": { mua: 500, ban: 250 },
+  "Magic Wand": { mua: 509, ban: 254 },
+  "Vanguard": { mua: 2225, ban: 1112 },
+  "Blink Dagger": { mua: 2150, ban: 1075 },
+  "Black King Bar": { mua: 3900, ban: 1950 },
+  "Blade Mail": { mua: 2200, ban: 1100 },
+  "Assault Cuirass": { mua: 5550, ban: 2775 },
+  "Heart of Tarrasque": { mua: 5500, ban: 2750 },
+  "Power Treads": { mua: 1450, ban: 725 },
+  "Armlet of Mordiggian": { mua: 2600, ban: 1300 },
+  "Satanic": { mua: 6150, ban: 3075 },
+  "Daedalus": { mua: 5750, ban: 2875 },
+  "Aghanim's Scepter": { mua: 4200, ban: 2100 },
+  "Ring of Protection": { mua: 175, ban: 87 },
+  "Phase Boots": { mua: 1400, ban: 700 },
+  "Shiva's Guard": { mua: 4700, ban: 2350 },
+  "Soul Ring": { mua: 800, ban: 400 },
+  "Refresher Orb": { mua: 5300, ban: 2650 },
+  "Clarity": { mua: 50, ban: 25 },
+  "Arcane Boots": { mua: 1500, ban: 750 },
+  "Urn of Shadows": { mua: 875, ban: 437 },
+  "Battle Fury": { mua: 4350, ban: 2175 },
+  "Manta Style": { mua: 4900, ban: 2450 },
+  "Butterfly": { mua: 6000, ban: 3000 },
+  "Slippers of Agility": { mua: 150, ban: 75 },
+  "Bracer": { mua: 525, ban: 262 },
+  "Desolator": { mua: 4400, ban: 2200 },
+  "Skadi": { mua: 5950, ban: 2975 },
+  "Mantle of Intelligence": { mua: 150, ban: 75 },
+  "Null Talisman": { mua: 505, ban: 252 },
+  "Scythe of Vyse": { mua: 5675, ban: 2837 },
+  "Sentry Ward": { mua: 200, ban: 100 },
+  "Force Staff": { mua: 2200, ban: 1100 }
+};
+
 // Ảnh item thật, dẫn link thẳng tới CDN chính thức của Valve (không tải về/host lại).
 // Mỗi URL đã được kiểm tra tồn tại (HTTP 200) trước khi đưa vào.
 const ITEM_IMG_BASE = "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items";

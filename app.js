@@ -75,7 +75,10 @@ function moChiTiet(id) {
             <img src="${ITEM_IMG[it] || ""}" alt="" onerror="this.remove()">
           </span>
           <div class="item-body">
-            <div class="ten">${it}</div>
+            <div class="ten-gia">
+              <span class="ten">${it}</span>
+              ${ITEM_PRICE[it] ? `<span class="gia"><span class="gia-mua">${ITEM_PRICE[it].mua}</span><span class="gia-ban">bán ${ITEM_PRICE[it].ban}</span></span>` : ""}
+            </div>
             <div class="mota">${ITEM_DESC[it] || ""}</div>
           </div>
         </div>

@@ -277,11 +277,36 @@ header.top p {
   margin-bottom: 8px;
 }
 
+.item-body .ten-gia {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+
 .item-body .ten {
   font-weight: 600;
   font-size: 0.88rem;
-  margin-bottom: 2px;
 }
+
+.gia {
+  flex-shrink: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.gia-mua {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.gia-mua::before { content: "💰 "; }
+
+.gia-ban { color: var(--muted); }
 
 .item-body .mota {
   font-size: 0.82rem;
