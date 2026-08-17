@@ -192,7 +192,7 @@ const HEROES = [
       khoiDau: ["Quelling Blade", "Tangoes", "Branch"],
       giaiDoanDau: ["Power Treads", "Battle Fury"],
       coreItem: ["Manta Style", "Black King Bar"],
-      xaXi: ["Butterfly", "Abyssal Blade", "Satanic"]
+      xaXi: ["Butterfly", "Cranium Basher", "Satanic"]
     },
     chienThuat: [
       "Farm rừng và các lane vắng thật nhanh nhờ Battle Fury, tránh giao tranh sớm khi chưa đủ đồ.",
@@ -248,7 +248,7 @@ const HEROES = [
       khoiDau: ["Quelling Blade", "Tangoes", "Branch"],
       giaiDoanDau: ["Power Treads", "Magic Wand"],
       coreItem: ["Battle Fury", "Manta Style"],
-      xaXi: ["Butterfly", "Abyssal Blade", "Satanic"]
+      xaXi: ["Butterfly", "Cranium Basher", "Satanic"]
     },
     chienThuat: [
       "Blade Fury vừa farm nhanh vừa là cách an toàn để né skill hướng mục tiêu trong giao tranh.",
@@ -359,8 +359,8 @@ const HEROES = [
     doBuild: {
       khoiDau: ["Tangoes", "Branch", "Mantle of Intelligence"],
       giaiDoanDau: ["Boots of Speed", "Null Talisman"],
-      coreItem: ["Black King Bar", "Kaya"],
-      xaXi: ["Scythe of Vyse", "Octarine Core", "Refresher Orb"]
+      coreItem: ["Black King Bar", "Ultimate Orb"],
+      xaXi: ["Scythe of Vyse", "Bloodstone", "Refresher Orb"]
     },
     chienThuat: [
       "Tướng có độ khó cao nhất vì phải nhớ tổ hợp phím và Invoke đúng cặp phép cho từng tình huống.",
@@ -387,8 +387,8 @@ const HEROES = [
     doBuild: {
       khoiDau: ["Tangoes", "Branch", "Clarity"],
       giaiDoanDau: ["Arcane Boots", "Null Talisman"],
-      coreItem: ["Black King Bar", "Kaya and Sange"],
-      xaXi: ["Scythe of Vyse", "Octarine Core", "Refresher Orb"]
+      coreItem: ["Black King Bar", "Linken's Sphere"],
+      xaXi: ["Scythe of Vyse", "Bloodstone", "Refresher Orb"]
     },
     chienThuat: [
       "Combo chuẩn: Light Strike Array choáng trước rồi Laguna Blade/Dragon Slave burst tiếp theo.",
@@ -416,7 +416,7 @@ const HEROES = [
       khoiDau: ["Tangoes", "Branch", "Sentry Ward"],
       giaiDoanDau: ["Arcane Boots", "Magic Wand"],
       coreItem: ["Aghanim's Scepter", "Blink Dagger"],
-      xaXi: ["Scythe of Vyse", "Octarine Core"]
+      xaXi: ["Scythe of Vyse", "Bloodstone"]
     },
     chienThuat: [
       "Hex là một trong những skill vô hiệu hoá mạnh nhất game — dùng để loại tướng nguy hiểm nhất khỏi giao tranh trong vài giây quyết định.",
@@ -442,9 +442,9 @@ const HEROES = [
     lenSkill: "Max Frostbite để khống chế gank, Crystal Nova xen kẽ, Freezing Field mỗi khi có thể dùng an toàn.",
     doBuild: {
       khoiDau: ["Tangoes", "Branch", "Sentry Ward"],
-      giaiDoanDau: ["Arcane Boots", "Glimmer Cape"],
+      giaiDoanDau: ["Arcane Boots", "Ghost Scepter"],
       coreItem: ["Aghanim's Scepter", "Force Staff"],
-      xaXi: ["Scythe of Vyse", "Aeon Disk"]
+      xaXi: ["Scythe of Vyse", "Linken's Sphere"]
     },
     chienThuat: [
       "Arcane Aura giúp cả đội thoải mái dùng phép hơn hẳn, đặc biệt hiệu quả với đội hình nhiều tướng phép.",
@@ -472,7 +472,7 @@ const HEROES = [
       khoiDau: ["Tangoes", "Branch", "Clarity"],
       giaiDoanDau: ["Arcane Boots", "Null Talisman"],
       coreItem: ["Aghanim's Scepter", "Black King Bar"],
-      xaXi: ["Octarine Core", "Refresher Orb", "Shiva's Guard"]
+      xaXi: ["Bloodstone", "Refresher Orb", "Shiva's Guard"]
     },
     chienThuat: [
       "Farm và giữ đường cực nhanh nhờ Arc Lightning gây sát thương diện rộng lên lính mỗi lần cast.",
@@ -498,9 +498,9 @@ const HEROES = [
     lenSkill: "Max Frost Blast để khống chế gank, Frost Armor xen kẽ để hỗ trợ trụ đường, Chain Frost mỗi khi có thể.",
     doBuild: {
       khoiDau: ["Tangoes", "Branch", "Sentry Ward"],
-      giaiDoanDau: ["Arcane Boots", "Glimmer Cape"],
+      giaiDoanDau: ["Arcane Boots", "Ghost Scepter"],
       coreItem: ["Aghanim's Scepter", "Force Staff"],
-      xaXi: ["Scythe of Vyse", "Aeon Disk"]
+      xaXi: ["Scythe of Vyse", "Linken's Sphere"]
     },
     chienThuat: [
       "Chain Frost gây sát thương cực lớn khi đội địch đứng cụm, tận dụng lúc giao tranh tổng nổ ra.",
@@ -543,21 +543,20 @@ const ITEM_ICONS = {
   "Battle Fury": "🌊",
   "Manta Style": "👥",
   "Butterfly": "🦋",
-  "Abyssal Blade": "⛓️",
+  "Cranium Basher": "🔨",
   "Slippers of Agility": "🩰",
   "Bracer": "🔗",
   "Desolator": "💀",
   "Skadi": "🧊",
   "Mantle of Intelligence": "📘",
   "Null Talisman": "🔷",
-  "Kaya": "🟢",
+  "Ultimate Orb": "💠",
   "Scythe of Vyse": "🔱",
-  "Octarine Core": "💫",
-  "Kaya and Sange": "🌗",
+  "Bloodstone": "🔴",
+  "Linken's Sphere": "🌐",
   "Sentry Ward": "👁️",
-  "Glimmer Cape": "🧥",
-  "Force Staff": "➡️",
-  "Aeon Disk": "⏱️"
+  "Ghost Scepter": "👻",
+  "Force Staff": "➡️"
 };
 
 // Mô tả tính năng từng item — dùng chung cho mọi tướng vì hiệu ứng item không đổi theo tướng.
@@ -589,21 +588,20 @@ const ITEM_DESC = {
   "Battle Fury": "Cộng sát thương lớn và tạo hiệu ứng lan sát thương đánh thường sang các mục tiêu xung quanh, kèm hồi máu theo sát thương gây ra — giúp farm rừng/lane cực nhanh.",
   "Manta Style": "Chủ động tạo các bản sao ảo giống hệt bản thân (gây được một phần sát thương), đồng thời tự gỡ một số hiệu ứng khống chế khi kích hoạt.",
   "Butterfly": "Cộng tốc đánh và tỉ lệ né đòn rất cao, giúp giảm mạnh sát thương vật lý phải nhận.",
-  "Abyssal Blade": "Đòn đánh có tỉ lệ làm choáng mục tiêu; chủ động ghim chặt một mục tiêu, ngăn không cho chạy trốn trong thời gian ngắn.",
+  "Cranium Basher": "Đòn đánh có tỉ lệ làm choáng ngắn mục tiêu, tác dụng liên tục không cần kích hoạt.",
   "Slippers of Agility": "Cộng một lượng nhỏ Nhanh nhẹn; item giá rẻ dùng để lên đồ giai đoạn đầu.",
   "Bracer": "Cộng đều máu, giáp và một phần chỉ số chính; giá rẻ, hiệu quả tốt ở giai đoạn đầu.",
   "Desolator": "Tăng sát thương đánh thường lớn, đồng thời làm giảm giáp vĩnh viễn của mục tiêu bị đánh trúng.",
   "Skadi": "Cộng nhiều chỉ số và máu tối đa; đòn đánh làm chậm mạnh tốc chạy và tốc đánh của mục tiêu.",
   "Mantle of Intelligence": "Cộng một lượng nhỏ Phép thuật; item giá rẻ dùng để lên đồ giai đoạn đầu.",
   "Null Talisman": "Cộng Phép thuật và một phần hồi mana; nguyên liệu phổ biến cho các tướng phép giai đoạn đầu.",
-  "Kaya": "Cộng Phép thuật và tăng thêm phần trăm sát thương phép gây ra.",
+  "Ultimate Orb": "Cộng một lượng lớn cho chỉ số chính của tướng; chủ yếu dùng làm nguyên liệu ghép lên các item mạnh hơn.",
   "Scythe of Vyse": "Chủ động biến mục tiêu thành cừu trong thời gian dài, vô hiệu hoá hoàn toàn khả năng hành động và kỹ năng.",
-  "Octarine Core": "Giảm mạnh thời gian hồi chiêu của mọi kỹ năng, đồng thời hồi máu/mana mỗi khi gây sát thương phép.",
-  "Kaya and Sange": "Kết hợp tăng phần trăm sát thương phép gây ra với tăng máu tối đa và tốc độ hồi máu.",
+  "Bloodstone": "Cộng rất nhiều mana tối đa và hút máu/mana theo sát thương phép gây ra; tích thêm sạc mỗi khi có tướng tử vong gần đó, giúp rút ngắn thời gian hồi sinh.",
+  "Linken's Sphere": "Bị động tự động chặn hoàn toàn một phép đơn mục tiêu nhắm vào bản thân, sau đó cần một khoảng thời gian để nạp lại.",
   "Sentry Ward": "Vật phẩm tiêu hao: đặt xuống tạo vùng phát hiện tàng hình trong một khoảng thời gian, không tự cấp tầm nhìn thường.",
-  "Glimmer Cape": "Chủ động tàng hình ngắn kèm cộng giáp; thường dùng để cứu đồng đội hoặc bản thân khỏi bị dồn sát thương.",
-  "Force Staff": "Chủ động đẩy bản thân hoặc một đơn vị khác (đồng minh hay địch) về phía trước một đoạn ngắn.",
-  "Aeon Disk": "Bị động: khi máu xuống quá thấp sẽ tự kích hoạt một lá chắn phép ngắn, miễn nhiễm sát thương và hiệu ứng xấu."
+  "Ghost Scepter": "Chủ động biến bản thân thành trạng thái phi vật chất trong thời gian ngắn, né được mọi đòn đánh và phép vật lý nhưng không tấn công được.",
+  "Force Staff": "Chủ động đẩy bản thân hoặc một đơn vị khác (đồng minh hay địch) về phía trước một đoạn ngắn."
 };
 
 // Giá mua/bán (vàng) theo đúng DotA Allstars bản 1, đối chiếu từ gaming-tools.com/warcraft-3/dota-items/.
@@ -644,7 +642,12 @@ const ITEM_PRICE = {
   "Null Talisman": { mua: 505, ban: 252 },
   "Scythe of Vyse": { mua: 5675, ban: 2837 },
   "Sentry Ward": { mua: 200, ban: 100 },
-  "Force Staff": { mua: 2200, ban: 1100 }
+  "Force Staff": { mua: 2200, ban: 1100 },
+  "Cranium Basher": { mua: 3100, ban: 1550 },
+  "Ultimate Orb": { mua: 2100, ban: 1050 },
+  "Linken's Sphere": { mua: 5175, ban: 2587 },
+  "Bloodstone": { mua: 5050, ban: 2525 },
+  "Ghost Scepter": { mua: 1600, ban: 800 }
 };
 
 // Ảnh item thật, dẫn link thẳng tới CDN chính thức của Valve (không tải về/host lại).
@@ -678,19 +681,18 @@ const ITEM_IMG = {
   "Battle Fury": `${ITEM_IMG_BASE}/bfury.png`,
   "Manta Style": `${ITEM_IMG_BASE}/manta.png`,
   "Butterfly": `${ITEM_IMG_BASE}/butterfly.png`,
-  "Abyssal Blade": `${ITEM_IMG_BASE}/abyssal_blade.png`,
+  "Cranium Basher": `${ITEM_IMG_BASE}/basher.png`,
   "Slippers of Agility": `${ITEM_IMG_BASE}/slippers.png`,
   "Bracer": `${ITEM_IMG_BASE}/bracer.png`,
   "Desolator": `${ITEM_IMG_BASE}/desolator.png`,
   "Skadi": `${ITEM_IMG_BASE}/skadi.png`,
   "Mantle of Intelligence": `${ITEM_IMG_BASE}/mantle.png`,
   "Null Talisman": `${ITEM_IMG_BASE}/null_talisman.png`,
-  "Kaya": `${ITEM_IMG_BASE}/kaya.png`,
+  "Ultimate Orb": `${ITEM_IMG_BASE}/ultimate_orb.png`,
   "Scythe of Vyse": `${ITEM_IMG_BASE}/sheepstick.png`,
-  "Octarine Core": `${ITEM_IMG_BASE}/octarine_core.png`,
-  "Kaya and Sange": `${ITEM_IMG_BASE}/kaya_and_sange.png`,
+  "Bloodstone": `${ITEM_IMG_BASE}/bloodstone.png`,
+  "Linken's Sphere": `${ITEM_IMG_BASE}/sphere.png`,
   "Sentry Ward": `${ITEM_IMG_BASE}/ward_sentry.png`,
-  "Glimmer Cape": `${ITEM_IMG_BASE}/glimmer_cape.png`,
-  "Force Staff": `${ITEM_IMG_BASE}/force_staff.png`,
-  "Aeon Disk": `${ITEM_IMG_BASE}/aeon_disk.png`
+  "Ghost Scepter": `${ITEM_IMG_BASE}/ghost_scepter.png`,
+  "Force Staff": `${ITEM_IMG_BASE}/force_staff.png`
 };
