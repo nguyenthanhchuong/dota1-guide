@@ -560,6 +560,52 @@ const ITEM_ICONS = {
   "Aeon Disk": "⏱️"
 };
 
+// Mô tả tính năng từng item — dùng chung cho mọi tướng vì hiệu ứng item không đổi theo tướng.
+const ITEM_DESC = {
+  "Quelling Blade": "Tăng sát thương đánh thường lên creep/quái rừng, giúp farm nhanh giai đoạn đầu; không có tác dụng khi đánh tướng địch.",
+  "Tangoes": "Vật phẩm tiêu hao: cắn vào cây gần đó để hồi máu dần theo thời gian, dùng được nhiều lượt.",
+  "Branch": "Cộng một lượng nhỏ cho cả ba chỉ số, giá rất rẻ, chủ yếu dùng làm nguyên liệu ghép lên item khác.",
+  "Boots of Speed": "Tăng tốc độ di chuyển cơ bản; là nguyên liệu để nâng cấp lên hầu hết các loại giày cao cấp hơn.",
+  "Magic Wand": "Tự tích điểm mỗi khi có phép/khống chế được dùng gần đó; kích hoạt để hồi ngay một lượng máu và mana theo số điểm tích được.",
+  "Vanguard": "Cộng máu và giáp, có tỉ lệ chặn bớt sát thương từ mỗi đòn đánh (kể cả phép), giúp trụ đường và trụ giao tranh tốt hơn.",
+  "Blink Dagger": "Dịch chuyển tức thời trong tầm ngắn; hiệu ứng bị khoá tạm thời nếu vừa nhận sát thương gần đây.",
+  "Black King Bar": "Kích hoạt miễn nhiễm phần lớn phép và hiệu ứng khống chế trong một khoảng thời gian; thời lượng miễn nhiễm giảm dần nếu dùng liên tục.",
+  "Blade Mail": "Kích hoạt phản lại cho kẻ tấn công một phần sát thương mà bản thân vừa nhận, trong thời gian ngắn.",
+  "Assault Cuirass": "Cộng giáp và tốc đánh cho bản thân và đồng đội xung quanh, đồng thời giảm giáp của quân địch gần đó.",
+  "Heart of Tarrasque": "Cộng rất nhiều máu tối đa, đồng thời hồi máu theo phần trăm máu đã mất mỗi giây.",
+  "Power Treads": "Giày tăng tốc đánh, có thể đổi qua lại để cộng thêm chỉ số Sức mạnh/Nhanh nhẹn/Phép thuật tuỳ chọn.",
+  "Armlet of Mordiggian": "Kích hoạt cộng mạnh Sức mạnh (kéo theo máu và sát thương) nhưng liên tục mất máu theo thời gian trong lúc bật.",
+  "Satanic": "Bị động tăng hút máu cho đòn đánh; chủ động hút máu cực mạnh trong thời gian ngắn kèm miễn nhiễm hiệu ứng làm chậm.",
+  "Daedalus": "Tăng sát thương lớn và cộng tỉ lệ chí mạng cao cho đòn đánh thường.",
+  "Aghanim's Scepter": "Nâng cấp một kỹ năng đặc trưng của tướng — hiệu ứng nâng cấp khác nhau tuỳ từng tướng, thường mạnh lên đáng kể ở ulti hoặc skill chính.",
+  "Ring of Protection": "Cộng giáp cơ bản; chủ yếu dùng làm nguyên liệu ghép lên các item phòng thủ khác.",
+  "Phase Boots": "Giày tăng tốc chạy; kích hoạt cho phép xuyên qua đơn vị và cộng thêm sát thương đánh thường trong thời gian ngắn.",
+  "Shiva's Guard": "Cộng giáp và Phép thuật; chủ động gây sát thương diện rộng và làm chậm mạnh tốc đánh của quân địch xung quanh.",
+  "Soul Ring": "Chuyển ngay một phần máu thành mana khi kích hoạt, giúp có mana sớm mà không cần chờ hồi tự nhiên.",
+  "Refresher Orb": "Kích hoạt làm mới toàn bộ thời gian hồi chiêu và mana, cho phép dùng lại ulti ngay lập tức.",
+  "Clarity": "Vật phẩm tiêu hao: hồi một lượng mana theo thời gian, mất tác dụng nếu bị tấn công trong lúc hồi.",
+  "Arcane Boots": "Giày tăng mana tối đa; chủ động hồi ngay một lượng mana cho bản thân và đồng đội đứng gần.",
+  "Urn of Shadows": "Chủ động rút máu mục tiêu theo thời gian; khi có tướng vừa tử vong gần đó sẽ tích một sạc, dùng sau để hồi máu cho đồng minh.",
+  "Battle Fury": "Cộng sát thương lớn và tạo hiệu ứng lan sát thương đánh thường sang các mục tiêu xung quanh, kèm hồi máu theo sát thương gây ra — giúp farm rừng/lane cực nhanh.",
+  "Manta Style": "Chủ động tạo các bản sao ảo giống hệt bản thân (gây được một phần sát thương), đồng thời tự gỡ một số hiệu ứng khống chế khi kích hoạt.",
+  "Butterfly": "Cộng tốc đánh và tỉ lệ né đòn rất cao, giúp giảm mạnh sát thương vật lý phải nhận.",
+  "Abyssal Blade": "Đòn đánh có tỉ lệ làm choáng mục tiêu; chủ động ghim chặt một mục tiêu, ngăn không cho chạy trốn trong thời gian ngắn.",
+  "Slippers of Agility": "Cộng một lượng nhỏ Nhanh nhẹn; item giá rẻ dùng để lên đồ giai đoạn đầu.",
+  "Bracer": "Cộng đều máu, giáp và một phần chỉ số chính; giá rẻ, hiệu quả tốt ở giai đoạn đầu.",
+  "Desolator": "Tăng sát thương đánh thường lớn, đồng thời làm giảm giáp vĩnh viễn của mục tiêu bị đánh trúng.",
+  "Skadi": "Cộng nhiều chỉ số và máu tối đa; đòn đánh làm chậm mạnh tốc chạy và tốc đánh của mục tiêu.",
+  "Mantle of Intelligence": "Cộng một lượng nhỏ Phép thuật; item giá rẻ dùng để lên đồ giai đoạn đầu.",
+  "Null Talisman": "Cộng Phép thuật và một phần hồi mana; nguyên liệu phổ biến cho các tướng phép giai đoạn đầu.",
+  "Kaya": "Cộng Phép thuật và tăng thêm phần trăm sát thương phép gây ra.",
+  "Scythe of Vyse": "Chủ động biến mục tiêu thành cừu trong thời gian dài, vô hiệu hoá hoàn toàn khả năng hành động và kỹ năng.",
+  "Octarine Core": "Giảm mạnh thời gian hồi chiêu của mọi kỹ năng, đồng thời hồi máu/mana mỗi khi gây sát thương phép.",
+  "Kaya and Sange": "Kết hợp tăng phần trăm sát thương phép gây ra với tăng máu tối đa và tốc độ hồi máu.",
+  "Sentry Ward": "Vật phẩm tiêu hao: đặt xuống tạo vùng phát hiện tàng hình trong một khoảng thời gian, không tự cấp tầm nhìn thường.",
+  "Glimmer Cape": "Chủ động tàng hình ngắn kèm cộng giáp; thường dùng để cứu đồng đội hoặc bản thân khỏi bị dồn sát thương.",
+  "Force Staff": "Chủ động đẩy bản thân hoặc một đơn vị khác (đồng minh hay địch) về phía trước một đoạn ngắn.",
+  "Aeon Disk": "Bị động: khi máu xuống quá thấp sẽ tự kích hoạt một lá chắn phép ngắn, miễn nhiễm sát thương và hiệu ứng xấu."
+};
+
 // Ảnh item thật, dẫn link thẳng tới CDN chính thức của Valve (không tải về/host lại).
 // Mỗi URL đã được kiểm tra tồn tại (HTTP 200) trước khi đưa vào.
 const ITEM_IMG_BASE = "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items";

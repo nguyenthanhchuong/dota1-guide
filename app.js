@@ -68,14 +68,18 @@ function moChiTiet(id) {
   const buildTier = (nhan, items) => `
     <div class="build-tier">
       <div class="nhan">${nhan}</div>
-      <div class="item-list">${items.map(it => `
-        <span class="item-chip">
+      ${items.map(it => `
+        <div class="item-row">
           <span class="item-icon-wrap">
             <span class="item-icon">${ITEM_ICONS[it] || "❔"}</span>
             <img src="${ITEM_IMG[it] || ""}" alt="" onerror="this.remove()">
-          </span>${it}
-        </span>
-      `).join("")}</div>
+          </span>
+          <div class="item-body">
+            <div class="ten">${it}</div>
+            <div class="mota">${ITEM_DESC[it] || ""}</div>
+          </div>
+        </div>
+      `).join("")}
     </div>
   `;
 
