@@ -227,7 +227,16 @@ const CONG_THUC = {
   "Aghanim's Scepter": { tu: ["Point Booster", "Staff of Wizardry", "Ogre Axe", "Blade of Alacrity"] },
   "Ethereal Blade": { tu: ["Ghost Scepter", "Messerschmidt's Reaver"], chuaChac: true },
   "Dagon 1": { tu: ["Null Talisman", "Staff of Wizardry"] },
-  "Necronomicon 1": { tu: ["Staff of Wizardry", "Belt of Giant Strength"] }
+  "Necronomicon 1": { tu: ["Staff of Wizardry", "Belt of Giant Strength"] },
+
+  // Nâng cấp theo cấp — mỗi cấp cộng thêm đúng một khoản cố định,
+  // Dagon +1300/cấp và Necronomicon +1250/cấp (khớp đều qua cả 4 cấp).
+  "Dagon 2": { tu: ["Dagon 1"] },
+  "Dagon 3": { tu: ["Dagon 2"] },
+  "Dagon 4": { tu: ["Dagon 3"] },
+  "Dagon 5": { tu: ["Dagon 4"] },
+  "Necronomicon 2": { tu: ["Necronomicon 1"] },
+  "Necronomicon 3": { tu: ["Necronomicon 2"] }
 };
 
 // Giá giấy ghép = giá món cuối - tổng giá thành phần. Âm nghĩa là công thức sai.
