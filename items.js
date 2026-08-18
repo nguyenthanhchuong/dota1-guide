@@ -153,3 +153,87 @@ function anhItem(ten) {
   const it = ITEM_MAP[ten];
   return it ? `${ITEM_IMG_BASE}/${it.file}` : "";
 }
+
+// Công thức ghép đồ. Nguồn không có bảng này nên em tự dựng, NHƯNG kiểm được bằng
+// phép cộng: tổng giá các món thành phần + giá giấy ghép = đúng giá món cuối.
+// Giá giấy ghép được app tự tính ra (giá món cuối trừ tổng thành phần), nên nếu
+// danh sách thành phần sai thì con số hiện ra sẽ vô lý (âm) và lộ ngay.
+// `chuaChac: true` = công thức em không dám chắc.
+const CONG_THUC = {
+  // --- Đồ nhỏ ---
+  "Wraith Band": { tu: ["Circlet of Nobility", "Slippers of Agility"] },
+  "Bracer": { tu: ["Circlet of Nobility", "Gauntlets of Ogre Strength"] },
+  "Null Talisman": { tu: ["Circlet of Nobility", "Mantle of Intelligence"] },
+  "Magic Wand": { tu: ["Magic Stick", "Branch", "Branch"] },
+  "Poor Man's Shield": { tu: ["Stout Shield", "Slippers of Agility"] },
+  "Ring of Basilius": { tu: ["Ring of Protection", "Sobi Mask"] },
+  "Soul Ring": { tu: ["Ring of Regeneration", "Sobi Mask"] },
+  "Headdress of Rejuvenation": { tu: ["Ring of Regeneration", "Circlet of Nobility"] },
+  "Natherezim Buckler": { tu: ["Chainmail", "Circlet of Nobility"] },
+  "Urn of Shadows": { tu: ["Sobi Mask", "Gauntlets of Ogre Strength", "Gauntlets of Ogre Strength"] },
+  "Perseverance": { tu: ["Ring of Health", "Void Stone"] },
+  "Oblivion Staff": { tu: ["Quarterstaff", "Robe of the Magi", "Sobi Mask"] },
+
+  // --- Giày ---
+  "Power Treads": { tu: ["Boots of Speed", "Gloves of Haste", "Belt of Giant Strength"] },
+  "Phase Boots": { tu: ["Boots of Speed", "Blades of Attack", "Blades of Attack"] },
+  "Arcane Boots": { tu: ["Boots of Speed", "Energy Booster"] },
+  "Boots of Travel": { tu: ["Boots of Speed"] },
+
+  // --- Tầm trung ---
+  "Vanguard": { tu: ["Ring of Health", "Vitality Booster", "Stout Shield"] },
+  "Hood of Defiance": { tu: ["Ring of Health", "Planeswalker's Cloak"] },
+  "Blade Mail": { tu: ["Broadsword", "Chainmail", "Robe of the Magi"] },
+  "Force Staff": { tu: ["Staff of Wizardry", "Ring of Regeneration"] },
+  "Mekansm": { tu: ["Headdress of Rejuvenation", "Natherezim Buckler"] },
+  "Vladmir's Offering": { tu: ["Ring of Basilius", "Mask of Death"] },
+  "Crystalys": { tu: ["Blades of Attack", "Broadsword"] },
+  "Sange": { tu: ["Ogre Axe", "Belt of Giant Strength"] },
+  "Yasha": { tu: ["Blade of Alacrity", "Boots of Elvenskin"] },
+  "Eul's Scepter of Divinity": { tu: ["Staff of Wizardry", "Void Stone"] },
+  "Cranium Basher": { tu: ["Mithril Hammer", "Belt of Giant Strength"] },
+  "Lothar's Edge": { tu: ["Claymore", "Quarterstaff"] },
+  "Mask of Madness": { tu: ["Mask of Death", "Quarterstaff"] },
+  "Hand of Midas": { tu: ["Gloves of Haste"] },
+  "Helm of the Dominator": { tu: ["Helm of Iron Will", "Mask of Death"] },
+  "Armlet of Mordiggian": { tu: ["Helm of Iron Will", "Blades of Attack", "Gloves of Haste"] },
+  "Khadgar's Pipe of Insight": { tu: ["Hood of Defiance", "Headdress of Rejuvenation"] },
+  "Soul Booster": { tu: ["Point Booster", "Energy Booster", "Vitality Booster"] },
+  "Maelstrom": { tu: ["Mithril Hammer", "Gloves of Haste"], chuaChac: true },
+  "Diffusal Blade": { tu: ["Blade of Alacrity", "Robe of the Magi"], chuaChac: true },
+
+  // --- Đồ mạnh ---
+  "Black King Bar": { tu: ["Ogre Axe", "Mithril Hammer"] },
+  "Battle Fury": { tu: ["Broadsword", "Claymore", "Perseverance"] },
+  "Desolator": { tu: ["Mithril Hammer", "Mithril Hammer"] },
+  "Sange and Yasha": { tu: ["Sange", "Yasha"] },
+  "Shiva's Guard": { tu: ["Plate Mail", "Mystic Staff"] },
+  "Manta Style": { tu: ["Yasha", "Ultimate Orb"] },
+  "Orchid Malevolence": { tu: ["Oblivion Staff", "Oblivion Staff"] },
+  "Bloodstone": { tu: ["Soul Booster", "Perseverance"] },
+  "Radiance": { tu: ["Sacred Relic"] },
+  "Linken's Sphere": { tu: ["Perseverance", "Ultimate Orb"] },
+  "Refresher Orb": { tu: ["Perseverance", "Perseverance"] },
+  "Monkey King Bar": { tu: ["Demon Edge", "Javelin", "Javelin"] },
+  "Assault Cuirass": { tu: ["Plate Mail", "Hyperstone", "Chainmail"] },
+  "Scythe of Vyse": { tu: ["Mystic Staff", "Ultimate Orb", "Void Stone"] },
+  "Heart of Tarrasque": { tu: ["Messerschmidt's Reaver", "Vitality Booster"] },
+  "Mjollnir": { tu: ["Maelstrom", "Hyperstone"] },
+  "Daedalus": { tu: ["Crystalys", "Demon Edge"] },
+  "Skadi": { tu: ["Ultimate Orb", "Ultimate Orb", "Point Booster"] },
+  "Butterfly": { tu: ["Talisman of Evasion", "Eaglehorn", "Quarterstaff"] },
+  "Satanic": { tu: ["Messerschmidt's Reaver", "Mask of Death", "Helm of Iron Will"] },
+  "Divine Rapier": { tu: ["Sacred Relic", "Demon Edge"] },
+  "Aghanim's Scepter": { tu: ["Point Booster", "Staff of Wizardry", "Ogre Axe", "Blade of Alacrity"] },
+  "Ethereal Blade": { tu: ["Ghost Scepter", "Messerschmidt's Reaver"], chuaChac: true },
+  "Dagon 1": { tu: ["Null Talisman", "Staff of Wizardry"] },
+  "Necronomicon 1": { tu: ["Staff of Wizardry", "Belt of Giant Strength"] }
+};
+
+// Giá giấy ghép = giá món cuối - tổng giá thành phần. Âm nghĩa là công thức sai.
+function giayGhep(ten) {
+  const ct = CONG_THUC[ten], it = ITEM_MAP[ten];
+  if (!ct || !it || it.mua === null) return null;
+  const tong = ct.tu.reduce((s, t) => s + ((ITEM_MAP[t] && ITEM_MAP[t].mua) || 0), 0);
+  return it.mua - tong;
+}

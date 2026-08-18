@@ -404,6 +404,81 @@ header.top p {
 
 .item-icon { font-size: 1rem; line-height: 1; }
 
+/* Dòng item bấm được để xem công thức */
+.item-row.co-ct { cursor: pointer; border-radius: 8px; padding: 4px; margin-left: -4px; }
+.item-row.co-ct:hover { background: var(--card); }
+.item-row.co-ct:active { background: var(--card-hover); }
+
+.dau-ghep {
+  font-size: 0.7rem;
+  color: var(--gold);
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+/* ===== Hộp công thức ghép ===== */
+.ct-sheet .sheet-head { align-items: center; }
+
+.item-icon-wrap.to {
+  width: 48px; height: 48px; border-radius: 10px; font-size: 1.5rem; flex-shrink: 0;
+}
+.item-icon-wrap.nho { width: 22px; height: 22px; border-radius: 4px; }
+.item-icon-wrap.nho .item-icon { font-size: 0.8rem; }
+
+.ct-mota {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.5;
+  margin: 0 0 4px;
+}
+
+.ct-cay {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 10px;
+  background: var(--card);
+}
+
+.ct-dong {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 0;
+  font-size: 0.85rem;
+}
+
+.ct-ten { flex: 1; }
+
+.ct-gia {
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.ct-goc {
+  font-size: 0.7rem;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 1px 8px;
+}
+
+.ct-giay .ct-ten { color: var(--muted); font-style: italic; }
+
+.ct-tong {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.ct-tong b { color: var(--gold); font-size: 0.95rem; }
+
 .item-icon-wrap img {
   position: absolute;
   inset: 0;

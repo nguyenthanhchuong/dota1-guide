@@ -80,6 +80,92 @@ function dongChiTiet() {
   if (backdrop) backdrop.remove();
 }
 
+function dongCongThuc() {
+  const b = $("ct-backdrop");
+  if (b) b.remove();
+}
+
+// Dựng cây công thức đệ quy: món nào ghép được thì mở tiếp thành phần của nó.
+function cayCongThuc(ten, sau) {
+  sau = sau || 0;
+  const it = timItem(ten);
+  const ct = CONG_THUC[ten];
+  const gia = it && it.mua !== null ? it.mua : null;
+
+  const dong = `
+    <div class="ct-dong" style="margin-left:${sau * 18}px">
+      <span class="item-icon-wrap nho">
+        <span class="item-icon">${it ? it.icon : "❔"}</span>
+        <img src="${anhItem(ten)}" alt="" onerror="this.remove()">
+      </span>
+      <span class="ct-ten">${ten}</span>
+      ${gia !== null ? `<span class="ct-gia">${gia}</span>` : ""}
+      ${!ct ? '<span class="ct-goc">mua thẳng</span>' : ""}
+    </div>`;
+
+  if (!ct || sau >= 3) return dong;
+
+  const gg = giayGhep(ten);
+  const dongGiay = gg && gg > 0
+    ? `<div class="ct-dong ct-giay" style="margin-left:${(sau + 1) * 18}px">
+         <span class="item-icon-wrap nho"><span class="item-icon">📜</span></span>
+         <span class="ct-ten">Giấy ghép</span><span class="ct-gia">${gg}</span>
+       </div>`
+    : "";
+
+  return dong + ct.tu.map(t => cayCongThuc(t, sau + 1)).join("") + dongGiay;
+}
+
+function moCongThuc(ten) {
+  const it = timItem(ten);
+  const ct = CONG_THUC[ten];
+  if (!it || !ct) return;
+
+  const gg = giayGhep(ten);
+  const tongPhan = ct.tu.reduce((s, t) => s + ((timItem(t) && timItem(t).mua) || 0), 0);
+
+  const html = `
+    <div class="sheet-backdrop" id="ct-backdrop">
+      <div class="sheet ct-sheet">
+        <div class="sheet-head">
+          <span class="item-icon-wrap to">
+            <span class="item-icon">${it.icon}</span>
+            <img src="${anhItem(ten)}" alt="" onerror="this.remove()">
+          </span>
+          <div>
+            <h2>${ten}</h2>
+            <div class="danh-hieu">${it.tenGoc ? it.tenGoc + " · " : ""}${it.mua} vàng</div>
+          </div>
+        </div>
+
+        <p class="ct-mota">${it.mota}</p>
+
+        ${ct.chuaChac ? '<div class="canh-bao">⚠️ Công thức món này em chưa chắc chắn — anh nên kiểm lại trong game.</div>' : ""}
+
+        <h3>Ghép từ</h3>
+        <div class="ct-cay">${ct.tu.map(t => cayCongThuc(t, 0)).join("")}
+          ${gg && gg > 0 ? `<div class="ct-dong ct-giay">
+              <span class="item-icon-wrap nho"><span class="item-icon">📜</span></span>
+              <span class="ct-ten">Giấy ghép</span><span class="ct-gia">${gg}</span>
+            </div>` : ""}
+        </div>
+
+        <div class="ct-tong">
+          <span>Cộng lại</span>
+          <span>${tongPhan}${gg && gg > 0 ? " + " + gg + " giấy" : ""} = <b>${it.mua}</b> vàng</span>
+        </div>
+
+        <button type="button" class="sheet-close" id="ct-close">Đóng</button>
+      </div>
+    </div>`;
+
+  document.body.insertAdjacentHTML("beforeend", html);
+  $("ct-backdrop").addEventListener("click", e => {
+    if (e.target.id === "ct-backdrop") dongCongThuc();
+  });
+  $("ct-close").addEventListener("click", dongCongThuc);
+}
+
 function moChiTiet(id) {
   const h = DS_TUONG.find(x => x.id === id);
   if (!h) return;
@@ -112,15 +198,16 @@ function moChiTiet(id) {
           const gia = it && it.mua !== null
             ? `<span class="gia"><span class="gia-mua">${it.mua}</span>${it.ban !== null ? `<span class="gia-ban">bán ${it.ban}</span>` : ""}</span>`
             : "";
+          const coCT = !!CONG_THUC[ten];
           return `
-          <div class="item-row">
+          <div class="item-row${coCT ? " co-ct" : ""}" data-item="${ten.replace(/"/g, "&quot;")}">
             <span class="item-icon-wrap">
               <span class="item-icon">${it ? it.icon : "❔"}</span>
               <img src="${anhItem(ten)}" alt="" onerror="this.remove()">
             </span>
             <div class="item-body">
               <div class="ten-gia">
-                <span class="ten">${ten}${it && it.tenGoc ? ` <span class="ten-goc">${it.tenGoc}</span>` : ""}</span>
+                <span class="ten">${ten}${it && it.tenGoc ? ` <span class="ten-goc">${it.tenGoc}</span>` : ""}${coCT ? ' <span class="dau-ghep">ghép ▸</span>' : ""}</span>
                 ${gia}
               </div>
               <div class="mota">${it ? it.mota : ""}</div>
@@ -180,6 +267,14 @@ function moChiTiet(id) {
     if (e.target.id === "sheet-backdrop") dongChiTiet();
   });
   $("sheet-close").addEventListener("click", dongChiTiet);
+
+  // Bấm vào món đồ ghép được để xem công thức
+  document.querySelectorAll("#sheet-backdrop .item-row.co-ct").forEach(row => {
+    row.addEventListener("click", e => {
+      e.stopPropagation();
+      moCongThuc(row.dataset.item);
+    });
+  });
 }
 
 function initTimKiem() {

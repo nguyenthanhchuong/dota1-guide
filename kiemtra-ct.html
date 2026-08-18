@@ -1,0 +1,26 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Kiểm tra công thức</title></head><body>
+<pre id="out">…</pre>
+<script src="items.js"></script>
+<script>
+const loi = [], nghiNgo = [], ok = [];
+Object.keys(CONG_THUC).forEach(ten => {
+  const it = ITEM_MAP[ten], ct = CONG_THUC[ten];
+  if (!it) { loi.push("Công thức cho item không tồn tại: " + ten); return; }
+  const thieu = ct.tu.filter(t => !ITEM_MAP[t]);
+  if (thieu.length) { loi.push(ten + ": thành phần không có trong danh mục: " + thieu.join(", ")); return; }
+  const tong = ct.tu.reduce((s,t) => s + (ITEM_MAP[t].mua || 0), 0);
+  const gg = it.mua - tong;
+  if (gg < 0) loi.push(ten + ": SAI — thành phần (" + tong + ") đắt hơn cả món (" + it.mua + "), thừa " + (-gg));
+  else if (gg > 2500) nghiNgo.push(ten + ": giấy ghép " + gg + " (cao bất thường, có thể thiếu thành phần)");
+  else ok.push(ten + " = " + tong + (gg>0 ? " + " + gg + " giấy" : "") + " = " + it.mua);
+});
+// item ghep duoc nhung chua co cong thuc
+const chuaCo = ITEMS.filter(i => !CONG_THUC[i.ten] && i.mua && i.mua >= 1900).map(i => i.ten + " (" + i.mua + ")");
+document.getElementById('out').textContent =
+  "Tổng công thức: " + Object.keys(CONG_THUC).length +
+  "\nĐúng số: " + ok.length + " | Nghi ngờ: " + nghiNgo.length + " | Sai: " + loi.length +
+  "\n\n=== SAI ===\n" + (loi.join("\n")||"(không có)") +
+  "\n\n=== NGHI NGỜ ===\n" + (nghiNgo.join("\n")||"(không có)") +
+  "\n\n=== ĐỒ ĐẮT CHƯA CÓ CÔNG THỨC ===\n" + (chuaCo.join("\n")||"(không có)") +
+  "\n\n=== ĐÚNG ===\n" + ok.join("\n");
+</script></body></html>
