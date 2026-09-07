@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cẩm Nang Dota 1</title>
+<meta name="theme-color" content="#15110d">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Dota 1">
 <link rel="stylesheet" href="style.css?v=11">
 </head>
 <body>
@@ -26,5 +32,16 @@
 <script src="data.js?v=11"></script>
 <script src="heroes-them.js?v=11"></script>
 <script src="app.js?v=11"></script>
+
+<script>
+// Đăng ký service worker để cài được ra màn hình chính và tra cứu khi mất mạng.
+// Bọc trong điều kiện vì trình duyệt cũ không có, và lỗi ở đây không được phép
+// làm hỏng trang — cẩm nang vẫn phải đọc được bình thường khi không đăng ký nổi.
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+  });
+}
+</script>
 </body>
 </html>
