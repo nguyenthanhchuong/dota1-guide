@@ -6,19 +6,19 @@
 // từ app chi tiêu: máy đã lưu index.html thì vĩnh viễn chạy bản cũ, mọi bản sửa
 // đẩy lên đều không tới được người dùng — và rất khó nhận ra vì trang vẫn chạy
 // bình thường. Trang này còn hay bổ sung tướng mới nên càng phải ưu tiên mạng.
-const CACHE_VERSION = "dota1-guide-v1";
+const CACHE_VERSION = "dota1-guide-v2";
 
 // Cache trọn bộ: cả cẩm nang chỉ có 7 file tĩnh nên tải hết một lần là dùng
 // offline được đầy đủ, không phải chọn lọc.
 const SHELL = [
   "./",
   "./index.html",
-  "./style.css?v=11",
-  "./heroes-base.js?v=11",
-  "./items.js?v=11",
-  "./data.js?v=11",
-  "./heroes-them.js?v=11",
-  "./app.js?v=11",
+  "./style.css?v=12",
+  "./heroes-base.js?v=12",
+  "./items.js?v=12",
+  "./data.js?v=12",
+  "./heroes-them.js?v=12",
+  "./app.js?v=12",
   "./manifest.json",
   "./icons/icon-192.png",
   "./icons/icon-512.png"

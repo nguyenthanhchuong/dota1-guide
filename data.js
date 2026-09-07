@@ -12,10 +12,10 @@ const HEROES = [
     he: "str",
     vaiTro: ["Đấu sĩ", "Khởi chiến", "Càn creep"],
     skills: [
-      { phim: "Q", ten: "Berserker's Call", mota: "Ép toàn bộ quân địch trong phạm vi phải tấn công Axe, đồng thời tăng giáp cho bản thân trong lúc gồng." },
-      { phim: "W", ten: "Battle Hunger", mota: "Nguyền một mục tiêu, gây sát thương theo thời gian và làm chậm tốc độ chạy; hiệu ứng chỉ hết khi mục tiêu giết được một đơn vị khác." },
-      { phim: "E", ten: "Counter Helix", mota: "Bị động: mỗi khi bị đánh trúng có tỉ lệ phản đòn, gây sát thương lan toả quanh Axe." },
-      { phim: "R", ten: "Culling Blade", mota: "Ulti: xử tử ngay lập tức mục tiêu có máu dưới ngưỡng, nếu giết được thì Axe và đồng đội xung quanh được tăng tốc chạy." }
+      { phim: "Q", loai: "Chủ động", ten: "Berserker's Call", mota: "Ép toàn bộ quân địch trong phạm vi phải tấn công Axe, đồng thời tăng giáp cho bản thân trong lúc gồng." },
+      { phim: "W", loai: "Chủ động", ten: "Battle Hunger", mota: "Nguyền một mục tiêu, gây sát thương theo thời gian và làm chậm tốc độ chạy; hiệu ứng chỉ hết khi mục tiêu giết được một đơn vị khác." },
+      { phim: "E", loai: "Bị động", ten: "Counter Helix", mota: "Bị động: mỗi khi bị đánh trúng có tỉ lệ phản đòn, gây sát thương lan toả quanh Axe." },
+      { phim: "R", loai: "Chủ động", ten: "Culling Blade", mota: "Ulti: xử tử ngay lập tức mục tiêu có máu dưới ngưỡng, nếu giết được thì Axe và đồng đội xung quanh được tăng tốc chạy." }
     ],
     lenSkill: "Max Counter Helix trước, xen Berserker's Call ở mốc có thể khởi chiến, Culling Blade lên mỗi khi có thể.",
     doBuild: {
@@ -40,10 +40,10 @@ const HEROES = [
     he: "str",
     vaiTro: ["Carry", "Đấu sĩ"],
     skills: [
-      { phim: "Q", ten: "Storm Bolt", mota: "Ném búa gây sát thương và choáng mục tiêu trúng đòn, tầm xa vừa phải." },
-      { phim: "W", ten: "Great Cleave", mota: "Bị động: mỗi đòn đánh thường lan sang các mục tiêu lân cận với phần trăm sát thương giảm dần." },
-      { phim: "E", ten: "Warcry", mota: "Tăng giáp và tốc độ chạy cho Sven và đồng đội xung quanh trong một khoảng thời gian." },
-      { phim: "R", ten: "God's Strength", mota: "Ulti: tăng mạnh sát thương vật lý của Sven theo phần trăm, biến thành cỗ máy sát thương thuần." }
+      { phim: "Q", loai: "Chủ động", ten: "Storm Bolt", mota: "Ném búa gây sát thương và choáng mục tiêu trúng đòn, tầm xa vừa phải." },
+      { phim: "W", loai: "Bị động", ten: "Great Cleave", mota: "Bị động: mỗi đòn đánh thường lan sang các mục tiêu lân cận với phần trăm sát thương giảm dần." },
+      { phim: "E", loai: "Chủ động", ten: "Warcry", mota: "Tăng giáp và tốc độ chạy cho Sven và đồng đội xung quanh trong một khoảng thời gian." },
+      { phim: "R", loai: "Chủ động", ten: "God's Strength", mota: "Ulti: tăng mạnh sát thương vật lý của Sven theo phần trăm, biến thành cỗ máy sát thương thuần." }
     ],
     lenSkill: "Max Great Cleave sớm để farm nhanh, Storm Bolt đủ dùng combo, God's Strength lên mỗi khi có thể.",
     doBuild: {
@@ -68,10 +68,10 @@ const HEROES = [
     he: "str",
     vaiTro: ["Carry", "Đấu sĩ", "Nuker"],
     skills: [
-      { phim: "Q", ten: "Avalanche", mota: "Gọi đá rơi vào một khu vực, gây sát thương và làm choáng nhẹ các đơn vị trúng đòn." },
-      { phim: "W", ten: "Toss", mota: "Ném một đơn vị (quân mình hoặc địch) ra xa, gây sát thương cho mục tiêu bị ném trúng lúc rơi xuống." },
-      { phim: "E", ten: "Craggy Exterior", mota: "Bị động: khi bị đánh có tỉ lệ làm choáng đối phương và giảm sát thương phải nhận." },
-      { phim: "R", ten: "Grow", mota: "Ulti: Tiny lớn dần theo cấp độ, tăng sát thương và tầm đánh, đổi lại giảm tốc độ đánh." }
+      { phim: "Q", loai: "Chủ động", ten: "Avalanche", mota: "Gọi đá rơi vào một khu vực, gây sát thương và làm choáng nhẹ các đơn vị trúng đòn." },
+      { phim: "W", loai: "Chủ động", ten: "Toss", mota: "Ném một đơn vị (quân mình hoặc địch) ra xa, gây sát thương cho mục tiêu bị ném trúng lúc rơi xuống." },
+      { phim: "E", loai: "Bị động", ten: "Craggy Exterior", mota: "Bị động: khi bị đánh có tỉ lệ làm choáng đối phương và giảm sát thương phải nhận." },
+      { phim: "R", loai: "Bị động", ten: "Grow", mota: "Ulti: Tiny lớn dần theo cấp độ, tăng sát thương và tầm đánh, đổi lại giảm tốc độ đánh." }
     ],
     lenSkill: "Max Avalanche trước để farm và combo, Toss lên sớm để kết hợp Avalanche + Toss gây burst lớn.",
     doBuild: {
@@ -96,10 +96,10 @@ const HEROES = [
     he: "str",
     vaiTro: ["Đấu sĩ", "Khởi chiến", "Tank"],
     skills: [
-      { phim: "Q", ten: "Hoof Stomp", mota: "Giậm chân gây sát thương và choáng diện rộng quanh Centaur." },
-      { phim: "W", ten: "Double Edge", mota: "Lao vào gây sát thương cho cả mục tiêu lẫn bản thân Centaur, sát thương càng lớn nếu Centaur càng nhiều máu." },
-      { phim: "E", ten: "Return", mota: "Bị động: phản lại một phần sát thương vật lý phải nhận cho kẻ tấn công." },
-      { phim: "R", ten: "Stampede", mota: "Ulti: triệu hồi đàn ngựa chạy theo một hướng, tăng mạnh tốc độ chạy cho Centaur và đồng đội trúng hiệu ứng." }
+      { phim: "Q", loai: "Chủ động", ten: "Hoof Stomp", mota: "Giậm chân gây sát thương và choáng diện rộng quanh Centaur." },
+      { phim: "W", loai: "Chủ động", ten: "Double Edge", mota: "Lao vào gây sát thương cho cả mục tiêu lẫn bản thân Centaur, sát thương càng lớn nếu Centaur càng nhiều máu." },
+      { phim: "E", loai: "Bị động", ten: "Return", mota: "Bị động: phản lại một phần sát thương vật lý phải nhận cho kẻ tấn công." },
+      { phim: "R", loai: "Chủ động", ten: "Stampede", mota: "Ulti: triệu hồi đàn ngựa chạy theo một hướng, tăng mạnh tốc độ chạy cho Centaur và đồng đội trúng hiệu ứng." }
     ],
     lenSkill: "Max Return để farm và trả sát thương khi bị vây, Hoof Stomp lên đủ để khởi chiến, Stampede mỗi khi có thể.",
     doBuild: {
@@ -124,10 +124,10 @@ const HEROES = [
     he: "str",
     vaiTro: ["Tank", "Khởi chiến", "Hỗ trợ"],
     skills: [
-      { phim: "Q", ten: "Gush", mota: "Gây sát thương và làm chậm mạnh tốc độ chạy của mục tiêu, đồng thời giảm giáp." },
-      { phim: "W", ten: "Kraken Shell", mota: "Bị động: giảm sát thương nhận vào và tự gỡ một số hiệu ứng khống chế sau một khoảng thời gian tích luỹ sát thương." },
-      { phim: "E", ten: "Anchor Smash", mota: "Vung xúc tu gây sát thương lan toả quanh Tidehunter, đồng thời giảm sát thương đánh thường của quân địch trúng đòn." },
-      { phim: "R", ten: "Ravage", mota: "Ulti: các xúc tu khổng lồ trồi lên khắp bản đồ quanh Tidehunter, gây sát thương và choáng diện rộng cực lớn." }
+      { phim: "Q", loai: "Chủ động", ten: "Gush", mota: "Gây sát thương và làm chậm mạnh tốc độ chạy của mục tiêu, đồng thời giảm giáp." },
+      { phim: "W", loai: "Bị động", ten: "Kraken Shell", mota: "Bị động: giảm sát thương nhận vào và tự gỡ một số hiệu ứng khống chế sau một khoảng thời gian tích luỹ sát thương." },
+      { phim: "E", loai: "Chủ động", ten: "Anchor Smash", mota: "Vung xúc tu gây sát thương lan toả quanh Tidehunter, đồng thời giảm sát thương đánh thường của quân địch trúng đòn." },
+      { phim: "R", loai: "Chủ động", ten: "Ravage", mota: "Ulti: các xúc tu khổng lồ trồi lên khắp bản đồ quanh Tidehunter, gây sát thương và choáng diện rộng cực lớn." }
     ],
     lenSkill: "Max Kraken Shell và Gush song song để trụ lane, Ravage lên mỗi khi có thể vì tầm ảnh hưởng cực lớn.",
     doBuild: {
@@ -152,10 +152,10 @@ const HEROES = [
     he: "str",
     vaiTro: ["Khởi chiến", "Bắt lẻ", "Tank"],
     skills: [
-      { phim: "Q", ten: "Meat Hook", mota: "Móc xích tầm xa, kéo mục tiêu trúng đòn (kể cả quân mình) về phía Pudge và gây sát thương." },
-      { phim: "W", ten: "Rot", mota: "Kích hoạt vùng độc quanh Pudge, gây sát thương theo thời gian cho cả địch lẫn chính Pudge, làm chậm tốc độ chạy." },
-      { phim: "E", ten: "Flesh Heap", mota: "Bị động: cộng dồn sức mạnh vĩnh viễn mỗi khi có tướng gần đó tử vong, đồng thời kháng phép khi cộng dồn cao." },
-      { phim: "R", ten: "Dismember", mota: "Ulti: giữ chặt mục tiêu không cho hành động, liên tục rút máu gây sát thương và hồi máu cho Pudge." }
+      { phim: "Q", loai: "Chủ động", ten: "Meat Hook", mota: "Móc xích tầm xa, kéo mục tiêu trúng đòn (kể cả quân mình) về phía Pudge và gây sát thương." },
+      { phim: "W", loai: "Chủ động", ten: "Rot", mota: "Kích hoạt vùng độc quanh Pudge, gây sát thương theo thời gian cho cả địch lẫn chính Pudge, làm chậm tốc độ chạy." },
+      { phim: "E", loai: "Bị động", ten: "Flesh Heap", mota: "Bị động: cộng dồn sức mạnh vĩnh viễn mỗi khi có tướng gần đó tử vong, đồng thời kháng phép khi cộng dồn cao." },
+      { phim: "R", loai: "Chủ động", ten: "Dismember", mota: "Ulti: giữ chặt mục tiêu không cho hành động, liên tục rút máu gây sát thương và hồi máu cho Pudge." }
     ],
     lenSkill: "Max Meat Hook trước tiên để bắt lẻ, Rot xen kẽ để farm và gây áp lực đường, Dismember lên mỗi khi có thể.",
     doBuild: {
@@ -182,10 +182,10 @@ const HEROES = [
     he: "agi",
     vaiTro: ["Carry", "Khắc phép"],
     skills: [
-      { phim: "Q", ten: "Mana Break", mota: "Bị động: mỗi đòn đánh thường đốt một phần mana của mục tiêu, mất càng nhiều mana thì sát thương nhận thêm càng cao." },
-      { phim: "W", ten: "Blink", mota: "Dịch chuyển tức thời trong tầm ngắn, dùng để đuổi đánh hoặc rút lui." },
-      { phim: "E", ten: "Counterspell", mota: "Bị động/chủ động: có tỉ lệ phản phép đơn mục tiêu nhắm vào Anti-Mage; có thể bật chủ động để chắc chắn phản." },
-      { phim: "R", ten: "Mana Void", mota: "Ulti: sau một nhịp trễ, gây sát thương lên khu vực dựa theo lượng mana đã mất của mục tiêu." }
+      { phim: "Q", loai: "Bị động", ten: "Mana Break", mota: "Bị động: mỗi đòn đánh thường đốt một phần mana của mục tiêu, mất càng nhiều mana thì sát thương nhận thêm càng cao." },
+      { phim: "W", loai: "Chủ động", ten: "Blink", mota: "Dịch chuyển tức thời trong tầm ngắn, dùng để đuổi đánh hoặc rút lui." },
+      { phim: "E", loai: "Bị động", ten: "Counterspell", mota: "Bị động/chủ động: có tỉ lệ phản phép đơn mục tiêu nhắm vào Anti-Mage; có thể bật chủ động để chắc chắn phản." },
+      { phim: "R", loai: "Chủ động", ten: "Mana Void", mota: "Ulti: sau một nhịp trễ, gây sát thương lên khu vực dựa theo lượng mana đã mất của mục tiêu." }
     ],
     lenSkill: "Max Mana Break để farm nhanh và khắc chế tướng phép, Blink lên sớm để né/đuổi, Mana Void mỗi khi có thể.",
     doBuild: {
@@ -210,10 +210,10 @@ const HEROES = [
     he: "agi",
     vaiTro: ["Carry", "Sát thủ"],
     skills: [
-      { phim: "Q", ten: "Stifling Dagger", mota: "Ném dao gây sát thương và làm chậm tốc độ chạy mục tiêu trúng đòn." },
-      { phim: "W", ten: "Phantom Strike", mota: "Dịch chuyển tới cạnh mục tiêu và tăng mạnh tốc độ đánh trong vài đòn tiếp theo." },
-      { phim: "E", ten: "Blur", mota: "Bị động: tăng né đòn, và mờ dần gần như tàng hình khi không nhận sát thương trong một khoảng thời gian." },
-      { phim: "R", ten: "Coup de Grace", mota: "Bị động: mỗi đòn đánh có tỉ lệ chí mạng gây sát thương cực lớn, tỉ lệ và mức chí mạng cao hơn hẳn tướng thường." }
+      { phim: "Q", loai: "Chủ động", ten: "Stifling Dagger", mota: "Ném dao gây sát thương và làm chậm tốc độ chạy mục tiêu trúng đòn." },
+      { phim: "W", loai: "Chủ động", ten: "Phantom Strike", mota: "Dịch chuyển tới cạnh mục tiêu và tăng mạnh tốc độ đánh trong vài đòn tiếp theo." },
+      { phim: "E", loai: "Bị động", ten: "Blur", mota: "Bị động: tăng né đòn, và mờ dần gần như tàng hình khi không nhận sát thương trong một khoảng thời gian." },
+      { phim: "R", loai: "Bị động", ten: "Coup de Grace", mota: "Bị động: mỗi đòn đánh có tỉ lệ chí mạng gây sát thương cực lớn, tỉ lệ và mức chí mạng cao hơn hẳn tướng thường." }
     ],
     lenSkill: "Max Stifling Dagger đầu để farm và trao đổi lane, Phantom Strike lên đủ combo, Coup de Grace mỗi khi có thể — đây là kỹ năng cốt lõi.",
     doBuild: {
@@ -238,10 +238,10 @@ const HEROES = [
     he: "agi",
     vaiTro: ["Carry", "Đấu sĩ"],
     skills: [
-      { phim: "Q", ten: "Blade Fury", mota: "Xoay kiếm gây sát thương liên tục quanh Juggernaut, miễn nhiễm hiệu ứng phép trong lúc xoay." },
-      { phim: "W", ten: "Healing Ward", mota: "Triệu hồi một totem di động hồi máu cho Juggernaut và đồng đội đứng gần nó." },
-      { phim: "E", ten: "Blade Dance", mota: "Bị động: tăng tỉ lệ chí mạng cho các đòn đánh thường." },
-      { phim: "R", ten: "Omnislash", mota: "Ulti: nhảy chém liên tiếp nhiều mục tiêu địch xung quanh, gây sát thương từng đòn." }
+      { phim: "Q", loai: "Chủ động", ten: "Blade Fury", mota: "Xoay kiếm gây sát thương liên tục quanh Juggernaut, miễn nhiễm hiệu ứng phép trong lúc xoay." },
+      { phim: "W", loai: "Chủ động", ten: "Healing Ward", mota: "Triệu hồi một totem di động hồi máu cho Juggernaut và đồng đội đứng gần nó." },
+      { phim: "E", loai: "Bị động", ten: "Blade Dance", mota: "Bị động: tăng tỉ lệ chí mạng cho các đòn đánh thường." },
+      { phim: "R", loai: "Chủ động", ten: "Omnislash", mota: "Ulti: nhảy chém liên tiếp nhiều mục tiêu địch xung quanh, gây sát thương từng đòn." }
     ],
     lenSkill: "Max Blade Fury để farm nhanh và trụ lane, Healing Ward xen kẽ, Omnislash mỗi khi có thể.",
     doBuild: {
@@ -266,10 +266,10 @@ const HEROES = [
     he: "agi",
     vaiTro: ["Carry", "Khởi chiến"],
     skills: [
-      { phim: "Q", ten: "Time Walk", mota: "Lao nhanh theo hướng di chuyển, khi kết thúc sẽ hoàn tác lại sát thương Void nhận trong khoảng thời gian đó." },
-      { phim: "W", ten: "Time Lock", mota: "Bị động: mỗi đòn đánh có tỉ lệ gây thêm sát thương và làm choáng ngắn mục tiêu." },
-      { phim: "E", ten: "Time Dilation", mota: "Làm chậm hồi chiêu và tốc độ hành động của quân địch trong khu vực, đồng thời gây sát thương." },
-      { phim: "R", ten: "Chronosphere", mota: "Ulti: tạo một vùng đóng băng thời gian, mọi đơn vị bên trong (trừ Void) không thể hành động." }
+      { phim: "Q", loai: "Chủ động", ten: "Time Walk", mota: "Lao nhanh theo hướng di chuyển, khi kết thúc sẽ hoàn tác lại sát thương Void nhận trong khoảng thời gian đó." },
+      { phim: "W", loai: "Bị động", ten: "Time Lock", mota: "Bị động: mỗi đòn đánh có tỉ lệ gây thêm sát thương và làm choáng ngắn mục tiêu." },
+      { phim: "E", loai: "Chủ động", ten: "Time Dilation", mota: "Làm chậm hồi chiêu và tốc độ hành động của quân địch trong khu vực, đồng thời gây sát thương." },
+      { phim: "R", loai: "Chủ động", ten: "Chronosphere", mota: "Ulti: tạo một vùng đóng băng thời gian, mọi đơn vị bên trong (trừ Void) không thể hành động." }
     ],
     lenSkill: "Max Time Walk để farm và combat sớm, Time Lock xen kẽ, Chronosphere mỗi khi có thể.",
     doBuild: {
@@ -294,10 +294,10 @@ const HEROES = [
     he: "agi",
     vaiTro: ["Sát thủ", "Bắt lẻ"],
     skills: [
-      { phim: "Q", ten: "Smoke Screen", mota: "Ném khói vào khu vực, gây sát thương theo thời gian, làm mù và câm lặng các đơn vị địch bên trong." },
-      { phim: "W", ten: "Blink Strike", mota: "Dịch chuyển tới cạnh mục tiêu (quân mình hoặc địch) và gây sát thương nếu là địch." },
-      { phim: "E", ten: "Tricks of the Trade", mota: "Riki biến mất và di chuyển nhanh tới các mục tiêu chỉ định, gây sát thương rồi hiện lại." },
-      { phim: "R", ten: "Permanent Invisibility", mota: "Ulti bị động: Riki tự động tàng hình khi không hành động trong thời gian ngắn, đòn đánh từ tàng hình gây thêm sát thương." }
+      { phim: "Q", loai: "Chủ động", ten: "Smoke Screen", mota: "Ném khói vào khu vực, gây sát thương theo thời gian, làm mù và câm lặng các đơn vị địch bên trong." },
+      { phim: "W", loai: "Chủ động", ten: "Blink Strike", mota: "Dịch chuyển tới cạnh mục tiêu (quân mình hoặc địch) và gây sát thương nếu là địch." },
+      { phim: "E", loai: "Chủ động", ten: "Tricks of the Trade", mota: "Riki biến mất và di chuyển nhanh tới các mục tiêu chỉ định, gây sát thương rồi hiện lại." },
+      { phim: "R", loai: "Bị động", ten: "Permanent Invisibility", mota: "Ulti bị động: Riki tự động tàng hình khi không hành động trong thời gian ngắn, đòn đánh từ tàng hình gây thêm sát thương." }
     ],
     lenSkill: "Max Blink Strike để di chuyển và gây sát thương, Smoke Screen xen kẽ để khống chế, Tricks of the Trade mỗi khi có thể.",
     doBuild: {
@@ -322,10 +322,10 @@ const HEROES = [
     he: "agi",
     vaiTro: ["Carry", "Đánh xa"],
     skills: [
-      { phim: "Q", ten: "Shrapnel", mota: "Rải mảnh đạn xuống một khu vực, gây sát thương theo thời gian, làm chậm và tạo tầm nhìn." },
-      { phim: "W", ten: "Headshot", mota: "Bị động: mỗi đòn đánh có tỉ lệ gây thêm sát thương và làm choáng cực ngắn (ministun)." },
-      { phim: "E", ten: "Take Aim", mota: "Bị động: tăng tầm đánh thường, giúp Sniper đứng từ rất xa vẫn gây sát thương." },
-      { phim: "R", ten: "Assassinate", mota: "Ulti: nhắm bắn một mục tiêu ở tầm cực xa, gây sát thương lớn sau một nhịp channel (bị huỷ nếu Sniper bị gây sát thương)." }
+      { phim: "Q", loai: "Chủ động", ten: "Shrapnel", mota: "Rải mảnh đạn xuống một khu vực, gây sát thương theo thời gian, làm chậm và tạo tầm nhìn." },
+      { phim: "W", loai: "Bị động", ten: "Headshot", mota: "Bị động: mỗi đòn đánh có tỉ lệ gây thêm sát thương và làm choáng cực ngắn (ministun)." },
+      { phim: "E", loai: "Bị động", ten: "Take Aim", mota: "Bị động: tăng tầm đánh thường, giúp Sniper đứng từ rất xa vẫn gây sát thương." },
+      { phim: "R", loai: "Chủ động", ten: "Assassinate", mota: "Ulti: nhắm bắn một mục tiêu ở tầm cực xa, gây sát thương lớn sau một nhịp channel (bị huỷ nếu Sniper bị gây sát thương)." }
     ],
     lenSkill: "Max Headshot và Take Aim song song để tối đa hoá sát thương đánh thường, Shrapnel xen kẽ, Assassinate mỗi khi có thể.",
     doBuild: {
@@ -352,8 +352,8 @@ const HEROES = [
     he: "int",
     vaiTro: ["Nuker", "Combo", "Linh hoạt"],
     skills: [
-      { phim: "Q/W/E", ten: "Quas / Wex / Exort", mota: "Ba trụ thuộc tính: Quas cộng máu hồi và giáp, Wex cộng tốc đánh/chạy và giảm hồi chiêu, Exort cộng sát thương phép. Mức mỗi trụ quyết định phép được Invoke ra." },
-      { phim: "R", ten: "Invoke", mota: "Ulti: hoán đổi và triệu hồi 2 trong số 10 phép dựa trên tổ hợp Quas/Wex/Exort hiện tại, ví dụ Cold Snap, EMP, Tornado, Alacrity, Sun Strike, Forge Spirit, Chaos Meteor, Deafening Blast, Ghost Walk, Ice Wall." }
+      { phim: "Q/W/E", loai: "Chủ động", ten: "Quas / Wex / Exort", mota: "Ba trụ thuộc tính: Quas cộng máu hồi và giáp, Wex cộng tốc đánh/chạy và giảm hồi chiêu, Exort cộng sát thương phép. Mức mỗi trụ quyết định phép được Invoke ra." },
+      { phim: "R", loai: "Chủ động", ten: "Invoke", mota: "Ulti: hoán đổi và triệu hồi 2 trong số 10 phép dựa trên tổ hợp Quas/Wex/Exort hiện tại, ví dụ Cold Snap, EMP, Tornado, Alacrity, Sun Strike, Forge Spirit, Chaos Meteor, Deafening Blast, Ghost Walk, Ice Wall." }
     ],
     lenSkill: "Build Quas-Wex (hỗ trợ/gank) lên Wex và Quas trước, giữ Exort ở mức thấp; hoặc build Exort (carry) để tối đa sát thương phép giai đoạn giữa-cuối game.",
     doBuild: {
@@ -378,10 +378,10 @@ const HEROES = [
     he: "int",
     vaiTro: ["Nuker", "Carry phép"],
     skills: [
-      { phim: "Q", ten: "Dragon Slave", mota: "Phun lửa theo một đường thẳng, gây sát thương diện rộng cho mọi đơn vị trúng đòn." },
-      { phim: "W", ten: "Light Strike Array", mota: "Gọi cột lửa nổ chậm tại một khu vực, gây sát thương và làm choáng ngắn các mục tiêu trúng." },
-      { phim: "E", ten: "Fiery Soul", mota: "Bị động: mỗi lần dùng phép được cộng dồn tốc đánh và tốc chạy trong thời gian ngắn." },
-      { phim: "R", ten: "Laguna Blade", mota: "Ulti: phóng tia sét gây sát thương cực lớn lên một mục tiêu duy nhất." }
+      { phim: "Q", loai: "Chủ động", ten: "Dragon Slave", mota: "Phun lửa theo một đường thẳng, gây sát thương diện rộng cho mọi đơn vị trúng đòn." },
+      { phim: "W", loai: "Chủ động", ten: "Light Strike Array", mota: "Gọi cột lửa nổ chậm tại một khu vực, gây sát thương và làm choáng ngắn các mục tiêu trúng." },
+      { phim: "E", loai: "Bị động", ten: "Fiery Soul", mota: "Bị động: mỗi lần dùng phép được cộng dồn tốc đánh và tốc chạy trong thời gian ngắn." },
+      { phim: "R", loai: "Chủ động", ten: "Laguna Blade", mota: "Ulti: phóng tia sét gây sát thương cực lớn lên một mục tiêu duy nhất." }
     ],
     lenSkill: "Max Dragon Slave để farm và gây áp lực đường, Light Strike Array xen kẽ để combo choáng, Laguna Blade mỗi khi có thể.",
     doBuild: {
@@ -406,10 +406,10 @@ const HEROES = [
     he: "int",
     vaiTro: ["Hỗ trợ", "Khống chế", "Gank"],
     skills: [
-      { phim: "Q", ten: "Earth Spike", mota: "Gai đất trồi lên theo một đường thẳng, gây sát thương và làm choáng các mục tiêu trúng." },
-      { phim: "W", ten: "Hex", mota: "Biến mục tiêu thành thú nhỏ vô hại trong một khoảng thời gian, vô hiệu hoá hoàn toàn khả năng hành động và kỹ năng." },
-      { phim: "E", ten: "Mana Drain", mota: "Channel để rút mana của mục tiêu về cho Lion, đồng thời làm chậm mục tiêu trong lúc channel." },
-      { phim: "R", ten: "Finger of Death", mota: "Ulti: gây một lượng sát thương phép cực lớn ngay lập tức lên một mục tiêu duy nhất." }
+      { phim: "Q", loai: "Chủ động", ten: "Earth Spike", mota: "Gai đất trồi lên theo một đường thẳng, gây sát thương và làm choáng các mục tiêu trúng." },
+      { phim: "W", loai: "Chủ động", ten: "Hex", mota: "Biến mục tiêu thành thú nhỏ vô hại trong một khoảng thời gian, vô hiệu hoá hoàn toàn khả năng hành động và kỹ năng." },
+      { phim: "E", loai: "Chủ động", ten: "Mana Drain", mota: "Channel để rút mana của mục tiêu về cho Lion, đồng thời làm chậm mục tiêu trong lúc channel." },
+      { phim: "R", loai: "Chủ động", ten: "Finger of Death", mota: "Ulti: gây một lượng sát thương phép cực lớn ngay lập tức lên một mục tiêu duy nhất." }
     ],
     lenSkill: "Max Earth Spike và Hex song song tuỳ tình huống gank, Mana Drain xen kẽ, Finger of Death mỗi khi có thể.",
     doBuild: {
@@ -434,10 +434,10 @@ const HEROES = [
     he: "int",
     vaiTro: ["Hỗ trợ", "Khống chế", "Cấp mana"],
     skills: [
-      { phim: "Q", ten: "Crystal Nova", mota: "Đóng băng một khu vực, gây sát thương và làm chậm tốc chạy lẫn tốc đánh của mọi đơn vị trúng." },
-      { phim: "W", ten: "Frostbite", mota: "Đóng băng mục tiêu tại chỗ, gây sát thương liên tục và khoá hoàn toàn khả năng di chuyển/tấn công." },
-      { phim: "E", ten: "Arcane Aura", mota: "Bị động: hồi thêm mana theo thời gian cho Crystal Maiden và toàn bộ đồng đội trên bản đồ." },
-      { phim: "R", ten: "Freezing Field", mota: "Ulti: channel tạo hàng loạt vụ nổ băng ngẫu nhiên quanh khu vực, gây sát thương và làm chậm diện rộng." }
+      { phim: "Q", loai: "Chủ động", ten: "Crystal Nova", mota: "Đóng băng một khu vực, gây sát thương và làm chậm tốc chạy lẫn tốc đánh của mọi đơn vị trúng." },
+      { phim: "W", loai: "Chủ động", ten: "Frostbite", mota: "Đóng băng mục tiêu tại chỗ, gây sát thương liên tục và khoá hoàn toàn khả năng di chuyển/tấn công." },
+      { phim: "E", loai: "Bị động", ten: "Arcane Aura", mota: "Bị động: hồi thêm mana theo thời gian cho Crystal Maiden và toàn bộ đồng đội trên bản đồ." },
+      { phim: "R", loai: "Chủ động", ten: "Freezing Field", mota: "Ulti: channel tạo hàng loạt vụ nổ băng ngẫu nhiên quanh khu vực, gây sát thương và làm chậm diện rộng." }
     ],
     lenSkill: "Max Frostbite để khống chế gank, Crystal Nova xen kẽ, Freezing Field mỗi khi có thể dùng an toàn.",
     doBuild: {
@@ -462,10 +462,10 @@ const HEROES = [
     he: "int",
     vaiTro: ["Nuker", "Gây áp lực đường", "Farm nhanh"],
     skills: [
-      { phim: "Q", ten: "Arc Lightning", mota: "Phóng tia sét nảy qua nhiều mục tiêu liên tiếp, gây sát thương giảm dần mỗi lần nảy." },
-      { phim: "W", ten: "Lightning Bolt", mota: "Đánh sét trực tiếp vào một mục tiêu, gây sát thương và tạo tầm nhìn thật (true sight) ngắn quanh khu vực." },
-      { phim: "E", ten: "Static Field", mota: "Bị động: mỗi lần dùng phép gây thêm một phần sát thương dựa theo máu hiện tại của tất cả kẻ địch trong tầm nhìn." },
-      { phim: "R", ten: "Thundergod's Wrath", mota: "Ulti: gây sát thương phép tức thời lên toàn bộ tướng địch trên bản đồ, bất kể khoảng cách." }
+      { phim: "Q", loai: "Chủ động", ten: "Arc Lightning", mota: "Phóng tia sét nảy qua nhiều mục tiêu liên tiếp, gây sát thương giảm dần mỗi lần nảy." },
+      { phim: "W", loai: "Chủ động", ten: "Lightning Bolt", mota: "Đánh sét trực tiếp vào một mục tiêu, gây sát thương và tạo tầm nhìn thật (true sight) ngắn quanh khu vực." },
+      { phim: "E", loai: "Bị động", ten: "Static Field", mota: "Bị động: mỗi lần dùng phép gây thêm một phần sát thương dựa theo máu hiện tại của tất cả kẻ địch trong tầm nhìn." },
+      { phim: "R", loai: "Chủ động", ten: "Thundergod's Wrath", mota: "Ulti: gây sát thương phép tức thời lên toàn bộ tướng địch trên bản đồ, bất kể khoảng cách." }
     ],
     lenSkill: "Max Arc Lightning để farm và gây áp lực đường liên tục, Lightning Bolt xen kẽ, Thundergod's Wrath mỗi khi có thể.",
     doBuild: {
@@ -490,10 +490,10 @@ const HEROES = [
     he: "int",
     vaiTro: ["Hỗ trợ", "Khống chế", "Gây áp lực đường"],
     skills: [
-      { phim: "Q", ten: "Frost Blast", mota: "Ném cầu băng gây sát thương và làm chậm mạnh mục tiêu cùng khu vực xung quanh." },
-      { phim: "W", ten: "Frost Armor", mota: "Phủ giáp băng lên một đơn vị: nếu là đồng minh sẽ tăng giáp, nếu là kẻ địch sẽ giảm giáp; kẻ tấn công mục tiêu có giáp băng bị chậm lại." },
-      { phim: "E", ten: "Sacrifice", mota: "Hy sinh một lính của Lich để hồi máu/mana cho đồng đội, đồng thời loại lính đó khỏi vòng farm của cả hai bên (deny)." },
-      { phim: "R", ten: "Chain Frost", mota: "Ulti: bắn quả cầu băng nảy liên tục giữa các mục tiêu địch gần nhau, mỗi lần trúng gây sát thương và làm chậm." }
+      { phim: "Q", loai: "Chủ động", ten: "Frost Blast", mota: "Ném cầu băng gây sát thương và làm chậm mạnh mục tiêu cùng khu vực xung quanh." },
+      { phim: "W", loai: "Chủ động", ten: "Frost Armor", mota: "Phủ giáp băng lên một đơn vị: nếu là đồng minh sẽ tăng giáp, nếu là kẻ địch sẽ giảm giáp; kẻ tấn công mục tiêu có giáp băng bị chậm lại." },
+      { phim: "E", loai: "Chủ động", ten: "Sacrifice", mota: "Hy sinh một lính của Lich để hồi máu/mana cho đồng đội, đồng thời loại lính đó khỏi vòng farm của cả hai bên (deny)." },
+      { phim: "R", loai: "Chủ động", ten: "Chain Frost", mota: "Ulti: bắn quả cầu băng nảy liên tục giữa các mục tiêu địch gần nhau, mỗi lần trúng gây sát thương và làm chậm." }
     ],
     lenSkill: "Max Frost Blast để khống chế gank, Frost Armor xen kẽ để hỗ trợ trụ đường, Chain Frost mỗi khi có thể.",
     doBuild: {

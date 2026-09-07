@@ -327,6 +327,38 @@ header.top p {
   line-height: 1.4;
 }
 
+/* Nhãn loại kỹ năng: chủ động / bị động / tự đánh.
+   Ba màu tách bạch để liếc qua là phân biệt được, không phải đọc chữ. */
+.skill-loai {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+.skill-loai.chu-dong {
+  color: #7ec8f0;
+  background: #16303f;
+  border-color: #24506a;
+}
+.skill-loai.bi-dong {
+  color: #9fd88f;
+  background: #1c3218;
+  border-color: #2f5427;
+}
+/* Tự đánh (orb) là loại thứ ba thật sự: vừa phải bật, vừa ăn theo đòn đánh —
+   gọi là chủ động hay bị động đều sai, nên cho màu riêng. */
+.skill-loai.tu-danh {
+  color: var(--gold);
+  background: var(--gold-soft);
+  border-color: #6b5220;
+}
+
 .len-skill {
   font-size: 0.85rem;
   color: var(--muted);

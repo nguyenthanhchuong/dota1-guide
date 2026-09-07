@@ -180,15 +180,22 @@ function moChiTiet(id) {
 
   let phanHuongDan;
   if (h.coHuongDan) {
-    const skillsHtml = h.skills.map(s => `
+    // Nhãn loại kỹ năng. Lớp CSS suy từ nhãn nên chỉ nhận đúng ba giá trị đã
+    // biết; giá trị lạ thì bỏ nhãn luôn chứ không dựng lớp CSS không tồn tại.
+    const LOP_LOAI = { "Chủ động": "chu-dong", "Bị động": "bi-dong", "Tự đánh": "tu-danh" };
+    const skillsHtml = h.skills.map(s => {
+      const lop = LOP_LOAI[s.loai];
+      const nhan = lop ? `<span class="skill-loai ${lop}">${s.loai}</span>` : "";
+      return `
       <div class="skill-row">
         <div class="skill-key">${s.phim}</div>
         <div class="skill-body">
-          <div class="ten">${s.ten}</div>
+          <div class="ten">${s.ten}${nhan}</div>
           <div class="mota">${s.mota}</div>
         </div>
       </div>
-    `).join("");
+    `;
+    }).join("");
 
     const buildTier = (nhan, items) => `
       <div class="build-tier">

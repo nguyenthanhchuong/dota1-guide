@@ -6,10 +6,10 @@ const HEROES_THEM = [
     icon: "🛡️",
     danhHieu: "Lord of Avernus",
     skills: [
-      { phim: "Q", ten: "Mist Coil", mota: "Bắn một quả cầu bóng tối, tốn một ít máu của bản thân để gây sát thương lên kẻ địch hoặc hồi máu cho đồng minh. Vừa là chiêu quấy rối vừa là chiêu cứu mạng." },
-      { phim: "W", ten: "Aphotic Shield", mota: "Phủ lên bản thân hoặc đồng minh một lớp khiên hấp thụ sát thương. Khi khiên vỡ hoặc hết hạn sẽ nổ gây sát thương xung quanh. Quan trọng nhất: khi đặt khiên sẽ gỡ bỏ phần lớn hiệu ứng khống chế đang dính trên mục tiêu." },
-      { phim: "E", ten: "Curse of Avernus", mota: "Đòn đánh thường của Abaddon dán một lớp nguyền lên mục tiêu; khi tích đủ lớp thì mục tiêu bị làm chậm nặng, đồng thời đồng minh đánh vào mục tiêu đó được tăng tốc đánh và tốc chạy." },
-      { phim: "R", ten: "Borrowed Time", mota: "Ulti: Trong thời gian ngắn, mọi sát thương nhận vào bị đảo ngược thành hồi máu. Có thể tự kích hoạt khi máu tụt xuống ngưỡng thấp, hoặc bấm chủ động. Khi bật cũng gỡ bỏ phần lớn hiệu ứng khống chế." }
+      { phim: "Q", loai: "Chủ động", ten: "Mist Coil", mota: "Bắn một quả cầu bóng tối, tốn một ít máu của bản thân để gây sát thương lên kẻ địch hoặc hồi máu cho đồng minh. Vừa là chiêu quấy rối vừa là chiêu cứu mạng." },
+      { phim: "W", loai: "Chủ động", ten: "Aphotic Shield", mota: "Phủ lên bản thân hoặc đồng minh một lớp khiên hấp thụ sát thương. Khi khiên vỡ hoặc hết hạn sẽ nổ gây sát thương xung quanh. Quan trọng nhất: khi đặt khiên sẽ gỡ bỏ phần lớn hiệu ứng khống chế đang dính trên mục tiêu." },
+      { phim: "E", loai: "Bị động", ten: "Curse of Avernus", mota: "Đòn đánh thường của Abaddon dán một lớp nguyền lên mục tiêu; khi tích đủ lớp thì mục tiêu bị làm chậm nặng, đồng thời đồng minh đánh vào mục tiêu đó được tăng tốc đánh và tốc chạy." },
+      { phim: "R", loai: "Chủ động", ten: "Borrowed Time", mota: "Ulti: Trong thời gian ngắn, mọi sát thương nhận vào bị đảo ngược thành hồi máu. Có thể tự kích hoạt khi máu tụt xuống ngưỡng thấp, hoặc bấm chủ động. Khi bật cũng gỡ bỏ phần lớn hiệu ứng khống chế." }
     ],
     lenSkill: "Ưu tiên max Aphotic Shield trước để vừa cứu đồng đội vừa gây sát thương, điểm phụ vào Mist Coil, lấy Borrowed Time ngay khi đủ cấp.",
     doBuild: {
@@ -35,10 +35,10 @@ const HEROES_THEM = [
     icon: "⚗️",
     danhHieu: "Razzil Darkbrew",
     skills: [
-      { phim: "Q", ten: "Acid Spray", mota: "Rải một vũng axit lên mặt đất, gây sát thương theo thời gian và giảm mạnh giáp của kẻ địch đứng trong vùng. Rất mạnh để dọn lính và đẩy trụ." },
-      { phim: "W", ten: "Unstable Concoction", mota: "Tích tụ một bình thuốc nổ; càng tích lâu sát thương và thời gian choáng càng lớn, nhưng tích quá lâu sẽ nổ ngay trên tay Alchemist. Ném trúng kẻ địch để làm choáng." },
-      { phim: "E", ten: "Greevil's Greed", mota: "Mỗi lần hạ gục đơn vị, Alchemist nhận thêm vàng thưởng, và chuỗi hạ gục liên tiếp làm phần thưởng tăng dần. Đây là lý do Alchemist lên đồ nhanh nhất game." },
-      { phim: "R", ten: "Chemical Rage", mota: "Ulti: Biến thành dạng quái vật, tăng mạnh máu tối đa, hồi máu và giảm mạnh thời gian giữa các đòn đánh. Biến Alchemist từ bao cát thành cỗ máy chém." }
+      { phim: "Q", loai: "Chủ động", ten: "Acid Spray", mota: "Rải một vũng axit lên mặt đất, gây sát thương theo thời gian và giảm mạnh giáp của kẻ địch đứng trong vùng. Rất mạnh để dọn lính và đẩy trụ." },
+      { phim: "W", loai: "Chủ động", ten: "Unstable Concoction", mota: "Tích tụ một bình thuốc nổ; càng tích lâu sát thương và thời gian choáng càng lớn, nhưng tích quá lâu sẽ nổ ngay trên tay Alchemist. Ném trúng kẻ địch để làm choáng." },
+      { phim: "E", loai: "Bị động", ten: "Greevil's Greed", mota: "Mỗi lần hạ gục đơn vị, Alchemist nhận thêm vàng thưởng, và chuỗi hạ gục liên tiếp làm phần thưởng tăng dần. Đây là lý do Alchemist lên đồ nhanh nhất game." },
+      { phim: "R", loai: "Chủ động", ten: "Chemical Rage", mota: "Ulti: Biến thành dạng quái vật, tăng mạnh máu tối đa, hồi máu và giảm mạnh thời gian giữa các đòn đánh. Biến Alchemist từ bao cát thành cỗ máy chém." }
     ],
     lenSkill: "Max Greevil's Greed sớm để tích vàng, kết hợp một vài điểm Acid Spray để farm rừng và lính, lấy Chemical Rage ngay khi có thể.",
     doBuild: {
@@ -64,10 +64,10 @@ const HEROES_THEM = [
     icon: "❄️",
     danhHieu: "Kaldr",
     skills: [
-      { phim: "Q", ten: "Cold Feet", mota: "Đặt một lời nguyền lên kẻ địch; nếu mục tiêu không chạy ra đủ xa khỏi vị trí bị dính trong thời gian ngắn, mục tiêu sẽ bị đóng băng cứng người. Gây sát thương theo thời gian trong lúc chờ." },
-      { phim: "W", ten: "Ice Vortex", mota: "Tạo một xoáy băng trên mặt đất, làm chậm và giảm kháng phép của kẻ địch trong vùng. Cũng cho tầm nhìn tại vị trí đặt." },
-      { phim: "E", ten: "Chilling Touch", mota: "Tăng sát thương phép cho các đòn đánh thường tiếp theo của Ancient Apparition và đồng minh xung quanh, đổi lại làm chậm tốc độ đánh." },
-      { phim: "R", ten: "Ice Blast", mota: "Ulti: Bắn một quả cầu băng bay xuyên bản đồ, bấm lần hai để cho nổ. Kẻ địch trong vùng nổ bị dính hiệu ứng cấm hồi máu hoàn toàn; nếu máu tụt xuống dưới một ngưỡng trong lúc dính hiệu ứng thì bị xử tử ngay lập tức." }
+      { phim: "Q", loai: "Chủ động", ten: "Cold Feet", mota: "Đặt một lời nguyền lên kẻ địch; nếu mục tiêu không chạy ra đủ xa khỏi vị trí bị dính trong thời gian ngắn, mục tiêu sẽ bị đóng băng cứng người. Gây sát thương theo thời gian trong lúc chờ." },
+      { phim: "W", loai: "Chủ động", ten: "Ice Vortex", mota: "Tạo một xoáy băng trên mặt đất, làm chậm và giảm kháng phép của kẻ địch trong vùng. Cũng cho tầm nhìn tại vị trí đặt." },
+      { phim: "E", loai: "Chủ động", ten: "Chilling Touch", mota: "Tăng sát thương phép cho các đòn đánh thường tiếp theo của Ancient Apparition và đồng minh xung quanh, đổi lại làm chậm tốc độ đánh." },
+      { phim: "R", loai: "Chủ động", ten: "Ice Blast", mota: "Ulti: Bắn một quả cầu băng bay xuyên bản đồ, bấm lần hai để cho nổ. Kẻ địch trong vùng nổ bị dính hiệu ứng cấm hồi máu hoàn toàn; nếu máu tụt xuống dưới một ngưỡng trong lúc dính hiệu ứng thì bị xử tử ngay lập tức." }
     ],
     lenSkill: "Max Cold Feet để có khống chế mạnh trong đi đường, điểm phụ vào Ice Vortex, luôn lấy Ice Blast ngay khi đủ cấp.",
     doBuild: {
@@ -94,10 +94,10 @@ const HEROES_THEM = [
     danhHieu: "Zet",
     chuaChac: true,
     skills: [
-      { phim: "Q", ten: "Flux", mota: "Đánh dấu một kẻ địch, gây sát thương theo thời gian và làm chậm, nhưng chỉ có tác dụng khi mục tiêu ở một mình — có đơn vị khác đứng gần thì hiệu ứng ngừng lại." },
-      { phim: "W", ten: "Magnetic Field", mota: "Tạo một vùng từ trường; đồng minh trong vùng được tăng mạnh tốc độ đánh và có cơ hội né tránh đòn đánh thường từ bên ngoài." },
-      { phim: "E", ten: "Spark Wraith", mota: "Đặt một linh hồn tia lửa tại vị trí chỉ định; sau một lúc tích tụ, nó sẽ tự truy đuổi kẻ địch đến gần và gây sát thương phép kèm làm chậm. Dùng để cắm phòng thủ và soi tầm nhìn." },
-      { phim: "R", ten: "Tempest Double", mota: "Ulti: Tạo ra một bản sao hoàn hảo của bản thân, mang theo toàn bộ đồ đạc và kỹ năng với thời gian hồi chiêu riêng. Bản sao tồn tại trong thời gian ngắn và có thể farm hoặc đánh nhau song song." }
+      { phim: "Q", loai: "Chủ động", ten: "Flux", mota: "Đánh dấu một kẻ địch, gây sát thương theo thời gian và làm chậm, nhưng chỉ có tác dụng khi mục tiêu ở một mình — có đơn vị khác đứng gần thì hiệu ứng ngừng lại." },
+      { phim: "W", loai: "Chủ động", ten: "Magnetic Field", mota: "Tạo một vùng từ trường; đồng minh trong vùng được tăng mạnh tốc độ đánh và có cơ hội né tránh đòn đánh thường từ bên ngoài." },
+      { phim: "E", loai: "Chủ động", ten: "Spark Wraith", mota: "Đặt một linh hồn tia lửa tại vị trí chỉ định; sau một lúc tích tụ, nó sẽ tự truy đuổi kẻ địch đến gần và gây sát thương phép kèm làm chậm. Dùng để cắm phòng thủ và soi tầm nhìn." },
+      { phim: "R", loai: "Chủ động", ten: "Tempest Double", mota: "Ulti: Tạo ra một bản sao hoàn hảo của bản thân, mang theo toàn bộ đồ đạc và kỹ năng với thời gian hồi chiêu riêng. Bản sao tồn tại trong thời gian ngắn và có thể farm hoặc đánh nhau song song." }
     ],
     lenSkill: "Max Spark Wraith để farm và quấy rối an toàn, điểm phụ Magnetic Field, lấy Tempest Double ngay khi có thể.",
     doBuild: {
@@ -123,10 +123,10 @@ const HEROES_THEM = [
     icon: "😈",
     danhHieu: "Atropos",
     skills: [
-      { phim: "Q", ten: "Enfeeble", mota: "Làm suy yếu một kẻ địch, giảm mạnh sát thương đòn đánh thường của mục tiêu trong thời gian dài. Cực kỳ hiệu quả khi ném vào carry đối phương ngay trước giao tranh." },
-      { phim: "W", ten: "Brain Sap", mota: "Hút sinh lực từ mục tiêu, gây sát thương thuần và hồi lại lượng máu tương ứng cho Bane. Xuyên qua hầu hết kháng phép." },
-      { phim: "E", ten: "Nightmare", mota: "Đưa mục tiêu vào giấc ngủ ác mộng, khiến mục tiêu bất động và bất khả xâm phạm cho đến khi bị đánh trúng. Có thể dùng lên cả đồng minh để cứu khỏi sát thương theo thời gian." },
-      { phim: "R", ten: "Fiend's Grip", mota: "Ulti: Trói chặt một mục tiêu tại chỗ, gây sát thương liên tục và rút mana trong suốt thời gian kênh chiêu. Là một trong những chiêu khống chế đơn mục tiêu mạnh nhất game." }
+      { phim: "Q", loai: "Chủ động", ten: "Enfeeble", mota: "Làm suy yếu một kẻ địch, giảm mạnh sát thương đòn đánh thường của mục tiêu trong thời gian dài. Cực kỳ hiệu quả khi ném vào carry đối phương ngay trước giao tranh." },
+      { phim: "W", loai: "Chủ động", ten: "Brain Sap", mota: "Hút sinh lực từ mục tiêu, gây sát thương thuần và hồi lại lượng máu tương ứng cho Bane. Xuyên qua hầu hết kháng phép." },
+      { phim: "E", loai: "Chủ động", ten: "Nightmare", mota: "Đưa mục tiêu vào giấc ngủ ác mộng, khiến mục tiêu bất động và bất khả xâm phạm cho đến khi bị đánh trúng. Có thể dùng lên cả đồng minh để cứu khỏi sát thương theo thời gian." },
+      { phim: "R", loai: "Chủ động", ten: "Fiend's Grip", mota: "Ulti: Trói chặt một mục tiêu tại chỗ, gây sát thương liên tục và rút mana trong suốt thời gian kênh chiêu. Là một trong những chiêu khống chế đơn mục tiêu mạnh nhất game." }
     ],
     lenSkill: "Max Brain Sap để có sát thương thuần và tự hồi máu, kèm điểm Nightmare để khống chế, lấy Fiend's Grip ngay khi đủ cấp.",
     doBuild: {
@@ -152,10 +152,10 @@ const HEROES_THEM = [
     icon: "🐂",
     danhHieu: "Spirit Breaker, Barathrum",
     skills: [
-      { phim: "Q", ten: "Charge of Darkness", mota: "Húc thẳng về phía một kẻ địch bất kể khoảng cách trên toàn bản đồ, xuyên qua địa hình. Khi chạm mục tiêu sẽ làm choáng. Trong lúc húc, Bara nhìn thấy mục tiêu và tăng dần tốc chạy." },
-      { phim: "W", ten: "Empowering Haste", mota: "Tăng tốc độ di chuyển cho Bara và đồng minh xung quanh, đồng thời chuyển một phần tốc chạy thành sát thương thêm cho đòn đánh." },
-      { phim: "E", ten: "Greater Bash", mota: "Đòn đánh thường có cơ hội đẩy lùi và làm choáng mục tiêu, gây sát thương tỷ lệ theo tốc độ di chuyển của Bara. Đây là nguồn sát thương chính của tướng." },
-      { phim: "R", ten: "Nether Strike", mota: "Ulti: Dịch chuyển tức thời đến sau lưng mục tiêu và tung một đòn đánh mạnh, chắc chắn kích hoạt Greater Bash. Cách mở giao tranh hoặc kết liễu cực nhanh." }
+      { phim: "Q", loai: "Chủ động", ten: "Charge of Darkness", mota: "Húc thẳng về phía một kẻ địch bất kể khoảng cách trên toàn bản đồ, xuyên qua địa hình. Khi chạm mục tiêu sẽ làm choáng. Trong lúc húc, Bara nhìn thấy mục tiêu và tăng dần tốc chạy." },
+      { phim: "W", loai: "Bị động", ten: "Empowering Haste", mota: "Tăng tốc độ di chuyển cho Bara và đồng minh xung quanh, đồng thời chuyển một phần tốc chạy thành sát thương thêm cho đòn đánh." },
+      { phim: "E", loai: "Bị động", ten: "Greater Bash", mota: "Đòn đánh thường có cơ hội đẩy lùi và làm choáng mục tiêu, gây sát thương tỷ lệ theo tốc độ di chuyển của Bara. Đây là nguồn sát thương chính của tướng." },
+      { phim: "R", loai: "Chủ động", ten: "Nether Strike", mota: "Ulti: Dịch chuyển tức thời đến sau lưng mục tiêu và tung một đòn đánh mạnh, chắc chắn kích hoạt Greater Bash. Cách mở giao tranh hoặc kết liễu cực nhanh." }
     ],
     lenSkill: "Max Greater Bash để tăng sát thương và tỉ lệ choáng, kèm điểm Charge of Darkness sớm để gank, lấy Nether Strike ngay khi có thể.",
     doBuild: {
@@ -181,10 +181,10 @@ const HEROES_THEM = [
     icon: "🦇",
     danhHieu: "Jin'zakk",
     skills: [
-      { phim: "Q", ten: "Sticky Napalm", mota: "Ném dầu lên một vùng, cộng dồn nhiều lớp lên kẻ địch. Mỗi lớp làm chậm tốc quay và tốc chạy, đồng thời tăng sát thương mà Batrider gây lên mục tiêu đó." },
-      { phim: "W", ten: "Flamebreak", mota: "Ném một quả cầu lửa nổ tại điểm rơi, gây sát thương và đẩy lùi kẻ địch trong vùng ra xa." },
-      { phim: "E", ten: "Firefly", mota: "Batrider bay lên, có thể bay qua địa hình và để lại một vệt lửa phía sau gây sát thương theo thời gian cho kẻ địch đi qua. Vừa là chiêu chạy trốn vừa là chiêu farm." },
-      { phim: "R", ten: "Flaming Lasso", mota: "Ulti: Quăng dây trói một kẻ địch và kéo lê theo Batrider, mục tiêu hoàn toàn mất khả năng hành động. Dùng để lôi mục tiêu quan trọng vào giữa đội hình mình." }
+      { phim: "Q", loai: "Chủ động", ten: "Sticky Napalm", mota: "Ném dầu lên một vùng, cộng dồn nhiều lớp lên kẻ địch. Mỗi lớp làm chậm tốc quay và tốc chạy, đồng thời tăng sát thương mà Batrider gây lên mục tiêu đó." },
+      { phim: "W", loai: "Chủ động", ten: "Flamebreak", mota: "Ném một quả cầu lửa nổ tại điểm rơi, gây sát thương và đẩy lùi kẻ địch trong vùng ra xa." },
+      { phim: "E", loai: "Chủ động", ten: "Firefly", mota: "Batrider bay lên, có thể bay qua địa hình và để lại một vệt lửa phía sau gây sát thương theo thời gian cho kẻ địch đi qua. Vừa là chiêu chạy trốn vừa là chiêu farm." },
+      { phim: "R", loai: "Chủ động", ten: "Flaming Lasso", mota: "Ulti: Quăng dây trói một kẻ địch và kéo lê theo Batrider, mục tiêu hoàn toàn mất khả năng hành động. Dùng để lôi mục tiêu quan trọng vào giữa đội hình mình." }
     ],
     lenSkill: "Max Sticky Napalm sớm để thống trị đi đường, kèm một điểm Firefly để cơ động, lấy Flaming Lasso ngay khi đủ cấp.",
     doBuild: {
@@ -210,10 +210,10 @@ const HEROES_THEM = [
     icon: "🐗",
     danhHieu: "Karroch, Rexxar",
     skills: [
-      { phim: "Q", ten: "Wild Axes", mota: "Ném hai chiếc rìu theo hình vòng cung, gây sát thương cho kẻ địch trúng phải; trúng cả hai rìu thì sát thương cộng dồn. Dùng để dọn lính rất tốt." },
-      { phim: "W", ten: "Call of the Wild", mota: "Triệu hồi thú đồng hành: một con chim cho tầm nhìn trên cao và một con lợn rừng tấn công kèm làm chậm mục tiêu. Nguồn tầm nhìn và quấy rối miễn phí ở giai đoạn đầu." },
-      { phim: "E", ten: "Inner Beast", mota: "Nội tại: tăng tốc độ đánh cho Beastmaster và toàn bộ đồng minh xung quanh, bao gồm cả lính triệu hồi." },
-      { phim: "R", ten: "Primal Roar", mota: "Ulti: Gầm lên, làm choáng cứng một mục tiêu trong thời gian dài, đồng thời đẩy dạt và làm chậm mọi đơn vị đứng trên đường gầm. Là một trong những chiêu khống chế đơn mục tiêu lâu nhất game." }
+      { phim: "Q", loai: "Chủ động", ten: "Wild Axes", mota: "Ném hai chiếc rìu theo hình vòng cung, gây sát thương cho kẻ địch trúng phải; trúng cả hai rìu thì sát thương cộng dồn. Dùng để dọn lính rất tốt." },
+      { phim: "W", loai: "Chủ động", ten: "Call of the Wild", mota: "Triệu hồi thú đồng hành: một con chim cho tầm nhìn trên cao và một con lợn rừng tấn công kèm làm chậm mục tiêu. Nguồn tầm nhìn và quấy rối miễn phí ở giai đoạn đầu." },
+      { phim: "E", loai: "Bị động", ten: "Inner Beast", mota: "Nội tại: tăng tốc độ đánh cho Beastmaster và toàn bộ đồng minh xung quanh, bao gồm cả lính triệu hồi." },
+      { phim: "R", loai: "Chủ động", ten: "Primal Roar", mota: "Ulti: Gầm lên, làm choáng cứng một mục tiêu trong thời gian dài, đồng thời đẩy dạt và làm chậm mọi đơn vị đứng trên đường gầm. Là một trong những chiêu khống chế đơn mục tiêu lâu nhất game." }
     ],
     lenSkill: "Max Wild Axes hoặc Call of the Wild tùy lane, giữ một điểm Inner Beast, ưu tiên Primal Roar ngay khi đủ cấp.",
     doBuild: {
@@ -239,10 +239,10 @@ const HEROES_THEM = [
     icon: "🩸",
     danhHieu: "Strygwyr",
     skills: [
-      { phim: "Q", ten: "Bloodrage", mota: "Đưa bản thân hoặc đồng minh vào trạng thái cuồng máu: tăng mạnh sát thương gây ra nhưng cũng nhận thêm sát thương, và mục tiêu bị câm lặng trong lúc hiệu lực." },
-      { phim: "W", ten: "Blood Bath", mota: "Khi một đơn vị chết gần đó, Bloodseeker hồi lại một phần máu; hạ gục tướng địch cho lượng hồi lớn hơn nhiều." },
-      { phim: "E", ten: "Thirst", mota: "Nội tại: khi có tướng địch máu thấp trên bản đồ, Bloodseeker được tăng tốc chạy và nhìn thấy vị trí của họ dù ở đâu. Máu địch càng thấp hiệu ứng càng mạnh." },
-      { phim: "R", ten: "Rupture", mota: "Ulti: Xé rách da thịt mục tiêu; trong thời gian hiệu lực, mục tiêu nhận sát thương lớn mỗi khi di chuyển. Đứng yên thì không sao, nhưng chạy trốn là chết." }
+      { phim: "Q", loai: "Chủ động", ten: "Bloodrage", mota: "Đưa bản thân hoặc đồng minh vào trạng thái cuồng máu: tăng mạnh sát thương gây ra nhưng cũng nhận thêm sát thương, và mục tiêu bị câm lặng trong lúc hiệu lực." },
+      { phim: "W", loai: "Bị động", ten: "Blood Bath", mota: "Khi một đơn vị chết gần đó, Bloodseeker hồi lại một phần máu; hạ gục tướng địch cho lượng hồi lớn hơn nhiều." },
+      { phim: "E", loai: "Bị động", ten: "Thirst", mota: "Nội tại: khi có tướng địch máu thấp trên bản đồ, Bloodseeker được tăng tốc chạy và nhìn thấy vị trí của họ dù ở đâu. Máu địch càng thấp hiệu ứng càng mạnh." },
+      { phim: "R", loai: "Chủ động", ten: "Rupture", mota: "Ulti: Xé rách da thịt mục tiêu; trong thời gian hiệu lực, mục tiêu nhận sát thương lớn mỗi khi di chuyển. Đứng yên thì không sao, nhưng chạy trốn là chết." }
     ],
     lenSkill: "Max Bloodrage để có sát thương và câm lặng, điểm phụ vào Thirst để đi săn, lấy Rupture ngay khi đủ cấp.",
     doBuild: {
@@ -268,10 +268,10 @@ const HEROES_THEM = [
     icon: "🏹",
     danhHieu: "Clinkz, Bone Fletcher",
     skills: [
-      { phim: "Q", ten: "Strafe", mota: "Tăng vọt tốc độ đánh trong thời gian ngắn. Là công tắc bùng nổ sát thương của Clinkz trong lúc lao vào giết mục tiêu." },
-      { phim: "W", ten: "Searing Arrows", mota: "Đòn đánh thường tiêu tốn mana để cộng thêm sát thương. Dùng liên tục ở giai đoạn đầu để ép lane và last hit." },
-      { phim: "E", ten: "Skeleton Walk", mota: "Tàng hình và có thể đi xuyên qua đơn vị, đồng thời tăng tốc chạy. Dùng để tiếp cận mục tiêu, đi vòng vào hậu tuyến hoặc trốn thoát." },
-      { phim: "R", ten: "Death Pact", mota: "Ulti: Nuốt một đơn vị lính hoặc quái rừng, nhận thêm máu tối đa và sát thương dựa trên máu của đơn vị bị nuốt. Luôn nuốt quái to nhất tìm được trước khi đánh nhau." }
+      { phim: "Q", loai: "Chủ động", ten: "Strafe", mota: "Tăng vọt tốc độ đánh trong thời gian ngắn. Là công tắc bùng nổ sát thương của Clinkz trong lúc lao vào giết mục tiêu." },
+      { phim: "W", loai: "Tự đánh", ten: "Searing Arrows", mota: "Đòn đánh thường tiêu tốn mana để cộng thêm sát thương. Dùng liên tục ở giai đoạn đầu để ép lane và last hit." },
+      { phim: "E", loai: "Chủ động", ten: "Skeleton Walk", mota: "Tàng hình và có thể đi xuyên qua đơn vị, đồng thời tăng tốc chạy. Dùng để tiếp cận mục tiêu, đi vòng vào hậu tuyến hoặc trốn thoát." },
+      { phim: "R", loai: "Chủ động", ten: "Death Pact", mota: "Ulti: Nuốt một đơn vị lính hoặc quái rừng, nhận thêm máu tối đa và sát thương dựa trên máu của đơn vị bị nuốt. Luôn nuốt quái to nhất tìm được trước khi đánh nhau." }
     ],
     lenSkill: "Max Searing Arrows để ép lane và farm, điểm phụ Strafe, lấy Death Pact ngay khi đủ cấp và luôn giữ buff.",
     doBuild: {
@@ -297,10 +297,10 @@ const HEROES_THEM = [
     icon: "🗡️",
     danhHieu: "Gondar",
     skills: [
-      { phim: "Q", ten: "Shuriken Toss", mota: "Ném phi tiêu gây sát thương và làm choáng ngắn mục tiêu. Nếu mục tiêu đang bị đánh dấu Track, phi tiêu sẽ nảy sang các kẻ địch gần đó." },
-      { phim: "W", ten: "Jinada", mota: "Sau mỗi khoảng thời gian hồi, đòn đánh tiếp theo gây thêm sát thương chí mạng và cướp vàng của mục tiêu. Đây là công cụ ép lane cực mạnh ở giai đoạn đầu." },
-      { phim: "E", ten: "Wind Walk", mota: "Tàng hình và tăng tốc chạy; đòn đánh thoát tàng hình gây thêm sát thương lớn. Là chiêu tiếp cận và trốn thoát cốt lõi." },
-      { phim: "R", ten: "Track", mota: "Ulti: Đánh dấu một kẻ địch — nhìn thấy vị trí của họ xuyên bản đồ và xuyên tàng hình, làm chậm họ (hoặc tăng tốc bản thân), và khi mục tiêu bị hạ gục thì Bounty Hunter cùng đồng minh gần đó nhận thêm vàng thưởng." }
+      { phim: "Q", loai: "Chủ động", ten: "Shuriken Toss", mota: "Ném phi tiêu gây sát thương và làm choáng ngắn mục tiêu. Nếu mục tiêu đang bị đánh dấu Track, phi tiêu sẽ nảy sang các kẻ địch gần đó." },
+      { phim: "W", loai: "Bị động", ten: "Jinada", mota: "Sau mỗi khoảng thời gian hồi, đòn đánh tiếp theo gây thêm sát thương chí mạng và cướp vàng của mục tiêu. Đây là công cụ ép lane cực mạnh ở giai đoạn đầu." },
+      { phim: "E", loai: "Chủ động", ten: "Wind Walk", mota: "Tàng hình và tăng tốc chạy; đòn đánh thoát tàng hình gây thêm sát thương lớn. Là chiêu tiếp cận và trốn thoát cốt lõi." },
+      { phim: "R", loai: "Chủ động", ten: "Track", mota: "Ulti: Đánh dấu một kẻ địch — nhìn thấy vị trí của họ xuyên bản đồ và xuyên tàng hình, làm chậm họ (hoặc tăng tốc bản thân), và khi mục tiêu bị hạ gục thì Bounty Hunter cùng đồng minh gần đó nhận thêm vàng thưởng." }
     ],
     lenSkill: "Max Jinada để ép lane và cướp vàng, kèm điểm Wind Walk để cơ động, lấy Track ngay khi đủ cấp.",
     doBuild: {
@@ -326,10 +326,10 @@ const HEROES_THEM = [
     icon: "🦔",
     danhHieu: "Rigwarl",
     skills: [
-      { phim: "Q", ten: "Viscous Nasal Goo", mota: "Bắn một cục nhớt lên kẻ địch, cộng dồn nhiều lớp; mỗi lớp làm chậm mục tiêu và giảm giáp của họ." },
-      { phim: "W", ten: "Quill Spray", mota: "Bắn gai ra xung quanh, gây sát thương diện rộng. Sát thương tăng dần mỗi lần trúng lại cùng một mục tiêu trong thời gian ngắn, nên càng đánh lâu càng đau." },
-      { phim: "E", ten: "Bristleback", mota: "Nội tại: giảm sát thương nhận vào khi bị đánh từ phía sau hoặc hai bên sườn; đồng thời khi nhận đủ lượng sát thương ở lưng thì tự động bắn Quill Spray ra." },
-      { phim: "R", ten: "Warpath", mota: "Ulti: Mỗi lần Bristleback dùng chiêu, hắn tích thêm một lớp tăng sát thương và tốc chạy. Càng đánh nhau lâu càng mạnh." }
+      { phim: "Q", loai: "Chủ động", ten: "Viscous Nasal Goo", mota: "Bắn một cục nhớt lên kẻ địch, cộng dồn nhiều lớp; mỗi lớp làm chậm mục tiêu và giảm giáp của họ." },
+      { phim: "W", loai: "Chủ động", ten: "Quill Spray", mota: "Bắn gai ra xung quanh, gây sát thương diện rộng. Sát thương tăng dần mỗi lần trúng lại cùng một mục tiêu trong thời gian ngắn, nên càng đánh lâu càng đau." },
+      { phim: "E", loai: "Bị động", ten: "Bristleback", mota: "Nội tại: giảm sát thương nhận vào khi bị đánh từ phía sau hoặc hai bên sườn; đồng thời khi nhận đủ lượng sát thương ở lưng thì tự động bắn Quill Spray ra." },
+      { phim: "R", loai: "Bị động", ten: "Warpath", mota: "Ulti: Mỗi lần Bristleback dùng chiêu, hắn tích thêm một lớp tăng sát thương và tốc chạy. Càng đánh nhau lâu càng mạnh." }
     ],
     lenSkill: "Max Quill Spray trước để có sát thương diện rộng và farm, kèm điểm Viscous Nasal Goo và Bristleback, lấy Warpath ngay khi đủ cấp.",
     doBuild: {
@@ -356,10 +356,10 @@ const HEROES_THEM = [
     icon: "🕷️",
     danhHieu: "Black Arachnia",
     skills: [
-      { phim: "Q", ten: "Spawn Spiderlings", mota: "Phóng trứng nhện vào một mục tiêu, gây sát thương; nếu đơn vị đó chết trong lúc còn dính trứng sẽ nở ra bầy nhện con chiến đấu cho bạn." },
-      { phim: "W", ten: "Spin Web", mota: "Giăng mạng nhện tại một vị trí. Khi đứng trong mạng, Broodmother chạy nhanh hơn, hồi máu liên tục và ẩn mình khỏi tầm nhìn thường của địch." },
-      { phim: "E", ten: "Incapacitating Bite", mota: "Nội tại: đòn đánh thường mang nọc độc, làm kẻ địch chậm lại và có khả năng đánh trượt." },
-      { phim: "R", ten: "Insatiable Hunger", mota: "Ulti: trong thời gian ngắn, tăng mạnh sát thương đánh thường và hút máu theo mỗi đòn đánh." }
+      { phim: "Q", loai: "Chủ động", ten: "Spawn Spiderlings", mota: "Phóng trứng nhện vào một mục tiêu, gây sát thương; nếu đơn vị đó chết trong lúc còn dính trứng sẽ nở ra bầy nhện con chiến đấu cho bạn." },
+      { phim: "W", loai: "Chủ động", ten: "Spin Web", mota: "Giăng mạng nhện tại một vị trí. Khi đứng trong mạng, Broodmother chạy nhanh hơn, hồi máu liên tục và ẩn mình khỏi tầm nhìn thường của địch." },
+      { phim: "E", loai: "Bị động", ten: "Incapacitating Bite", mota: "Nội tại: đòn đánh thường mang nọc độc, làm kẻ địch chậm lại và có khả năng đánh trượt." },
+      { phim: "R", loai: "Chủ động", ten: "Insatiable Hunger", mota: "Ulti: trong thời gian ngắn, tăng mạnh sát thương đánh thường và hút máu theo mỗi đòn đánh." }
     ],
     lenSkill: "Ưu tiên Spin Web sớm để làm chủ lane và có đường chạy, xen Spawn Spiderlings để đẩy lính, lấy Insatiable Hunger ngay khi tới cấp.",
     doBuild: {
@@ -383,10 +383,10 @@ const HEROES_THEM = [
     icon: "🐎",
     danhHieu: "Nessaj",
     skills: [
-      { phim: "Q", ten: "Chaos Bolt", mota: "Ném quả cầu hỗn mang làm choáng mục tiêu, thời gian choáng và sát thương đều ngẫu nhiên." },
-      { phim: "W", ten: "Reality Rift", mota: "Xé không gian kéo bản thân, toàn bộ ảnh phân thân và mục tiêu về cùng một điểm, đồng thời cộng thêm sát thương cho đòn đánh kế tiếp." },
-      { phim: "E", ten: "Chaos Strike", mota: "Nội tại: có cơ hội tung đòn chí mạng kèm hút máu." },
-      { phim: "R", ten: "Phantasm", mota: "Ulti: tạo ra nhiều ảnh phân thân của chính mình, ảnh đánh rất đau nhưng nhận sát thương gấp bội nên chết nhanh." }
+      { phim: "Q", loai: "Chủ động", ten: "Chaos Bolt", mota: "Ném quả cầu hỗn mang làm choáng mục tiêu, thời gian choáng và sát thương đều ngẫu nhiên." },
+      { phim: "W", loai: "Chủ động", ten: "Reality Rift", mota: "Xé không gian kéo bản thân, toàn bộ ảnh phân thân và mục tiêu về cùng một điểm, đồng thời cộng thêm sát thương cho đòn đánh kế tiếp." },
+      { phim: "E", loai: "Bị động", ten: "Chaos Strike", mota: "Nội tại: có cơ hội tung đòn chí mạng kèm hút máu." },
+      { phim: "R", loai: "Chủ động", ten: "Phantasm", mota: "Ulti: tạo ra nhiều ảnh phân thân của chính mình, ảnh đánh rất đau nhưng nhận sát thương gấp bội nên chết nhanh." }
     ],
     lenSkill: "Lên Chaos Bolt và Chaos Strike xen kẽ để có khống chế và sức đánh sớm, giữ một điểm Reality Rift để bắt mục tiêu, lấy Phantasm mỗi khi đủ cấp.",
     doBuild: {
@@ -410,10 +410,10 @@ const HEROES_THEM = [
     icon: "🐑",
     danhHieu: "Holy Knight",
     skills: [
-      { phim: "Q", ten: "Penitence", mota: "Khiến mục tiêu di chuyển chậm hẳn lại và nhận thêm sát thương từ mọi nguồn." },
-      { phim: "W", ten: "Test of Faith", mota: "Gây sát thương phép ngẫu nhiên lên kẻ địch; khi dùng lên đồng minh thì dịch chuyển họ về nhà chính sau một khoảng chờ." },
-      { phim: "E", ten: "Holy Persuasion", mota: "Thu phục quái rừng hoặc lính làm quân riêng của mình, đồng thời tăng máu cho chúng." },
-      { phim: "R", ten: "Hand of God", mota: "Ulti: hồi máu cho toàn bộ đồng đội ở bất kỳ đâu trên bản đồ và hồi đầy máu cho đám quái đang bị thu phục." }
+      { phim: "Q", loai: "Chủ động", ten: "Penitence", mota: "Khiến mục tiêu di chuyển chậm hẳn lại và nhận thêm sát thương từ mọi nguồn." },
+      { phim: "W", loai: "Chủ động", ten: "Test of Faith", mota: "Gây sát thương phép ngẫu nhiên lên kẻ địch; khi dùng lên đồng minh thì dịch chuyển họ về nhà chính sau một khoảng chờ." },
+      { phim: "E", loai: "Chủ động", ten: "Holy Persuasion", mota: "Thu phục quái rừng hoặc lính làm quân riêng của mình, đồng thời tăng máu cho chúng." },
+      { phim: "R", loai: "Chủ động", ten: "Hand of God", mota: "Ulti: hồi máu cho toàn bộ đồng đội ở bất kỳ đâu trên bản đồ và hồi đầy máu cho đám quái đang bị thu phục." }
     ],
     lenSkill: "Lên Holy Persuasion sớm để có quân đi gank và giữ rừng, thêm Penitence hỗ trợ bắt người, ưu tiên Hand of God ngay khi đủ cấp.",
     doBuild: {
@@ -437,10 +437,10 @@ const HEROES_THEM = [
     icon: "⚙️",
     danhHieu: "Rattletrap",
     skills: [
-      { phim: "Q", ten: "Battery Assault", mota: "Liên tục bắn mảnh đạn vào các kẻ địch ở gần một cách ngẫu nhiên, mỗi phát gây sát thương nhỏ kèm choáng chớp nhoáng." },
-      { phim: "W", ten: "Power Cogs", mota: "Dựng vòng bánh răng vây quanh mình để nhốt mục tiêu; ai đụng vào sẽ bị hất văng ra ngoài, mất máu và mất mana." },
-      { phim: "E", ten: "Rocket Flare", mota: "Bắn pháo sáng tới bất kỳ đâu trên bản đồ, gây sát thương diện rộng và soi tầm nhìn tại điểm rơi." },
-      { phim: "R", ten: "Hookshot", mota: "Ulti: phóng móc bám; nếu trúng hero địch thì kéo Clockwerk lao thẳng tới, gây sát thương và làm choáng." }
+      { phim: "Q", loai: "Chủ động", ten: "Battery Assault", mota: "Liên tục bắn mảnh đạn vào các kẻ địch ở gần một cách ngẫu nhiên, mỗi phát gây sát thương nhỏ kèm choáng chớp nhoáng." },
+      { phim: "W", loai: "Chủ động", ten: "Power Cogs", mota: "Dựng vòng bánh răng vây quanh mình để nhốt mục tiêu; ai đụng vào sẽ bị hất văng ra ngoài, mất máu và mất mana." },
+      { phim: "E", loai: "Chủ động", ten: "Rocket Flare", mota: "Bắn pháo sáng tới bất kỳ đâu trên bản đồ, gây sát thương diện rộng và soi tầm nhìn tại điểm rơi." },
+      { phim: "R", loai: "Chủ động", ten: "Hookshot", mota: "Ulti: phóng móc bám; nếu trúng hero địch thì kéo Clockwerk lao thẳng tới, gây sát thương và làm choáng." }
     ],
     lenSkill: "Lên Battery Assault trước để đổi máu trong lane, thêm Power Cogs để nhốt người, giữ Rocket Flare mức thấp để soi bản đồ, lấy Hookshot mỗi khi đủ cấp.",
     doBuild: {
@@ -464,10 +464,10 @@ const HEROES_THEM = [
     icon: "🌀",
     danhHieu: "Ish'kafel",
     skills: [
-      { phim: "Q", ten: "Vacuum", mota: "Hút toàn bộ kẻ địch trong vùng về một điểm, gây sát thương và làm vỡ đội hình đối phương." },
-      { phim: "W", ten: "Ion Shell", mota: "Bọc một đơn vị bằng lớp vỏ năng lượng, thiêu đốt liên tục mọi kẻ địch đứng gần đơn vị đó." },
-      { phim: "E", ten: "Surge", mota: "Đẩy một đơn vị lên tốc chạy tối đa trong thời gian ngắn, dùng để lao vào hoặc chạy thoát." },
-      { phim: "R", ten: "Wall of Replica", mota: "Ulti: dựng một bức tường ma thuật; hero địch đi xuyên qua sẽ bị chậm và bị tạo ra một bản sao chiến đấu cho phe bạn." }
+      { phim: "Q", loai: "Chủ động", ten: "Vacuum", mota: "Hút toàn bộ kẻ địch trong vùng về một điểm, gây sát thương và làm vỡ đội hình đối phương." },
+      { phim: "W", loai: "Chủ động", ten: "Ion Shell", mota: "Bọc một đơn vị bằng lớp vỏ năng lượng, thiêu đốt liên tục mọi kẻ địch đứng gần đơn vị đó." },
+      { phim: "E", loai: "Chủ động", ten: "Surge", mota: "Đẩy một đơn vị lên tốc chạy tối đa trong thời gian ngắn, dùng để lao vào hoặc chạy thoát." },
+      { phim: "R", loai: "Chủ động", ten: "Wall of Replica", mota: "Ulti: dựng một bức tường ma thuật; hero địch đi xuyên qua sẽ bị chậm và bị tạo ra một bản sao chiến đấu cho phe bạn." }
     ],
     lenSkill: "Tối đa Ion Shell sớm để farm và ép lane, lấy một điểm Surge để cơ động, thêm Vacuum khi cần mở kèo, lên Wall of Replica ngay khi đủ cấp.",
     doBuild: {
@@ -491,10 +491,10 @@ const HEROES_THEM = [
     icon: "💚",
     danhHieu: "Shadow Priest",
     skills: [
-      { phim: "Q", ten: "Poison Touch", mota: "Đầu độc mục tiêu, khiến kẻ địch chậm dần và mất máu liên tục trong vài giây." },
-      { phim: "W", ten: "Shallow Grave", mota: "Giữ một đồng minh không thể chết trong vài giây, dù máu có tụt xuống mức thấp nhất." },
-      { phim: "E", ten: "Shadow Wave", mota: "Sóng bóng tối nhảy qua các đồng minh để hồi máu, đồng thời gây sát thương cho kẻ địch đứng cạnh những người được hồi." },
-      { phim: "R", ten: "Weave", mota: "Ulti: tạo vùng ảnh hưởng lớn, dần dần giảm giáp kẻ địch và tăng giáp cho đồng minh trong vùng." }
+      { phim: "Q", loai: "Chủ động", ten: "Poison Touch", mota: "Đầu độc mục tiêu, khiến kẻ địch chậm dần và mất máu liên tục trong vài giây." },
+      { phim: "W", loai: "Chủ động", ten: "Shallow Grave", mota: "Giữ một đồng minh không thể chết trong vài giây, dù máu có tụt xuống mức thấp nhất." },
+      { phim: "E", loai: "Chủ động", ten: "Shadow Wave", mota: "Sóng bóng tối nhảy qua các đồng minh để hồi máu, đồng thời gây sát thương cho kẻ địch đứng cạnh những người được hồi." },
+      { phim: "R", loai: "Chủ động", ten: "Weave", mota: "Ulti: tạo vùng ảnh hưởng lớn, dần dần giảm giáp kẻ địch và tăng giáp cho đồng minh trong vùng." }
     ],
     lenSkill: "Lấy Shallow Grave ngay khi có thể và luôn nâng đúng cấp, tối đa Shadow Wave để vừa hồi vừa đổi máu, Poison Touch để trong lane, lên Weave mỗi khi đủ cấp.",
     doBuild: {
@@ -519,10 +519,10 @@ const HEROES_THEM = [
     danhHieu: "Krobelus",
     chuaChac: true,
     skills: [
-      { phim: "Q", ten: "Carrion Swarm", mota: "Phóng bầy dơi theo hình nón, gây sát thương phép lên mọi kẻ địch trúng đòn." },
-      { phim: "W", ten: "Silence", mota: "Câm lặng toàn bộ kẻ địch trong một vùng, khiến chúng không dùng được kỹ năng." },
-      { phim: "E", ten: "Witchcraft", mota: "Nội tại: tăng tốc chạy và tăng số hồn ma mà Exorcism triệu ra. Lưu ý ở các bản sau kỹ năng này bị thay bằng Spirit Siphon nên tùy map có thể khác." },
-      { phim: "R", ten: "Exorcism", mota: "Ulti: triệu một bầy hồn ma bay quanh Krobelus, tự động lao vào tấn công hero, lính và công trình, đồng thời hút máu về cho cô." }
+      { phim: "Q", loai: "Chủ động", ten: "Carrion Swarm", mota: "Phóng bầy dơi theo hình nón, gây sát thương phép lên mọi kẻ địch trúng đòn." },
+      { phim: "W", loai: "Chủ động", ten: "Silence", mota: "Câm lặng toàn bộ kẻ địch trong một vùng, khiến chúng không dùng được kỹ năng." },
+      { phim: "E", loai: "Bị động", ten: "Witchcraft", mota: "Nội tại: tăng tốc chạy và tăng số hồn ma mà Exorcism triệu ra. Lưu ý ở các bản sau kỹ năng này bị thay bằng Spirit Siphon nên tùy map có thể khác." },
+      { phim: "R", loai: "Chủ động", ten: "Exorcism", mota: "Ulti: triệu một bầy hồn ma bay quanh Krobelus, tự động lao vào tấn công hero, lính và công trình, đồng thời hút máu về cho cô." }
     ],
     lenSkill: "Tối đa Carrion Swarm để dọn lính và đổi máu, để một điểm Silence chống lại hero phép, lên Exorcism ngay khi đủ cấp và tận dụng nó để đẩy trụ.",
     doBuild: {
@@ -547,10 +547,10 @@ const HEROES_THEM = [
     danhHieu: "Lucifer",
     chuaChac: true,
     skills: [
-      { phim: "Q", ten: "Devour", mota: "Nuốt chửng một con quái rừng để lấy vàng và học được kỹ năng nội tại của con quái đó." },
-      { phim: "W", ten: "Scorched Earth", mota: "Thiêu đốt mặt đất quanh mình, liên tục gây sát thương cho kẻ địch đồng thời tăng tốc chạy và hồi máu cho bản thân." },
-      { phim: "E", ten: "Infernal Blade", mota: "Đòn đánh tẩm lửa địa ngục, gây sát thương theo máu tối đa của mục tiêu kèm choáng ngắn. Ở các bản DotA 1 cũ hơn vị trí này là LVL? Death nên tùy map có thể khác." },
-      { phim: "R", ten: "Doom", mota: "Ulti: nguyền rủa một hero địch, khiến nó mất hoàn toàn khả năng dùng kỹ năng lẫn vật phẩm và cháy liên tục trong thời gian rất dài." }
+      { phim: "Q", loai: "Chủ động", ten: "Devour", mota: "Nuốt chửng một con quái rừng để lấy vàng và học được kỹ năng nội tại của con quái đó." },
+      { phim: "W", loai: "Chủ động", ten: "Scorched Earth", mota: "Thiêu đốt mặt đất quanh mình, liên tục gây sát thương cho kẻ địch đồng thời tăng tốc chạy và hồi máu cho bản thân." },
+      { phim: "E", loai: "Chủ động", ten: "Infernal Blade", mota: "Đòn đánh tẩm lửa địa ngục, gây sát thương theo máu tối đa của mục tiêu kèm choáng ngắn. Ở các bản DotA 1 cũ hơn vị trí này là LVL? Death nên tùy map có thể khác." },
+      { phim: "R", loai: "Chủ động", ten: "Doom", mota: "Ulti: nguyền rủa một hero địch, khiến nó mất hoàn toàn khả năng dùng kỹ năng lẫn vật phẩm và cháy liên tục trong thời gian rất dài." }
     ],
     lenSkill: "Nuốt quái sớm để có nội tại và vàng, tối đa Scorched Earth để đi gank và trụ lane, luôn lấy Doom ngay khi đủ cấp.",
     doBuild: {
@@ -574,10 +574,10 @@ const HEROES_THEM = [
     icon: "🐉",
     danhHieu: "Knight Davion",
     skills: [
-      { phim: "Q", ten: "Breathe Fire", mota: "Phun luồng lửa hình nón gây sát thương phép lên mọi kẻ địch phía trước." },
-      { phim: "W", ten: "Dragon Tail", mota: "Quật khiên vào một mục tiêu, gây sát thương và làm choáng." },
-      { phim: "E", ten: "Dragon Blood", mota: "Nội tại: tăng giáp và hồi máu liên tục, giúp trụ lane cực dai." },
-      { phim: "R", ten: "Elder Dragon Form", mota: "Ulti: hóa thành rồng, đánh tầm xa với sát thương lan ra xung quanh và thêm hiệu ứng phụ theo cấp rồng." }
+      { phim: "Q", loai: "Chủ động", ten: "Breathe Fire", mota: "Phun luồng lửa hình nón gây sát thương phép lên mọi kẻ địch phía trước." },
+      { phim: "W", loai: "Chủ động", ten: "Dragon Tail", mota: "Quật khiên vào một mục tiêu, gây sát thương và làm choáng." },
+      { phim: "E", loai: "Bị động", ten: "Dragon Blood", mota: "Nội tại: tăng giáp và hồi máu liên tục, giúp trụ lane cực dai." },
+      { phim: "R", loai: "Chủ động", ten: "Elder Dragon Form", mota: "Ulti: hóa thành rồng, đánh tầm xa với sát thương lan ra xung quanh và thêm hiệu ứng phụ theo cấp rồng." }
     ],
     lenSkill: "Tối đa Dragon Blood sớm để trụ lane và ăn rừng an toàn, giữ một điểm Dragon Tail để khống chế, lên Elder Dragon Form ngay khi đủ cấp.",
     doBuild: {
@@ -601,10 +601,10 @@ const HEROES_THEM = [
     icon: "🏹",
     danhHieu: "Traxex",
     skills: [
-      { phim: "Q", ten: "Frost Arrows", mota: "Mũi tên băng làm kẻ địch chậm hẳn lại; là kỹ năng bấm tay nên không làm hỏng việc kéo lính." },
-      { phim: "W", ten: "Silence", mota: "Câm lặng mọi kẻ địch trong vùng chỉ định, chặn đứng hero dựa vào kỹ năng." },
-      { phim: "E", ten: "Trueshot Aura", mota: "Hào quang cộng sát thương cho cả đội dựa trên chỉ số nhanh nhẹn của Drow, hiệu quả nhất với hero đánh xa." },
-      { phim: "R", ten: "Marksmanship", mota: "Ulti: nội tại cộng rất nhiều nhanh nhẹn, nhưng bị vô hiệu khi có hero địch đứng quá gần." }
+      { phim: "Q", loai: "Tự đánh", ten: "Frost Arrows", mota: "Mũi tên băng làm kẻ địch chậm hẳn lại; là kỹ năng bấm tay nên không làm hỏng việc kéo lính." },
+      { phim: "W", loai: "Chủ động", ten: "Silence", mota: "Câm lặng mọi kẻ địch trong vùng chỉ định, chặn đứng hero dựa vào kỹ năng." },
+      { phim: "E", loai: "Bị động", ten: "Trueshot Aura", mota: "Hào quang cộng sát thương cho cả đội dựa trên chỉ số nhanh nhẹn của Drow, hiệu quả nhất với hero đánh xa." },
+      { phim: "R", loai: "Bị động", ten: "Marksmanship", mota: "Ulti: nội tại cộng rất nhiều nhanh nhẹn, nhưng bị vô hiệu khi có hero địch đứng quá gần." }
     ],
     lenSkill: "Tối đa Frost Arrows để làm chủ lane, để một điểm Silence chống mở kèo, thêm Trueshot Aura khi cần farm, lên Marksmanship ngay khi đủ cấp.",
     doBuild: {
@@ -628,10 +628,10 @@ const HEROES_THEM = [
     icon: "🌋",
     danhHieu: "Raigor Stonehoof",
     skills: [
-      { phim: "Q", ten: "Fissure", mota: "Đập gậy xuống đất tạo bức tường đá dài, làm choáng và đẩy văng kẻ địch trúng đòn, đồng thời chặn đường đi." },
-      { phim: "W", ten: "Enchant Totem", mota: "Tăng vọt sát thương cho đòn đánh thường kế tiếp." },
-      { phim: "E", ten: "Aftershock", mota: "Nội tại: mỗi lần dùng kỹ năng đều tạo chấn động làm choáng kẻ địch xung quanh." },
-      { phim: "R", ten: "Echo Slam", mota: "Ulti: đập đất tạo sóng chấn dội lại; càng nhiều đơn vị địch đứng gần thì tổng sát thương càng khủng khiếp." }
+      { phim: "Q", loai: "Chủ động", ten: "Fissure", mota: "Đập gậy xuống đất tạo bức tường đá dài, làm choáng và đẩy văng kẻ địch trúng đòn, đồng thời chặn đường đi." },
+      { phim: "W", loai: "Chủ động", ten: "Enchant Totem", mota: "Tăng vọt sát thương cho đòn đánh thường kế tiếp." },
+      { phim: "E", loai: "Bị động", ten: "Aftershock", mota: "Nội tại: mỗi lần dùng kỹ năng đều tạo chấn động làm choáng kẻ địch xung quanh." },
+      { phim: "R", loai: "Chủ động", ten: "Echo Slam", mota: "Ulti: đập đất tạo sóng chấn dội lại; càng nhiều đơn vị địch đứng gần thì tổng sát thương càng khủng khiếp." }
     ],
     lenSkill: "Tối đa Fissure để khống chế và chặn đường, thêm Aftershock để mọi kỹ năng đều kèm choáng, lên Echo Slam ngay khi đủ cấp.",
     doBuild: {
@@ -656,10 +656,10 @@ const HEROES_THEM = [
     danhHieu: "Xin",
     chuaChac: true,
     skills: [
-      { phim: "Q", ten: "Searing Chains", mota: "Xích lửa trói ngẫu nhiên một vài kẻ địch quanh mình, khiến chúng không di chuyển được và bị thiêu đốt." },
-      { phim: "W", ten: "Sleight of Fist", mota: "Lướt qua toàn bộ kẻ địch trong vùng chỉ định, đánh mỗi mục tiêu một nhát rồi quay về vị trí cũ, trong lúc đó gần như không thể bị nhắm." },
-      { phim: "E", ten: "Flame Guard", mota: "Khiên lửa hấp thụ sát thương phép và liên tục thiêu đốt kẻ địch đứng gần." },
-      { phim: "R", ten: "Fire Remnant", mota: "Ulti: đặt sẵn các tàn lửa trên bản đồ, kích hoạt để lao thẳng tới vị trí tàn lửa và gây sát thương diện rộng khi đến nơi." }
+      { phim: "Q", loai: "Chủ động", ten: "Searing Chains", mota: "Xích lửa trói ngẫu nhiên một vài kẻ địch quanh mình, khiến chúng không di chuyển được và bị thiêu đốt." },
+      { phim: "W", loai: "Chủ động", ten: "Sleight of Fist", mota: "Lướt qua toàn bộ kẻ địch trong vùng chỉ định, đánh mỗi mục tiêu một nhát rồi quay về vị trí cũ, trong lúc đó gần như không thể bị nhắm." },
+      { phim: "E", loai: "Chủ động", ten: "Flame Guard", mota: "Khiên lửa hấp thụ sát thương phép và liên tục thiêu đốt kẻ địch đứng gần." },
+      { phim: "R", loai: "Chủ động", ten: "Fire Remnant", mota: "Ulti: đặt sẵn các tàn lửa trên bản đồ, kích hoạt để lao thẳng tới vị trí tàn lửa và gây sát thương diện rộng khi đến nơi." }
     ],
     lenSkill: "Tối đa Flame Guard sớm để farm và chống sát thương phép, thêm Searing Chains để bắt người, dùng Fire Remnant vừa để di chuyển vừa để gank.",
     doBuild: {
@@ -684,10 +684,10 @@ const HEROES_THEM = [
     icon: "🦌",
     danhHieu: "Aiushtha",
     skills: [
-      { phim: "Q", ten: "Untouchable", mota: "Nội tại: mỗi khi bị đánh thường, kẻ tấn công bị giảm mạnh tốc độ đánh trong chốc lát. Khiến Enchantress cực kỳ khó bị hạ bằng đánh tay, nhất là với các carry phụ thuộc tốc độ đánh." },
-      { phim: "W", ten: "Enchant", mota: "Thu phục một creep rừng hoặc creep lính về phe mình làm lính đánh thuê; nếu dùng lên tướng địch thì làm chậm nặng mục tiêu một khoảng thời gian. Đây là công cụ vừa để farm rừng vừa để đuổi giết." },
-      { phim: "E", ten: "Nature's Attendants", mota: "Triệu ra một bầy tinh linh bay quanh Enchantress, liên tục hồi máu cho cô và đồng đội đứng gần trong suốt thời gian tồn tại. Hồi phục tổng cộng rất lớn nếu đứng yên trong vùng." },
-      { phim: "R", ten: "Impetus", mota: "Ulti: đòn đánh tẩm phép (orb), gây thêm sát thương nguyên tố dựa trên khoảng cách giữa Enchantress và mục tiêu — càng xa càng đau. Kết hợp tầm đánh xa và làm chậm từ Enchant để đứng ngoài bắn tỉa." }
+      { phim: "Q", loai: "Bị động", ten: "Untouchable", mota: "Nội tại: mỗi khi bị đánh thường, kẻ tấn công bị giảm mạnh tốc độ đánh trong chốc lát. Khiến Enchantress cực kỳ khó bị hạ bằng đánh tay, nhất là với các carry phụ thuộc tốc độ đánh." },
+      { phim: "W", loai: "Chủ động", ten: "Enchant", mota: "Thu phục một creep rừng hoặc creep lính về phe mình làm lính đánh thuê; nếu dùng lên tướng địch thì làm chậm nặng mục tiêu một khoảng thời gian. Đây là công cụ vừa để farm rừng vừa để đuổi giết." },
+      { phim: "E", loai: "Chủ động", ten: "Nature's Attendants", mota: "Triệu ra một bầy tinh linh bay quanh Enchantress, liên tục hồi máu cho cô và đồng đội đứng gần trong suốt thời gian tồn tại. Hồi phục tổng cộng rất lớn nếu đứng yên trong vùng." },
+      { phim: "R", loai: "Tự đánh", ten: "Impetus", mota: "Ulti: đòn đánh tẩm phép (orb), gây thêm sát thương nguyên tố dựa trên khoảng cách giữa Enchantress và mục tiêu — càng xa càng đau. Kết hợp tầm đánh xa và làm chậm từ Enchant để đứng ngoài bắn tỉa." }
     ],
     lenSkill: "Ưu tiên Enchant sớm để farm rừng và cầm chân địch, điểm đầu cho Impetus khi đủ cấp, xen kẽ Nature's Attendants để trụ lane, Untouchable lấy sau cùng.",
     doBuild: {
@@ -711,10 +711,10 @@ const HEROES_THEM = [
     icon: "🌌",
     danhHieu: "Darchrow",
     skills: [
-      { phim: "Q", ten: "Malefice", mota: "Giam hãm mục tiêu bằng năng lượng hư không: gây sát thương và làm choáng ngắt quãng nhiều lần. Rất tốt để ngắt hồi chiêu, chặn dịch chuyển hoặc giữ chân mục tiêu bỏ chạy." },
-      { phim: "W", ten: "Demonic Conversion", mota: "Hiến tế một creep để biến nó thành một nhóm eidolon nhỏ đi theo Enigma. Nếu eidolon đánh đủ số đòn, chúng tự nhân đôi. Đây là nguồn farm và đẩy lane chính của Enigma giai đoạn đầu." },
-      { phim: "E", ten: "Midnight Pulse", mota: "Tạo vùng hư không dưới đất, liên tục đốt máu theo phần trăm máu tối đa của mọi kẻ địch đứng trong vùng. Càng đông và càng nhiều máu thì càng đau." },
-      { phim: "R", ten: "Black Hole", mota: "Ulti: mở hố đen hút mọi kẻ địch trong vùng vào tâm, vô hiệu hóa hoàn toàn (không đi, không đánh, không dùng chiêu) và gây sát thương liên tục. Đây là một trong những chiêu khởi chiến mạnh nhất game." }
+      { phim: "Q", loai: "Chủ động", ten: "Malefice", mota: "Giam hãm mục tiêu bằng năng lượng hư không: gây sát thương và làm choáng ngắt quãng nhiều lần. Rất tốt để ngắt hồi chiêu, chặn dịch chuyển hoặc giữ chân mục tiêu bỏ chạy." },
+      { phim: "W", loai: "Chủ động", ten: "Demonic Conversion", mota: "Hiến tế một creep để biến nó thành một nhóm eidolon nhỏ đi theo Enigma. Nếu eidolon đánh đủ số đòn, chúng tự nhân đôi. Đây là nguồn farm và đẩy lane chính của Enigma giai đoạn đầu." },
+      { phim: "E", loai: "Chủ động", ten: "Midnight Pulse", mota: "Tạo vùng hư không dưới đất, liên tục đốt máu theo phần trăm máu tối đa của mọi kẻ địch đứng trong vùng. Càng đông và càng nhiều máu thì càng đau." },
+      { phim: "R", loai: "Chủ động", ten: "Black Hole", mota: "Ulti: mở hố đen hút mọi kẻ địch trong vùng vào tâm, vô hiệu hóa hoàn toàn (không đi, không đánh, không dùng chiêu) và gây sát thương liên tục. Đây là một trong những chiêu khởi chiến mạnh nhất game." }
     ],
     lenSkill: "Max Demonic Conversion sớm để farm và giữ lane, điểm phụ cho Midnight Pulse và Malefice, luôn lấy Black Hole ngay khi đủ cấp.",
     doBuild: {
@@ -739,10 +739,10 @@ const HEROES_THEM = [
     danhHieu: "Ezalor",
     chuaChac: true,
     skills: [
-      { phim: "Q", ten: "Illuminate", mota: "Tích năng lượng ánh sáng rồi bắn ra một luồng dài, gây sát thương lớn cho mọi thứ trên đường đi. Tích càng lâu càng mạnh; dùng để dọn cả đợt lính từ xa hoặc bắn mù vào chỗ khuất." },
-      { phim: "W", ten: "Mana Leak", mota: "Nguyền một mục tiêu: mỗi bước nó di chuyển đều bị rút mana, và nếu cạn sạch mana thì bị choáng. Trừng phạt nặng những tướng phải chạy hoặc truy đuổi." },
-      { phim: "E", ten: "Chakra Magic", mota: "Truyền mana cho một đồng đội và giảm thời gian hồi chiêu của chiêu vừa dùng. Giúp cả đội, đặc biệt là các pháp sư, spam chiêu liên tục suốt giai đoạn đi lane và giao tranh." },
-      { phim: "R", ten: "Spirit Form", mota: "Ulti: hóa thành dạng linh hồn, tăng mạnh sức mạnh của Illuminate và mở thêm khả năng chiếu sáng làm kẻ địch trượt đòn đánh thường. Trong dạng này Ezalor trở thành nguồn sát thương và đẩy trụ đáng gờm." }
+      { phim: "Q", loai: "Chủ động", ten: "Illuminate", mota: "Tích năng lượng ánh sáng rồi bắn ra một luồng dài, gây sát thương lớn cho mọi thứ trên đường đi. Tích càng lâu càng mạnh; dùng để dọn cả đợt lính từ xa hoặc bắn mù vào chỗ khuất." },
+      { phim: "W", loai: "Chủ động", ten: "Mana Leak", mota: "Nguyền một mục tiêu: mỗi bước nó di chuyển đều bị rút mana, và nếu cạn sạch mana thì bị choáng. Trừng phạt nặng những tướng phải chạy hoặc truy đuổi." },
+      { phim: "E", loai: "Chủ động", ten: "Chakra Magic", mota: "Truyền mana cho một đồng đội và giảm thời gian hồi chiêu của chiêu vừa dùng. Giúp cả đội, đặc biệt là các pháp sư, spam chiêu liên tục suốt giai đoạn đi lane và giao tranh." },
+      { phim: "R", loai: "Chủ động", ten: "Spirit Form", mota: "Ulti: hóa thành dạng linh hồn, tăng mạnh sức mạnh của Illuminate và mở thêm khả năng chiếu sáng làm kẻ địch trượt đòn đánh thường. Trong dạng này Ezalor trở thành nguồn sát thương và đẩy trụ đáng gờm." }
     ],
     lenSkill: "Max Illuminate để đẩy lane và dọn lính, điểm sớm cho Chakra Magic nuôi mana đồng đội, Mana Leak lấy phụ, luôn nâng Spirit Form ngay khi đủ cấp.",
     doBuild: {
@@ -766,10 +766,10 @@ const HEROES_THEM = [
     icon: "🌳",
     danhHieu: "Furion",
     skills: [
-      { phim: "Q", ten: "Sprout", mota: "Mọc một vòng cây bao quanh mục tiêu, nhốt nó lại trong chốc lát. Vừa dùng để chặn đường chạy trốn, vừa dùng để tự cứu mình hoặc chặn đường truy đuổi của địch." },
-      { phim: "W", ten: "Teleportation", mota: "Dịch chuyển tới bất kỳ điểm nào trên bản đồ sau một khoảng niệm chú. Đây là chiêu định hình lối chơi của Furion: có mặt ở mọi nơi, tách đẩy lane, gank bất ngờ và bỏ chạy an toàn." },
-      { phim: "E", ten: "Force of Nature", mota: "Biến một cụm cây thành đàn treant chiến đấu cho Furion. Dùng để đẩy trụ cực nhanh, farm rừng, hoặc thêm sát thương và làm lá chắn thịt trong giao tranh." },
-      { phim: "R", ten: "Wrath of Nature", mota: "Ulti: bắn một tia năng lượng nảy lần lượt giữa các mục tiêu địch trên toàn bản đồ, sát thương tăng dần theo mỗi lần nảy. Dùng để kết liễu tướng địch máu thấp ở bất cứ đâu hoặc dọn lính toàn cầu." }
+      { phim: "Q", loai: "Chủ động", ten: "Sprout", mota: "Mọc một vòng cây bao quanh mục tiêu, nhốt nó lại trong chốc lát. Vừa dùng để chặn đường chạy trốn, vừa dùng để tự cứu mình hoặc chặn đường truy đuổi của địch." },
+      { phim: "W", loai: "Chủ động", ten: "Teleportation", mota: "Dịch chuyển tới bất kỳ điểm nào trên bản đồ sau một khoảng niệm chú. Đây là chiêu định hình lối chơi của Furion: có mặt ở mọi nơi, tách đẩy lane, gank bất ngờ và bỏ chạy an toàn." },
+      { phim: "E", loai: "Chủ động", ten: "Force of Nature", mota: "Biến một cụm cây thành đàn treant chiến đấu cho Furion. Dùng để đẩy trụ cực nhanh, farm rừng, hoặc thêm sát thương và làm lá chắn thịt trong giao tranh." },
+      { phim: "R", loai: "Chủ động", ten: "Wrath of Nature", mota: "Ulti: bắn một tia năng lượng nảy lần lượt giữa các mục tiêu địch trên toàn bản đồ, sát thương tăng dần theo mỗi lần nảy. Dùng để kết liễu tướng địch máu thấp ở bất cứ đâu hoặc dọn lính toàn cầu." }
     ],
     lenSkill: "Max Force of Nature để tách đẩy và farm, điểm sớm cho Sprout đủ dùng khi gank, Teleportation nâng dần để rút ngắn thời gian chờ, lấy Wrath of Nature ngay khi đủ cấp.",
     doBuild: {
@@ -793,10 +793,10 @@ const HEROES_THEM = [
     icon: "🐭",
     danhHieu: "Meepo",
     skills: [
-      { phim: "Q", ten: "Earthbind", mota: "Ném một tấm lưới xuống khu vực, trói chân mọi kẻ địch trong vùng và làm lộ cả mục tiêu tàng hình. Kẻ bị trói không thể di chuyển hay dịch chuyển — công cụ bắt người chủ lực của Meepo." },
-      { phim: "W", ten: "Poof", mota: "Một bản sao biến mất rồi dịch chuyển tới một bản sao khác, gây sát thương phép quanh cả điểm đi lẫn điểm đến. Vừa là cách gom quân, vừa là nguồn sát thương diện rộng chính." },
-      { phim: "E", ten: "Geostrike", mota: "Nội tại đòn đánh: mỗi cú đánh của mọi bản sao đều gây thêm sát thương theo thời gian và làm chậm mục tiêu. Nhiều Meepo đánh cùng lúc khiến nạn nhân gần như đứng yên." },
-      { phim: "R", ten: "Divided We Stand", mota: "Ulti: tạo thêm các bản sao Meepo hoàn chỉnh, mỗi bản sao đều có chiêu thức và chia sẻ một phần chỉ số từ trang bị của bản gốc. Nếu bất kỳ bản sao nào chết thì cả đội hình Meepo chết theo." }
+      { phim: "Q", loai: "Chủ động", ten: "Earthbind", mota: "Ném một tấm lưới xuống khu vực, trói chân mọi kẻ địch trong vùng và làm lộ cả mục tiêu tàng hình. Kẻ bị trói không thể di chuyển hay dịch chuyển — công cụ bắt người chủ lực của Meepo." },
+      { phim: "W", loai: "Chủ động", ten: "Poof", mota: "Một bản sao biến mất rồi dịch chuyển tới một bản sao khác, gây sát thương phép quanh cả điểm đi lẫn điểm đến. Vừa là cách gom quân, vừa là nguồn sát thương diện rộng chính." },
+      { phim: "E", loai: "Bị động", ten: "Geostrike", mota: "Nội tại đòn đánh: mỗi cú đánh của mọi bản sao đều gây thêm sát thương theo thời gian và làm chậm mục tiêu. Nhiều Meepo đánh cùng lúc khiến nạn nhân gần như đứng yên." },
+      { phim: "R", loai: "Bị động", ten: "Divided We Stand", mota: "Ulti: tạo thêm các bản sao Meepo hoàn chỉnh, mỗi bản sao đều có chiêu thức và chia sẻ một phần chỉ số từ trang bị của bản gốc. Nếu bất kỳ bản sao nào chết thì cả đội hình Meepo chết theo." }
     ],
     lenSkill: "Max Poof để farm và dồn sát thương, một điểm Earthbind sớm để bắt người, Geostrike nâng sau, và luôn ưu tiên Divided We Stand mỗi khi đủ cấp.",
     doBuild: {
@@ -821,10 +821,10 @@ const HEROES_THEM = [
     danhHieu: "Rizzrack",
     chuaChac: true,
     skills: [
-      { phim: "Q", ten: "Whirling Death", mota: "Quay lưỡi cưa gây sát thương diện rộng quanh mình; nếu có cây trong vùng thì cây bị chặt và mục tiêu bị giảm thêm chỉ số cơ bản. Đây là nguồn sát thương lặp lại rẻ tiền của Shredder." },
-      { phim: "W", ten: "Timber Chain", mota: "Bắn móc xích vào một cái cây và kéo mình bay tới đó, gây sát thương cho kẻ địch trên đường bay. Là công cụ cơ động chính: lao vào, thoát ra, hoặc băng rừng bất ngờ." },
-      { phim: "E", ten: "Reactive Armor", mota: "Nội tại: mỗi lần bị đánh trúng, Shredder cộng dồn thêm giáp và hồi máu, các lớp cộng dồn tự mất dần theo thời gian. Đánh càng nhiều thì càng khó giết bằng đòn thường." },
-      { phim: "R", ten: "Chakram", mota: "Ulti: phóng lưỡi cưa khổng lồ tới một điểm, đứng đó liên tục cắt và làm chậm mọi kẻ địch chạm phải, rồi thu hồi về gây sát thương lần nữa trên đường quay lại." }
+      { phim: "Q", loai: "Chủ động", ten: "Whirling Death", mota: "Quay lưỡi cưa gây sát thương diện rộng quanh mình; nếu có cây trong vùng thì cây bị chặt và mục tiêu bị giảm thêm chỉ số cơ bản. Đây là nguồn sát thương lặp lại rẻ tiền của Shredder." },
+      { phim: "W", loai: "Chủ động", ten: "Timber Chain", mota: "Bắn móc xích vào một cái cây và kéo mình bay tới đó, gây sát thương cho kẻ địch trên đường bay. Là công cụ cơ động chính: lao vào, thoát ra, hoặc băng rừng bất ngờ." },
+      { phim: "E", loai: "Bị động", ten: "Reactive Armor", mota: "Nội tại: mỗi lần bị đánh trúng, Shredder cộng dồn thêm giáp và hồi máu, các lớp cộng dồn tự mất dần theo thời gian. Đánh càng nhiều thì càng khó giết bằng đòn thường." },
+      { phim: "R", loai: "Chủ động", ten: "Chakram", mota: "Ulti: phóng lưỡi cưa khổng lồ tới một điểm, đứng đó liên tục cắt và làm chậm mọi kẻ địch chạm phải, rồi thu hồi về gây sát thương lần nữa trên đường quay lại." }
     ],
     lenSkill: "Max Reactive Armor để trụ lane thật lì, điểm sớm cho Whirling Death đổi máu, Timber Chain lấy đủ để cơ động, và luôn nâng Chakram khi đủ cấp.",
     doBuild: {
@@ -848,10 +848,10 @@ const HEROES_THEM = [
     icon: "🚁",
     danhHieu: "Aurel Vlaicu",
     skills: [
-      { phim: "Q", ten: "Rocket Barrage", mota: "Bắn liên tiếp hàng loạt tên lửa nhỏ vào mọi kẻ địch đứng gần trong vài giây. Càng ít mục tiêu quanh mình thì mỗi mục tiêu ăn càng nhiều đạn — cực mạnh khi solo đổi máu giai đoạn đầu." },
-      { phim: "W", ten: "Homing Missile", mota: "Phóng một quả tên lửa tự dò tìm bay chậm đuổi theo mục tiêu, khi trúng thì gây sát thương lớn và làm choáng. Tên lửa có thể bị đánh gãy trước khi nó chạm đích." },
-      { phim: "E", ten: "Flak Cannon", mota: "Trong thời gian hiệu lực, mỗi đòn đánh thường của Gyrocopter đồng thời bắn trúng tất cả kẻ địch trong bán kính lớn quanh mình. Đây là nguồn sát thương diện rộng và đẩy lane chủ lực." },
-      { phim: "R", ten: "Call Down", mota: "Ulti: gọi hai đợt không kích dội xuống một khu vực, đợt đầu gây sát thương và làm chậm, đợt sau đánh mạnh hơn. Tầm thi triển toàn cầu ở một số phiên bản, dùng để mở giao tranh hoặc kết liễu từ xa." }
+      { phim: "Q", loai: "Chủ động", ten: "Rocket Barrage", mota: "Bắn liên tiếp hàng loạt tên lửa nhỏ vào mọi kẻ địch đứng gần trong vài giây. Càng ít mục tiêu quanh mình thì mỗi mục tiêu ăn càng nhiều đạn — cực mạnh khi solo đổi máu giai đoạn đầu." },
+      { phim: "W", loai: "Chủ động", ten: "Homing Missile", mota: "Phóng một quả tên lửa tự dò tìm bay chậm đuổi theo mục tiêu, khi trúng thì gây sát thương lớn và làm choáng. Tên lửa có thể bị đánh gãy trước khi nó chạm đích." },
+      { phim: "E", loai: "Chủ động", ten: "Flak Cannon", mota: "Trong thời gian hiệu lực, mỗi đòn đánh thường của Gyrocopter đồng thời bắn trúng tất cả kẻ địch trong bán kính lớn quanh mình. Đây là nguồn sát thương diện rộng và đẩy lane chủ lực." },
+      { phim: "R", loai: "Chủ động", ten: "Call Down", mota: "Ulti: gọi hai đợt không kích dội xuống một khu vực, đợt đầu gây sát thương và làm chậm, đợt sau đánh mạnh hơn. Tầm thi triển toàn cầu ở một số phiên bản, dùng để mở giao tranh hoặc kết liễu từ xa." }
     ],
     lenSkill: "Max Rocket Barrage để áp đảo giai đoạn đi lane, một điểm sớm cho Homing Missile lấy choáng, Flak Cannon nâng khi bắt đầu farm nhanh, luôn lấy Call Down đủ cấp.",
     doBuild: {
@@ -875,10 +875,10 @@ const HEROES_THEM = [
     icon: "🔥",
     danhHieu: "Sacred Warrior",
     skills: [
-      { phim: "Q", ten: "Inner Vitality", mota: "Hồi máu liên tục cho bản thân hoặc đồng đội trong một khoảng thời gian, và hồi mạnh hơn hẳn khi mục tiêu đang ở mức máu thấp. Chính chiêu này cho phép Huskar chơi liều mạng." },
-      { phim: "W", ten: "Burning Spear", mota: "Tẩm lửa lên giáo: các đòn đánh thường tiếp theo gây sát thương cháy cộng dồn theo thời gian, đổi lại Huskar tự mất một ít máu mỗi lần dùng. Có thể bật tự động để đánh liên tục." },
-      { phim: "E", ten: "Berserker's Blood", mota: "Nội tại: máu càng thấp thì Huskar càng tăng tốc độ đánh và kháng phép. Đây là lý do Huskar càng gần chết lại càng nguy hiểm và càng khó bị giết bằng phép." },
-      { phim: "R", ten: "Life Break", mota: "Ulti: lao thẳng tới mục tiêu, chém một đòn hy sinh phần máu của chính mình để cắt đi một phần lớn máu của địch theo phần trăm, đồng thời làm chậm nặng mục tiêu. Vừa là chiêu lao vào vừa là chiêu tự hạ máu để kích hoạt nội tại." }
+      { phim: "Q", loai: "Chủ động", ten: "Inner Vitality", mota: "Hồi máu liên tục cho bản thân hoặc đồng đội trong một khoảng thời gian, và hồi mạnh hơn hẳn khi mục tiêu đang ở mức máu thấp. Chính chiêu này cho phép Huskar chơi liều mạng." },
+      { phim: "W", loai: "Tự đánh", ten: "Burning Spear", mota: "Tẩm lửa lên giáo: các đòn đánh thường tiếp theo gây sát thương cháy cộng dồn theo thời gian, đổi lại Huskar tự mất một ít máu mỗi lần dùng. Có thể bật tự động để đánh liên tục." },
+      { phim: "E", loai: "Bị động", ten: "Berserker's Blood", mota: "Nội tại: máu càng thấp thì Huskar càng tăng tốc độ đánh và kháng phép. Đây là lý do Huskar càng gần chết lại càng nguy hiểm và càng khó bị giết bằng phép." },
+      { phim: "R", loai: "Chủ động", ten: "Life Break", mota: "Ulti: lao thẳng tới mục tiêu, chém một đòn hy sinh phần máu của chính mình để cắt đi một phần lớn máu của địch theo phần trăm, đồng thời làm chậm nặng mục tiêu. Vừa là chiêu lao vào vừa là chiêu tự hạ máu để kích hoạt nội tại." }
     ],
     lenSkill: "Xen kẽ Burning Spear và Berserker's Blood để vừa có sát thương vừa có kháng phép, một điểm Inner Vitality sớm để trụ lane, luôn lấy Life Break khi đủ cấp.",
     doBuild: {
@@ -902,10 +902,10 @@ const HEROES_THEM = [
     icon: "🐉",
     danhHieu: "Twin Head Dragon",
     skills: [
-      { phim: "Q", ten: "Dual Breath", mota: "Thổi một luồng băng rồi tiếp nối bằng luồng lửa theo cùng hướng: luồng băng làm chậm, luồng lửa gây sát thương thiêu đốt. Trúng cả hai luồng thì sát thương và làm chậm rất đáng kể." },
-      { phim: "W", ten: "Ice Path", mota: "Tạo một đường băng dài trên mặt đất sau một nhịp trễ; mọi kẻ địch chạm phải bị choáng và gây ít sát thương. Dùng để chặn đường rút hoặc khóa cả đội hình địch đang đứng thành hàng." },
-      { phim: "E", ten: "Liquid Fire", mota: "Nội tại tự động: đòn đánh của Jakiro tạo vùng lửa quanh mục tiêu, gây sát thương theo thời gian và giảm mạnh tốc độ đánh của kẻ địch trúng phải. Rất mạnh khi quấy rối trụ và đi lane." },
-      { phim: "R", ten: "Macropyre", mota: "Ulti: đốt một dải lửa dài trên mặt đất, thiêu liên tục mọi kẻ địch đứng trong đó suốt thời gian tồn tại. Dùng chặn lối vào hoặc lối ra của giao tranh sẽ hiệu quả hơn là ném thẳng vào mặt địch." }
+      { phim: "Q", loai: "Chủ động", ten: "Dual Breath", mota: "Thổi một luồng băng rồi tiếp nối bằng luồng lửa theo cùng hướng: luồng băng làm chậm, luồng lửa gây sát thương thiêu đốt. Trúng cả hai luồng thì sát thương và làm chậm rất đáng kể." },
+      { phim: "W", loai: "Chủ động", ten: "Ice Path", mota: "Tạo một đường băng dài trên mặt đất sau một nhịp trễ; mọi kẻ địch chạm phải bị choáng và gây ít sát thương. Dùng để chặn đường rút hoặc khóa cả đội hình địch đang đứng thành hàng." },
+      { phim: "E", loai: "Tự đánh", ten: "Liquid Fire", mota: "Nội tại tự động: đòn đánh của Jakiro tạo vùng lửa quanh mục tiêu, gây sát thương theo thời gian và giảm mạnh tốc độ đánh của kẻ địch trúng phải. Rất mạnh khi quấy rối trụ và đi lane." },
+      { phim: "R", loai: "Chủ động", ten: "Macropyre", mota: "Ulti: đốt một dải lửa dài trên mặt đất, thiêu liên tục mọi kẻ địch đứng trong đó suốt thời gian tồn tại. Dùng chặn lối vào hoặc lối ra của giao tranh sẽ hiệu quả hơn là ném thẳng vào mặt địch." }
     ],
     lenSkill: "Max Dual Breath để có sát thương và làm chậm mạnh giai đoạn đầu, một điểm Ice Path sớm để khống chế, Liquid Fire lấy phụ, luôn nâng Macropyre khi đủ cấp.",
     doBuild: {
@@ -929,10 +929,10 @@ const HEROES_THEM = [
     icon: "⚓",
     danhHieu: "Admiral Proudmoore",
     skills: [
-      { phim: "Q", ten: "Torrent", mota: "Sau một nhịp trễ, một cột nước phun lên từ điểm chỉ định, hất tung kẻ địch lên không, gây sát thương và làm chậm nặng khi rơi xuống. Cần đoán trước đường đi của địch để trúng." },
-      { phim: "W", ten: "Tidebringer", mota: "Nội tại tích lũy: sau thời gian hồi, đòn đánh thường kế tiếp của Kunkka gây thêm sát thương lớn và chém lan ra hình quạt trúng nhiều kẻ địch cùng lúc. Nguồn dọn lính và đổi máu chính giai đoạn đi lane." },
-      { phim: "E", ten: "X Marks the Spot", mota: "Đánh dấu một mục tiêu (địch hoặc đồng minh); sau một lúc hoặc khi Kunkka kích hoạt lại, mục tiêu bị kéo ngược về đúng vị trí đã đánh dấu. Dùng để giữ chân địch hoặc cứu đồng đội." },
-      { phim: "R", ten: "Ghostship", mota: "Ulti: triệu một con tàu ma lao tới khu vực rồi vỡ tan, làm choáng và gây sát thương diện rộng cho địch, đồng thời ban cho đồng đội trong vùng hiệu ứng say rượu giúp trì hoãn phần lớn sát thương nhận vào." }
+      { phim: "Q", loai: "Chủ động", ten: "Torrent", mota: "Sau một nhịp trễ, một cột nước phun lên từ điểm chỉ định, hất tung kẻ địch lên không, gây sát thương và làm chậm nặng khi rơi xuống. Cần đoán trước đường đi của địch để trúng." },
+      { phim: "W", loai: "Bị động", ten: "Tidebringer", mota: "Nội tại tích lũy: sau thời gian hồi, đòn đánh thường kế tiếp của Kunkka gây thêm sát thương lớn và chém lan ra hình quạt trúng nhiều kẻ địch cùng lúc. Nguồn dọn lính và đổi máu chính giai đoạn đi lane." },
+      { phim: "E", loai: "Chủ động", ten: "X Marks the Spot", mota: "Đánh dấu một mục tiêu (địch hoặc đồng minh); sau một lúc hoặc khi Kunkka kích hoạt lại, mục tiêu bị kéo ngược về đúng vị trí đã đánh dấu. Dùng để giữ chân địch hoặc cứu đồng đội." },
+      { phim: "R", loai: "Chủ động", ten: "Ghostship", mota: "Ulti: triệu một con tàu ma lao tới khu vực rồi vỡ tan, làm choáng và gây sát thương diện rộng cho địch, đồng thời ban cho đồng đội trong vùng hiệu ứng say rượu giúp trì hoãn phần lớn sát thương nhận vào." }
     ],
     lenSkill: "Max Tidebringer để thống trị lane và dọn lính, một điểm sớm cho Torrent và X Marks the Spot để combo, luôn lấy Ghostship khi đủ cấp.",
     doBuild: {
@@ -957,10 +957,10 @@ const HEROES_THEM = [
     danhHieu: "Tresdin",
     chuaChac: true,
     skills: [
-      { phim: "Q", ten: "Overwhelming Odds", mota: "Đâm giáo từ dưới đất lên một khu vực, gây sát thương tăng theo số lượng kẻ địch và lính trong vùng, đồng thời tăng tốc chạy cho Legion Commander theo số mục tiêu trúng phải. Vừa dọn lính vừa đuổi giết." },
-      { phim: "W", ten: "Press the Attack", mota: "Ban cho bản thân hoặc đồng đội hiệu ứng gỡ bỏ khống chế và làm chậm, đồng thời tăng mạnh tốc độ đánh và hồi máu trong thời gian ngắn. Là chiêu vừa giải cứu vừa buff tấn công." },
-      { phim: "E", ten: "Moment of Courage", mota: "Nội tại: khi bị đánh, có cơ hội phản đòn ngay lập tức một cú đánh có hút máu. Càng ở giữa đám đông đánh nhau thì càng kích hoạt nhiều." },
-      { phim: "R", ten: "Duel", mota: "Ulti: ép một tướng địch tay đôi với mình, cả hai bị buộc phải đánh thường và không dùng được chiêu thức hay trang bị. Ai sống sót sẽ nhận thêm sát thương cơ bản vĩnh viễn — thắng càng nhiều càng mạnh." }
+      { phim: "Q", loai: "Chủ động", ten: "Overwhelming Odds", mota: "Đâm giáo từ dưới đất lên một khu vực, gây sát thương tăng theo số lượng kẻ địch và lính trong vùng, đồng thời tăng tốc chạy cho Legion Commander theo số mục tiêu trúng phải. Vừa dọn lính vừa đuổi giết." },
+      { phim: "W", loai: "Chủ động", ten: "Press the Attack", mota: "Ban cho bản thân hoặc đồng đội hiệu ứng gỡ bỏ khống chế và làm chậm, đồng thời tăng mạnh tốc độ đánh và hồi máu trong thời gian ngắn. Là chiêu vừa giải cứu vừa buff tấn công." },
+      { phim: "E", loai: "Bị động", ten: "Moment of Courage", mota: "Nội tại: khi bị đánh, có cơ hội phản đòn ngay lập tức một cú đánh có hút máu. Càng ở giữa đám đông đánh nhau thì càng kích hoạt nhiều." },
+      { phim: "R", loai: "Chủ động", ten: "Duel", mota: "Ulti: ép một tướng địch tay đôi với mình, cả hai bị buộc phải đánh thường và không dùng được chiêu thức hay trang bị. Ai sống sót sẽ nhận thêm sát thương cơ bản vĩnh viễn — thắng càng nhiều càng mạnh." }
     ],
     lenSkill: "Max Overwhelming Odds để farm và đuổi giết, một điểm Press the Attack sớm để tự cứu, Moment of Courage nâng dần, luôn lấy Duel khi đủ cấp.",
     doBuild: {
@@ -984,10 +984,10 @@ const HEROES_THEM = [
     icon: "⚡",
     danhHieu: "Tormented Soul",
     skills: [
-      { phim: "Q", ten: "Split Earth", mota: "Nứt đất tại một khu vực sau nhịp trễ ngắn, gây sát thương và làm choáng mọi kẻ địch đứng trong đó. Đây là khống chế duy nhất của Leshrac, cần dự đoán vị trí địch." },
-      { phim: "W", ten: "Diabolic Edict", mota: "Bao quanh mình bằng các quả cầu năng lượng liên tục nổ vào kẻ địch và công trình gần đó. Càng ít mục tiêu ở gần thì mỗi mục tiêu càng ăn nhiều phát nổ — cực mạnh khi phá trụ." },
-      { phim: "E", ten: "Lightning Storm", mota: "Gọi tia sét đánh vào một mục tiêu rồi nảy sang các kẻ địch gần đó, gây sát thương và làm chậm ngắn từng mục tiêu trúng phải. Rẻ và hồi nhanh, dùng để quấy rối liên tục." },
-      { phim: "R", ten: "Pulse Nova", mota: "Ulti: bật tắt, liên tục phát ra các đợt sóng năng lượng gây sát thương cho mọi kẻ địch quanh Leshrac, đổi lại tiêu hao mana đều đặn. Bật lên là cả đội địch đứng gần đều bị đốt máu." }
+      { phim: "Q", loai: "Chủ động", ten: "Split Earth", mota: "Nứt đất tại một khu vực sau nhịp trễ ngắn, gây sát thương và làm choáng mọi kẻ địch đứng trong đó. Đây là khống chế duy nhất của Leshrac, cần dự đoán vị trí địch." },
+      { phim: "W", loai: "Chủ động", ten: "Diabolic Edict", mota: "Bao quanh mình bằng các quả cầu năng lượng liên tục nổ vào kẻ địch và công trình gần đó. Càng ít mục tiêu ở gần thì mỗi mục tiêu càng ăn nhiều phát nổ — cực mạnh khi phá trụ." },
+      { phim: "E", loai: "Chủ động", ten: "Lightning Storm", mota: "Gọi tia sét đánh vào một mục tiêu rồi nảy sang các kẻ địch gần đó, gây sát thương và làm chậm ngắn từng mục tiêu trúng phải. Rẻ và hồi nhanh, dùng để quấy rối liên tục." },
+      { phim: "R", loai: "Chủ động", ten: "Pulse Nova", mota: "Ulti: bật tắt, liên tục phát ra các đợt sóng năng lượng gây sát thương cho mọi kẻ địch quanh Leshrac, đổi lại tiêu hao mana đều đặn. Bật lên là cả đội địch đứng gần đều bị đốt máu." }
     ],
     lenSkill: "Max Diabolic Edict để đẩy trụ và ép lane, một điểm Split Earth sớm để có khống chế, Lightning Storm nâng xen kẽ, luôn lấy Pulse Nova khi đủ cấp.",
     doBuild: {
@@ -1012,10 +1012,10 @@ const HEROES_THEM = [
     icon: "🧟",
     danhHieu: "Naix",
     skills: [
-      { phim: "Q", ten: "Rage", mota: "Miễn nhiễm phép thuật trong thời gian ngắn và tăng tốc chạy. Dùng để lao vào, thoát khống chế hoặc bọc qua chiêu cuối của địch." },
-      { phim: "W", ten: "Feast", mota: "Nội tại: mỗi đòn đánh gây thêm sát thương theo phần trăm máu tối đa của mục tiêu và hồi máu cho bản thân. Càng đánh trâu bò càng ăn mạnh." },
-      { phim: "E", ten: "Open Wounds", mota: "Xé rách mục tiêu, làm chậm cực nặng và cho phép đồng đội hút máu khi đánh vào nó. Là chiêu khóa chân chính để bắt lẻ." },
-      { phim: "R", ten: "Infest", mota: "Ulti: chui vào trong một creep hoặc lính (kể cả quái rừng), ẩn mình và hồi máu; khi nhảy ra sẽ gây sát thương cho địch xung quanh. Dùng để phục kích, di chuyển bí mật hoặc trốn thoát." }
+      { phim: "Q", loai: "Chủ động", ten: "Rage", mota: "Miễn nhiễm phép thuật trong thời gian ngắn và tăng tốc chạy. Dùng để lao vào, thoát khống chế hoặc bọc qua chiêu cuối của địch." },
+      { phim: "W", loai: "Bị động", ten: "Feast", mota: "Nội tại: mỗi đòn đánh gây thêm sát thương theo phần trăm máu tối đa của mục tiêu và hồi máu cho bản thân. Càng đánh trâu bò càng ăn mạnh." },
+      { phim: "E", loai: "Chủ động", ten: "Open Wounds", mota: "Xé rách mục tiêu, làm chậm cực nặng và cho phép đồng đội hút máu khi đánh vào nó. Là chiêu khóa chân chính để bắt lẻ." },
+      { phim: "R", loai: "Chủ động", ten: "Infest", mota: "Ulti: chui vào trong một creep hoặc lính (kể cả quái rừng), ẩn mình và hồi máu; khi nhảy ra sẽ gây sát thương cho địch xung quanh. Dùng để phục kích, di chuyển bí mật hoặc trốn thoát." }
     ],
     lenSkill: "Ưu tiên Feast để có sức đánh sớm, điểm vào Rage khi cần thoát khống chế, Open Wounds lấy vài điểm để gank, và luôn nâng Infest ở cấp 6-11-16.",
     doBuild: {
@@ -1040,10 +1040,10 @@ const HEROES_THEM = [
     icon: "🐻",
     danhHieu: "Sylla",
     skills: [
-      { phim: "Q", ten: "Summon Spirit Bear", mota: "Triệu hồi một con gấu chiến đấu riêng, có thể mang và dùng đồ riêng. Gấu chết sẽ hồi lại sau một khoảng thời gian." },
-      { phim: "W", ten: "Rabid", mota: "Tăng tốc đánh và tốc chạy cho cả Lone Druid lẫn Spirit Bear trong thời gian ngắn." },
-      { phim: "E", ten: "Synergy", mota: "Nội tại: tăng sức mạnh cho Spirit Bear và cường hóa các kỹ năng còn lại của Lone Druid." },
-      { phim: "R", ten: "True Form", mota: "Ulti: biến thành gấu, đổi sang đánh cận chiến, tăng mạnh máu và giáp nhưng chậm hơn. Ở dạng này có thêm chiêu phụ Battle Cry buff sát thương và giáp cho toàn đội." }
+      { phim: "Q", loai: "Chủ động", ten: "Summon Spirit Bear", mota: "Triệu hồi một con gấu chiến đấu riêng, có thể mang và dùng đồ riêng. Gấu chết sẽ hồi lại sau một khoảng thời gian." },
+      { phim: "W", loai: "Chủ động", ten: "Rabid", mota: "Tăng tốc đánh và tốc chạy cho cả Lone Druid lẫn Spirit Bear trong thời gian ngắn." },
+      { phim: "E", loai: "Bị động", ten: "Synergy", mota: "Nội tại: tăng sức mạnh cho Spirit Bear và cường hóa các kỹ năng còn lại của Lone Druid." },
+      { phim: "R", loai: "Chủ động", ten: "True Form", mota: "Ulti: biến thành gấu, đổi sang đánh cận chiến, tăng mạnh máu và giáp nhưng chậm hơn. Ở dạng này có thêm chiêu phụ Battle Cry buff sát thương và giáp cho toàn đội." }
     ],
     lenSkill: "Max Summon Spirit Bear trước để có sức đẩy trụ và farm, xen kẽ Synergy, lấy Rabid sau, nâng True Form khi đủ cấp.",
     doBuild: {
@@ -1068,10 +1068,10 @@ const HEROES_THEM = [
     icon: "🌙",
     danhHieu: "Moon Rider",
     skills: [
-      { phim: "Q", ten: "Lucent Beam", mota: "Chiếu một tia sáng vào mục tiêu, gây sát thương phép và làm choáng trong chớp mắt." },
-      { phim: "W", ten: "Moon Glaive", mota: "Nội tại: đòn đánh nảy sang các kẻ địch gần đó, sát thương giảm dần theo mỗi lần nảy. Giúp dọn lính và farm rất nhanh." },
-      { phim: "E", ten: "Lunar Blessing", mota: "Hào quang bị động tăng sát thương cho Luna và đồng minh xung quanh, đồng thời cải thiện tầm nhìn ban đêm." },
-      { phim: "R", ten: "Eclipse", mota: "Ulti: liên tục dội các tia Lucent Beam xuống kẻ địch ngẫu nhiên quanh Luna, gây sát thương phép rất lớn nếu chỉ có một mục tiêu." }
+      { phim: "Q", loai: "Chủ động", ten: "Lucent Beam", mota: "Chiếu một tia sáng vào mục tiêu, gây sát thương phép và làm choáng trong chớp mắt." },
+      { phim: "W", loai: "Bị động", ten: "Moon Glaive", mota: "Nội tại: đòn đánh nảy sang các kẻ địch gần đó, sát thương giảm dần theo mỗi lần nảy. Giúp dọn lính và farm rất nhanh." },
+      { phim: "E", loai: "Bị động", ten: "Lunar Blessing", mota: "Hào quang bị động tăng sát thương cho Luna và đồng minh xung quanh, đồng thời cải thiện tầm nhìn ban đêm." },
+      { phim: "R", loai: "Chủ động", ten: "Eclipse", mota: "Ulti: liên tục dội các tia Lucent Beam xuống kẻ địch ngẫu nhiên quanh Luna, gây sát thương phép rất lớn nếu chỉ có một mục tiêu." }
     ],
     lenSkill: "Max Lunar Blessing và Moon Glaive để farm cùng sức đánh, lấy vài điểm Lucent Beam để quấy rối lane, luôn nâng Eclipse khi có thể.",
     doBuild: {
@@ -1096,10 +1096,10 @@ const HEROES_THEM = [
     icon: "🐺",
     danhHieu: "Banehallow",
     skills: [
-      { phim: "Q", ten: "Summon Wolves", mota: "Triệu hồi hai con sói chiến đấu; ở cấp cao sói có thêm chí mạng và khả năng tàng hình." },
-      { phim: "W", ten: "Howl", mota: "Tiếng hú vang xa làm giảm sát thương của quân địch trong một khoảng thời gian ngắn." },
-      { phim: "E", ten: "Feral Impulse", mota: "Hào quang bị động tăng sát thương và hồi máu cho Lycan cùng các đơn vị đồng minh xung quanh, kể cả sói và lính." },
-      { phim: "R", ten: "Shapeshift", mota: "Ulti: biến thành sói, đạt tốc chạy tối đa và có tỉ lệ chí mạng cao, kèm tầm nhìn tốt hơn. Là chiêu vừa để lao vào vừa để chạy trốn." }
+      { phim: "Q", loai: "Chủ động", ten: "Summon Wolves", mota: "Triệu hồi hai con sói chiến đấu; ở cấp cao sói có thêm chí mạng và khả năng tàng hình." },
+      { phim: "W", loai: "Chủ động", ten: "Howl", mota: "Tiếng hú vang xa làm giảm sát thương của quân địch trong một khoảng thời gian ngắn." },
+      { phim: "E", loai: "Bị động", ten: "Feral Impulse", mota: "Hào quang bị động tăng sát thương và hồi máu cho Lycan cùng các đơn vị đồng minh xung quanh, kể cả sói và lính." },
+      { phim: "R", loai: "Chủ động", ten: "Shapeshift", mota: "Ulti: biến thành sói, đạt tốc chạy tối đa và có tỉ lệ chí mạng cao, kèm tầm nhìn tốt hơn. Là chiêu vừa để lao vào vừa để chạy trốn." }
     ],
     lenSkill: "Max Summon Wolves và Feral Impulse trước để farm rừng và đẩy trụ sớm, Howl lấy sau, nâng Shapeshift ngay khi đủ cấp.",
     doBuild: {
@@ -1125,10 +1125,10 @@ const HEROES_THEM = [
     danhHieu: "Magnataur",
     chuaChac: true,
     skills: [
-      { phim: "Q", ten: "Shockwave", mota: "Bắn một luồng sóng chấn theo đường thẳng, gây sát thương lên mọi kẻ địch trúng đường đi." },
-      { phim: "W", ten: "Empower", mota: "Buff lên bản thân hoặc một đồng minh, tăng sát thương và cho đòn đánh chém lan sang kẻ địch xung quanh." },
-      { phim: "E", ten: "Skewer", mota: "Lao thẳng về phía trước, xiên và kéo theo mọi kẻ địch trên đường đi rồi làm chậm chúng." },
-      { phim: "R", ten: "Reverse Polarity", mota: "Ulti: hút toàn bộ kẻ địch trong vùng lớn về trước mặt Magnus và làm choáng chúng trong nhiều giây — một trong những chiêu mở giao tranh mạnh nhất game." }
+      { phim: "Q", loai: "Chủ động", ten: "Shockwave", mota: "Bắn một luồng sóng chấn theo đường thẳng, gây sát thương lên mọi kẻ địch trúng đường đi." },
+      { phim: "W", loai: "Chủ động", ten: "Empower", mota: "Buff lên bản thân hoặc một đồng minh, tăng sát thương và cho đòn đánh chém lan sang kẻ địch xung quanh." },
+      { phim: "E", loai: "Chủ động", ten: "Skewer", mota: "Lao thẳng về phía trước, xiên và kéo theo mọi kẻ địch trên đường đi rồi làm chậm chúng." },
+      { phim: "R", loai: "Chủ động", ten: "Reverse Polarity", mota: "Ulti: hút toàn bộ kẻ địch trong vùng lớn về trước mặt Magnus và làm choáng chúng trong nhiều giây — một trong những chiêu mở giao tranh mạnh nhất game." }
     ],
     lenSkill: "Max Empower để hỗ trợ carry farm (hoặc max Shockwave nếu đi lane quấy rối), lấy một điểm Skewer, luôn nâng Reverse Polarity khi đủ cấp.",
     doBuild: {
@@ -1154,10 +1154,10 @@ const HEROES_THEM = [
     danhHieu: "Gorgon",
     chuaChac: true,
     skills: [
-      { phim: "Q", ten: "Split Shot", mota: "Bật/tắt: mỗi đòn đánh bắn thêm mũi tên sang các mục tiêu khác gần đó với sát thương giảm bớt. Farm và đẩy lính cực mạnh." },
-      { phim: "W", ten: "Mystic Snake", mota: "Thả một con rắn nảy qua lại giữa các kẻ địch, gây sát thương và hút mana, sát thương tăng dần theo mỗi lần nảy rồi trả mana về cho Medusa." },
-      { phim: "E", ten: "Mana Shield", mota: "Bật/tắt: một phần sát thương nhận vào được chuyển sang trừ mana thay vì máu, khiến Medusa cực kỳ khó chết khi đầy mana." },
-      { phim: "R", ten: "Stone Gaze", mota: "Ulti: kẻ địch nhìn về phía Medusa sẽ bị chậm rồi hóa đá, không thể hành động và nhận thêm sát thương vật lý." }
+      { phim: "Q", loai: "Chủ động", ten: "Split Shot", mota: "Bật/tắt: mỗi đòn đánh bắn thêm mũi tên sang các mục tiêu khác gần đó với sát thương giảm bớt. Farm và đẩy lính cực mạnh." },
+      { phim: "W", loai: "Chủ động", ten: "Mystic Snake", mota: "Thả một con rắn nảy qua lại giữa các kẻ địch, gây sát thương và hút mana, sát thương tăng dần theo mỗi lần nảy rồi trả mana về cho Medusa." },
+      { phim: "E", loai: "Chủ động", ten: "Mana Shield", mota: "Bật/tắt: một phần sát thương nhận vào được chuyển sang trừ mana thay vì máu, khiến Medusa cực kỳ khó chết khi đầy mana." },
+      { phim: "R", loai: "Chủ động", ten: "Stone Gaze", mota: "Ulti: kẻ địch nhìn về phía Medusa sẽ bị chậm rồi hóa đá, không thể hành động và nhận thêm sát thương vật lý." }
     ],
     lenSkill: "Max Mystic Snake để trụ lane và giữ mana, xen kẽ Mana Shield, lấy Split Shot khi bắt đầu farm mạnh, nâng ulti khi đủ cấp.",
     doBuild: {
@@ -1182,10 +1182,10 @@ const HEROES_THEM = [
     icon: "🏹",
     danhHieu: "Priestess of the Moon",
     skills: [
-      { phim: "Q", ten: "Starfall", mota: "Gọi mưa sao băng rơi xuống khu vực quanh Mirana, gây sát thương phép cho mọi kẻ địch; một mục tiêu ngẫu nhiên sẽ bị đánh trúng thêm lần nữa." },
-      { phim: "W", ten: "Elune's Arrow", mota: "Bắn một mũi tên bay rất xa theo đường thẳng; trúng mục tiêu đầu tiên thì gây sát thương và choáng, bay càng xa thì choáng càng lâu." },
-      { phim: "E", ten: "Leap", mota: "Nhảy vọt về phía trước, sau khi nhảy nhận buff tăng tốc đánh và tốc chạy cho bản thân cùng đồng minh xung quanh." },
-      { phim: "R", ten: "Moonlight Shadow", mota: "Ulti: khiến toàn bộ đồng minh trên bản đồ tàng hình và tăng tốc chạy; sau khi hết tàng hình do tấn công, hiệu ứng sẽ trở lại nếu thời gian chiêu còn." }
+      { phim: "Q", loai: "Chủ động", ten: "Starfall", mota: "Gọi mưa sao băng rơi xuống khu vực quanh Mirana, gây sát thương phép cho mọi kẻ địch; một mục tiêu ngẫu nhiên sẽ bị đánh trúng thêm lần nữa." },
+      { phim: "W", loai: "Chủ động", ten: "Elune's Arrow", mota: "Bắn một mũi tên bay rất xa theo đường thẳng; trúng mục tiêu đầu tiên thì gây sát thương và choáng, bay càng xa thì choáng càng lâu." },
+      { phim: "E", loai: "Chủ động", ten: "Leap", mota: "Nhảy vọt về phía trước, sau khi nhảy nhận buff tăng tốc đánh và tốc chạy cho bản thân cùng đồng minh xung quanh." },
+      { phim: "R", loai: "Chủ động", ten: "Moonlight Shadow", mota: "Ulti: khiến toàn bộ đồng minh trên bản đồ tàng hình và tăng tốc chạy; sau khi hết tàng hình do tấn công, hiệu ứng sẽ trở lại nếu thời gian chiêu còn." }
     ],
     lenSkill: "Lấy sớm Elune's Arrow và Leap để gank, max Starfall nếu muốn quấy rối lane hoặc max Arrow nếu muốn bắt lẻ, luôn nâng Moonlight Shadow.",
     doBuild: {
@@ -1210,10 +1210,10 @@ const HEROES_THEM = [
     icon: "💧",
     danhHieu: "Morph",
     skills: [
-      { phim: "Q", ten: "Waveform", mota: "Hóa thành sóng nước lao theo đường thẳng, gây sát thương cho kẻ địch trên đường và bất khả xâm phạm trong lúc lướt." },
-      { phim: "W", ten: "Adaptive Strike", mota: "Đòn đánh gây sát thương dựa theo chỉ số nhanh nhẹn, đồng thời đẩy lùi và choáng mục tiêu mạnh hơn khi Morphling có nhiều sức mạnh." },
-      { phim: "E", ten: "Morph", mota: "Chuyển đổi chỉ số giữa Sức mạnh và Nhanh nhẹn theo hai hướng: đổi sang Sức mạnh để trâu bò, đổi sang Nhanh nhẹn để đánh mạnh." },
-      { phim: "R", ten: "Replicate", mota: "Ulti: tạo một bản sao của một tướng bất kỳ (địch hoặc đồng minh). Với Aghanim's Scepter, Morphling có thể đổi chỗ với bản sao đó." }
+      { phim: "Q", loai: "Chủ động", ten: "Waveform", mota: "Hóa thành sóng nước lao theo đường thẳng, gây sát thương cho kẻ địch trên đường và bất khả xâm phạm trong lúc lướt." },
+      { phim: "W", loai: "Chủ động", ten: "Adaptive Strike", mota: "Đòn đánh gây sát thương dựa theo chỉ số nhanh nhẹn, đồng thời đẩy lùi và choáng mục tiêu mạnh hơn khi Morphling có nhiều sức mạnh." },
+      { phim: "E", loai: "Chủ động", ten: "Morph", mota: "Chuyển đổi chỉ số giữa Sức mạnh và Nhanh nhẹn theo hai hướng: đổi sang Sức mạnh để trâu bò, đổi sang Nhanh nhẹn để đánh mạnh." },
+      { phim: "R", loai: "Chủ động", ten: "Replicate", mota: "Ulti: tạo một bản sao của một tướng bất kỳ (địch hoặc đồng minh). Với Aghanim's Scepter, Morphling có thể đổi chỗ với bản sao đó." }
     ],
     lenSkill: "Lấy Morph sớm để linh hoạt chỉ số, max Waveform để farm và cơ động, điểm phụ vào Adaptive Strike, nâng Replicate khi đủ cấp.",
     doBuild: {
@@ -1239,10 +1239,10 @@ const HEROES_THEM = [
     danhHieu: "Slithice",
     chuaChac: true,
     skills: [
-      { phim: "Q", ten: "Mirror Image", mota: "Tạo ra nhiều ảnh phân thân và khiến Naga biến mất trong chốc lát khi phân tán, khiến địch khó nhắm đúng bản thể." },
-      { phim: "W", ten: "Ensnare", mota: "Ném lưới trói chặt một mục tiêu, khiến nó không thể di chuyển hay dịch chuyển trong vài giây (vẫn có thể đánh và dùng chiêu)." },
-      { phim: "E", ten: "Rip Tide", mota: "Gây sát thương diện rộng quanh Naga và giảm giáp kẻ địch trúng chiêu; các ảnh phân thân cũng kích hoạt hiệu ứng này." },
-      { phim: "R", ten: "Song of the Siren", mota: "Ulti: ru ngủ toàn bộ kẻ địch trong vùng rộng, chúng bất khả xâm phạm nhưng không thể hành động. Với Aghanim's Scepter có thêm chiêu phụ kết thúc bài hát sớm và hồi máu cho đồng đội." }
+      { phim: "Q", loai: "Chủ động", ten: "Mirror Image", mota: "Tạo ra nhiều ảnh phân thân và khiến Naga biến mất trong chốc lát khi phân tán, khiến địch khó nhắm đúng bản thể." },
+      { phim: "W", loai: "Chủ động", ten: "Ensnare", mota: "Ném lưới trói chặt một mục tiêu, khiến nó không thể di chuyển hay dịch chuyển trong vài giây (vẫn có thể đánh và dùng chiêu)." },
+      { phim: "E", loai: "Bị động", ten: "Rip Tide", mota: "Gây sát thương diện rộng quanh Naga và giảm giáp kẻ địch trúng chiêu; các ảnh phân thân cũng kích hoạt hiệu ứng này." },
+      { phim: "R", loai: "Chủ động", ten: "Song of the Siren", mota: "Ulti: ru ngủ toàn bộ kẻ địch trong vùng rộng, chúng bất khả xâm phạm nhưng không thể hành động. Với Aghanim's Scepter có thêm chiêu phụ kết thúc bài hát sớm và hồi máu cho đồng đội." }
     ],
     lenSkill: "Max Mirror Image để farm và đẩy lane, lấy một điểm Ensnare sớm để bắt lẻ, xen kẽ Rip Tide, luôn nâng Song of the Siren.",
     doBuild: {
@@ -1267,10 +1267,10 @@ const HEROES_THEM = [
     icon: "💀",
     danhHieu: "Rotund'jere",
     skills: [
-      { phim: "Q", ten: "Death Pulse", mota: "Phát ra một làn sóng tử khí gây sát thương phép cho kẻ địch xung quanh và đồng thời hồi máu cho đồng minh trong vùng." },
-      { phim: "W", ten: "Heartstopper Aura", mota: "Hào quang bị động khiến mọi kẻ địch ở gần liên tục mất máu theo phần trăm máu tối đa của chúng." },
-      { phim: "E", ten: "Sadist", mota: "Nội tại: mỗi lần hạ gục một đơn vị, Necrolyte nhận thêm khả năng hồi máu và mana trong một khoảng thời gian, cộng dồn nhiều lần." },
-      { phim: "R", ten: "Reaper's Scythe", mota: "Ulti: choáng mục tiêu rồi gây sát thương phép lớn dựa trên lượng máu đã mất của nó; mục tiêu chết vì chiêu này sẽ hồi sinh lâu hơn bình thường. Aghanim's Scepter tăng sức mạnh chiêu này rõ rệt." }
+      { phim: "Q", loai: "Chủ động", ten: "Death Pulse", mota: "Phát ra một làn sóng tử khí gây sát thương phép cho kẻ địch xung quanh và đồng thời hồi máu cho đồng minh trong vùng." },
+      { phim: "W", loai: "Bị động", ten: "Heartstopper Aura", mota: "Hào quang bị động khiến mọi kẻ địch ở gần liên tục mất máu theo phần trăm máu tối đa của chúng." },
+      { phim: "E", loai: "Bị động", ten: "Sadist", mota: "Nội tại: mỗi lần hạ gục một đơn vị, Necrolyte nhận thêm khả năng hồi máu và mana trong một khoảng thời gian, cộng dồn nhiều lần." },
+      { phim: "R", loai: "Chủ động", ten: "Reaper's Scythe", mota: "Ulti: choáng mục tiêu rồi gây sát thương phép lớn dựa trên lượng máu đã mất của nó; mục tiêu chết vì chiêu này sẽ hồi sinh lâu hơn bình thường. Aghanim's Scepter tăng sức mạnh chiêu này rõ rệt." }
     ],
     lenSkill: "Max Death Pulse để vừa quấy rối vừa hồi máu cho lane, xen kẽ Heartstopper Aura, lấy Sadist khi bắt đầu đi farm, luôn nâng Reaper's Scythe.",
     doBuild: {
@@ -1295,10 +1295,10 @@ const HEROES_THEM = [
     icon: "🕷️",
     danhHieu: "Anub'seran",
     skills: [
-      { phim: "Q", ten: "Impale", mota: "Gai đất trồi lên theo đường thẳng, hất tung và làm choáng mọi kẻ địch trúng chiêu kèm sát thương phép." },
-      { phim: "W", ten: "Mana Burn", mota: "Đốt một lượng mana của mục tiêu dựa theo chỉ số trí tuệ của nó và gây sát thương tương ứng lượng mana bị đốt." },
-      { phim: "E", ten: "Spiked Carapace", mota: "Dựng lớp giáp gai chặn đòn tấn công tiếp theo, phản lại sát thương và làm choáng kẻ đã tấn công." },
-      { phim: "R", ten: "Vendetta", mota: "Ulti: tàng hình kèm tăng tốc chạy; đòn đánh đầu tiên khi thoát tàng hình gây sát thương cực lớn." }
+      { phim: "Q", loai: "Chủ động", ten: "Impale", mota: "Gai đất trồi lên theo đường thẳng, hất tung và làm choáng mọi kẻ địch trúng chiêu kèm sát thương phép." },
+      { phim: "W", loai: "Chủ động", ten: "Mana Burn", mota: "Đốt một lượng mana của mục tiêu dựa theo chỉ số trí tuệ của nó và gây sát thương tương ứng lượng mana bị đốt." },
+      { phim: "E", loai: "Chủ động", ten: "Spiked Carapace", mota: "Dựng lớp giáp gai chặn đòn tấn công tiếp theo, phản lại sát thương và làm choáng kẻ đã tấn công." },
+      { phim: "R", loai: "Chủ động", ten: "Vendetta", mota: "Ulti: tàng hình kèm tăng tốc chạy; đòn đánh đầu tiên khi thoát tàng hình gây sát thương cực lớn." }
     ],
     lenSkill: "Max Impale để có khống chế và sát thương gank, lấy vài điểm Mana Burn để ép mana tướng phép, một điểm Spiked Carapace để phản đòn, luôn nâng Vendetta.",
     doBuild: {
@@ -1323,10 +1323,10 @@ const HEROES_THEM = [
     icon: "🦇",
     danhHieu: "Balanar",
     skills: [
-      { phim: "Q", ten: "Void", mota: "Gây sát thương phép cho một mục tiêu và làm chậm tốc chạy cùng tốc đánh của nó; hiệu quả mạnh hơn khi trời tối." },
-      { phim: "W", ten: "Crippling Fear", mota: "Gieo nỗi sợ khiến kẻ địch xung quanh bị câm lặng trong một khoảng thời gian; hiệu quả kéo dài hơn vào ban đêm." },
-      { phim: "E", ten: "Hunter in the Night", mota: "Nội tại: vào ban đêm, Night Stalker được tăng mạnh tốc đánh và tốc chạy, biến hắn thành kẻ đi săn đáng sợ." },
-      { phim: "R", ten: "Darkness", mota: "Ulti: biến ngày thành đêm trên toàn bản đồ trong một khoảng thời gian, đồng thời làm giảm tầm nhìn của kẻ địch." }
+      { phim: "Q", loai: "Chủ động", ten: "Void", mota: "Gây sát thương phép cho một mục tiêu và làm chậm tốc chạy cùng tốc đánh của nó; hiệu quả mạnh hơn khi trời tối." },
+      { phim: "W", loai: "Chủ động", ten: "Crippling Fear", mota: "Gieo nỗi sợ khiến kẻ địch xung quanh bị câm lặng trong một khoảng thời gian; hiệu quả kéo dài hơn vào ban đêm." },
+      { phim: "E", loai: "Bị động", ten: "Hunter in the Night", mota: "Nội tại: vào ban đêm, Night Stalker được tăng mạnh tốc đánh và tốc chạy, biến hắn thành kẻ đi săn đáng sợ." },
+      { phim: "R", loai: "Chủ động", ten: "Darkness", mota: "Ulti: biến ngày thành đêm trên toàn bản đồ trong một khoảng thời gian, đồng thời làm giảm tầm nhìn của kẻ địch." }
     ],
     lenSkill: "Max Hunter in the Night và Void để gank mạnh vào đêm đầu tiên, lấy Crippling Fear khi cần chống tướng phép, luôn nâng Darkness khi đủ cấp.",
     doBuild: {
@@ -1352,10 +1352,10 @@ const HEROES_THEM = [
     icon: "🔮",
     danhHieu: "Harbinger",
     skills: [
-      { phim: "Q", ten: "Arcane Orb", mota: "Orb effect: đòn đánh thường gây thêm sát thương phép dựa trên lượng mana hiện có, ăn mana để đánh mạnh. Sát thương này xuyên qua giáp vật lý." },
-      { phim: "W", ten: "Astral Imprisonment", mota: "Nhốt một đơn vị vào không gian khác trong vài giây, mục tiêu bất tử và không thể hành động. Dùng lên địch để vô hiệu hoá và hút mana, hoặc lên đồng đội để cứu mạng." },
-      { phim: "E", ten: "Essence Aura", mota: "Hào quang bị động tăng mana tối đa cho cả đội, và cho Harbinger cơ hội hồi lại một phần mana mỗi khi tung skill. Đây là nguồn mana giúp duy trì Arcane Orb liên tục." },
-      { phim: "R", ten: "Sanity's Eclipse", mota: "Ulti: gây sát thương phép diện rộng dựa trên chênh lệch chỉ số trí tuệ giữa Harbinger và mục tiêu. Đánh cực nặng vào các tướng sức mạnh và nhanh nhẹn có ít trí tuệ." }
+      { phim: "Q", loai: "Tự đánh", ten: "Arcane Orb", mota: "Orb effect: đòn đánh thường gây thêm sát thương phép dựa trên lượng mana hiện có, ăn mana để đánh mạnh. Sát thương này xuyên qua giáp vật lý." },
+      { phim: "W", loai: "Chủ động", ten: "Astral Imprisonment", mota: "Nhốt một đơn vị vào không gian khác trong vài giây, mục tiêu bất tử và không thể hành động. Dùng lên địch để vô hiệu hoá và hút mana, hoặc lên đồng đội để cứu mạng." },
+      { phim: "E", loai: "Bị động", ten: "Essence Aura", mota: "Hào quang bị động tăng mana tối đa cho cả đội, và cho Harbinger cơ hội hồi lại một phần mana mỗi khi tung skill. Đây là nguồn mana giúp duy trì Arcane Orb liên tục." },
+      { phim: "R", loai: "Chủ động", ten: "Sanity's Eclipse", mota: "Ulti: gây sát thương phép diện rộng dựa trên chênh lệch chỉ số trí tuệ giữa Harbinger và mục tiêu. Đánh cực nặng vào các tướng sức mạnh và nhanh nhẹn có ít trí tuệ." }
     ],
     lenSkill: "Ưu tiên tối đa Arcane Orb để farm và trade lane, điểm sớm vào Astral Imprisonment và Essence Aura, lấy ulti ngay khi mở.",
     doBuild: {
@@ -1379,10 +1379,10 @@ const HEROES_THEM = [
     icon: "👹",
     danhHieu: "Aggron Stonebreak",
     skills: [
-      { phim: "Q", ten: "Fireblast", mota: "Ném một quả cầu lửa gây sát thương phép và làm choáng mục tiêu trong thời gian ngắn. Là công cụ khống chế đơn mục tiêu chính từ đầu trận." },
-      { phim: "W", ten: "Ignite", mota: "Đốt cháy mục tiêu, gây sát thương theo thời gian và làm chậm mạnh tốc độ di chuyển. Rất tốt để chốt hạ hoặc giữ chân địch bỏ chạy." },
-      { phim: "E", ten: "Bloodlust", mota: "Buff lên đồng đội, tăng tốc độ đánh và tốc độ di chuyển. Dùng cho carry trước giao tranh hoặc khi đẩy trụ." },
-      { phim: "R", ten: "Multicast", mota: "Ulti: bị động cho các skill có cơ hội tự kích hoạt thêm nhiều lần vào các mục tiêu xung quanh. Càng lên cao, một nút Fireblast có thể hoá thành hàng loạt cú choáng." }
+      { phim: "Q", loai: "Chủ động", ten: "Fireblast", mota: "Ném một quả cầu lửa gây sát thương phép và làm choáng mục tiêu trong thời gian ngắn. Là công cụ khống chế đơn mục tiêu chính từ đầu trận." },
+      { phim: "W", loai: "Chủ động", ten: "Ignite", mota: "Đốt cháy mục tiêu, gây sát thương theo thời gian và làm chậm mạnh tốc độ di chuyển. Rất tốt để chốt hạ hoặc giữ chân địch bỏ chạy." },
+      { phim: "E", loai: "Chủ động", ten: "Bloodlust", mota: "Buff lên đồng đội, tăng tốc độ đánh và tốc độ di chuyển. Dùng cho carry trước giao tranh hoặc khi đẩy trụ." },
+      { phim: "R", loai: "Bị động", ten: "Multicast", mota: "Ulti: bị động cho các skill có cơ hội tự kích hoạt thêm nhiều lần vào các mục tiêu xung quanh. Càng lên cao, một nút Fireblast có thể hoá thành hàng loạt cú choáng." }
     ],
     lenSkill: "Lên Fireblast và Ignite xen kẽ để có khống chế và sát thương sớm, điểm vào Bloodlust khi cần hỗ trợ carry, lấy Multicast ngay khi có thể.",
     doBuild: {
@@ -1406,10 +1406,10 @@ const HEROES_THEM = [
     icon: "✨",
     danhHieu: "Purist Thunderwrath",
     skills: [
-      { phim: "Q", ten: "Purification", mota: "Hồi máu tức thì cho một đồng đội, đồng thời gây sát thương phép cho mọi kẻ địch quanh mục tiêu. Vừa cứu người vừa dọn creep hoặc trade lane." },
-      { phim: "W", ten: "Repel", mota: "Cho một đơn vị miễn nhiễm phép thuật trong thời gian ngắn, chặn hầu hết skill khống chế và sát thương phép. Có thể dùng để giải cứu đồng đội đang bị nhắm." },
-      { phim: "E", ten: "Degen Aura", mota: "Hào quang bị động làm chậm nặng tốc độ di chuyển của kẻ địch đứng gần. Giúp Omni và đồng đội bám đuổi hoặc rút lui an toàn." },
-      { phim: "R", ten: "Guardian Angel", mota: "Ulti: cho toàn bộ đồng minh trong vùng miễn nhiễm sát thương vật lý trong vài giây. Lật kèo giao tranh trước các đội thiên về sát thương đánh thường." }
+      { phim: "Q", loai: "Chủ động", ten: "Purification", mota: "Hồi máu tức thì cho một đồng đội, đồng thời gây sát thương phép cho mọi kẻ địch quanh mục tiêu. Vừa cứu người vừa dọn creep hoặc trade lane." },
+      { phim: "W", loai: "Chủ động", ten: "Repel", mota: "Cho một đơn vị miễn nhiễm phép thuật trong thời gian ngắn, chặn hầu hết skill khống chế và sát thương phép. Có thể dùng để giải cứu đồng đội đang bị nhắm." },
+      { phim: "E", loai: "Bị động", ten: "Degen Aura", mota: "Hào quang bị động làm chậm nặng tốc độ di chuyển của kẻ địch đứng gần. Giúp Omni và đồng đội bám đuổi hoặc rút lui an toàn." },
+      { phim: "R", loai: "Chủ động", ten: "Guardian Angel", mota: "Ulti: cho toàn bộ đồng minh trong vùng miễn nhiễm sát thương vật lý trong vài giây. Lật kèo giao tranh trước các đội thiên về sát thương đánh thường." }
     ],
     lenSkill: "Lên Purification sớm để trade lane và giữ máu cho carry, thêm điểm Repel, chỉ điểm Degen Aura khi thừa, ulti lấy ngay khi mở.",
     doBuild: {
@@ -1433,10 +1433,10 @@ const HEROES_THEM = [
     icon: "🐼",
     danhHieu: "Mangix",
     skills: [
-      { phim: "Q", ten: "Thunder Clap", mota: "Đập đất gây sát thương phép diện rộng quanh bản thân, đồng thời làm chậm tốc độ di chuyển và tốc độ đánh của kẻ địch trúng phải." },
-      { phim: "W", ten: "Drunken Haze", mota: "Ném rượu vào mục tiêu khiến nó bị say, làm chậm và có tỉ lệ cao đánh trượt đòn đánh thường. Vô hiệu hoá tạm thời một carry vật lý." },
-      { phim: "E", ten: "Drunken Brawler", mota: "Bị động cho cơ hội né đòn và cơ hội chí mạng khi đánh thường, giúp Brewmaster vừa trâu vừa có sát thương ở giai đoạn đầu." },
-      { phim: "R", ten: "Primal Split", mota: "Ulti: tách thành ba linh thú đất, lửa và gió, mỗi con có bộ skill riêng. Bản thân Brewmaster bất khả xâm phạm trong lúc tách; nếu các linh thú sống sót hết thời gian thì hồi sinh nguyên vẹn." }
+      { phim: "Q", loai: "Chủ động", ten: "Thunder Clap", mota: "Đập đất gây sát thương phép diện rộng quanh bản thân, đồng thời làm chậm tốc độ di chuyển và tốc độ đánh của kẻ địch trúng phải." },
+      { phim: "W", loai: "Chủ động", ten: "Drunken Haze", mota: "Ném rượu vào mục tiêu khiến nó bị say, làm chậm và có tỉ lệ cao đánh trượt đòn đánh thường. Vô hiệu hoá tạm thời một carry vật lý." },
+      { phim: "E", loai: "Bị động", ten: "Drunken Brawler", mota: "Bị động cho cơ hội né đòn và cơ hội chí mạng khi đánh thường, giúp Brewmaster vừa trâu vừa có sát thương ở giai đoạn đầu." },
+      { phim: "R", loai: "Chủ động", ten: "Primal Split", mota: "Ulti: tách thành ba linh thú đất, lửa và gió, mỗi con có bộ skill riêng. Bản thân Brewmaster bất khả xâm phạm trong lúc tách; nếu các linh thú sống sót hết thời gian thì hồi sinh nguyên vẹn." }
     ],
     lenSkill: "Lên Thunder Clap và Drunken Haze xen kẽ để khống chế lane, điểm Drunken Brawler khi cần trụ, lấy Primal Split ngay khi mở.",
     doBuild: {
@@ -1461,10 +1461,10 @@ const HEROES_THEM = [
     danhHieu: "Azwraith",
     chuaChac: true,
     skills: [
-      { phim: "Q", ten: "Spirit Lance", mota: "Phóng một ngọn giáo linh hồn gây sát thương và làm chậm mục tiêu, đồng thời tạo ra một ảnh ảo đánh vào mục tiêu đó. Dùng để quấy rối lane và bám đuổi." },
-      { phim: "W", ten: "Doppelwalk", mota: "Tàng hình trong thời gian ngắn và để lại ảnh ảo tại chỗ, ảnh ảo này làm chậm kẻ địch đánh trúng nó. Vừa là chiêu thoát vừa là chiêu đánh lừa." },
-      { phim: "E", ten: "Phantom Edge", mota: "Bị động tăng khả năng sống sót và tạo thêm ảnh ảo khi bị tấn công, giúp Azwraith khó bị chọn mục tiêu trong hỗn chiến." },
-      { phim: "R", ten: "Juxtapose", mota: "Ulti: bị động cho Azwraith và các ảnh ảo cơ hội tự nhân bản thêm khi đánh thường, tạo ra biển ảnh ảo tràn ngập màn hình." }
+      { phim: "Q", loai: "Chủ động", ten: "Spirit Lance", mota: "Phóng một ngọn giáo linh hồn gây sát thương và làm chậm mục tiêu, đồng thời tạo ra một ảnh ảo đánh vào mục tiêu đó. Dùng để quấy rối lane và bám đuổi." },
+      { phim: "W", loai: "Chủ động", ten: "Doppelwalk", mota: "Tàng hình trong thời gian ngắn và để lại ảnh ảo tại chỗ, ảnh ảo này làm chậm kẻ địch đánh trúng nó. Vừa là chiêu thoát vừa là chiêu đánh lừa." },
+      { phim: "E", loai: "Bị động", ten: "Phantom Edge", mota: "Bị động tăng khả năng sống sót và tạo thêm ảnh ảo khi bị tấn công, giúp Azwraith khó bị chọn mục tiêu trong hỗn chiến." },
+      { phim: "R", loai: "Bị động", ten: "Juxtapose", mota: "Ulti: bị động cho Azwraith và các ảnh ảo cơ hội tự nhân bản thêm khi đánh thường, tạo ra biển ảnh ảo tràn ngập màn hình." }
     ],
     lenSkill: "Tối đa Spirit Lance trước để trade và bám đuổi, điểm vào Doppelwalk để an toàn, lấy Juxtapose mỗi khi mở khoá.",
     doBuild: {
@@ -1489,10 +1489,10 @@ const HEROES_THEM = [
     danhHieu: "Icarus",
     chuaChac: true,
     skills: [
-      { phim: "Q", ten: "Icarus Dive", mota: "Lao vọt theo một đường vòng cung, gây sát thương và làm chậm kẻ địch trên đường bay. Đổi lại một phần máu hiện tại của bản thân." },
-      { phim: "W", ten: "Fire Spirits", mota: "Triệu hồi các linh hồn lửa có thể phóng vào kẻ địch, gây sát thương theo thời gian và giảm mạnh tốc độ đánh của mục tiêu." },
-      { phim: "E", ten: "Sun Ray", mota: "Bắn một luồng nắng có thể xoay hướng, gây sát thương theo phần trăm máu lên kẻ địch và hồi máu cho đồng minh trên đường tia. Phoenix bị bất động trong lúc dùng." },
-      { phim: "R", ten: "Supernova", mota: "Ulti: Phoenix hoá thành một mặt trời, làm choáng và đốt kẻ địch xung quanh. Kẻ địch phải đánh đủ số đòn để phá vỡ, nếu không Phoenix hồi sinh với máu đầy." }
+      { phim: "Q", loai: "Chủ động", ten: "Icarus Dive", mota: "Lao vọt theo một đường vòng cung, gây sát thương và làm chậm kẻ địch trên đường bay. Đổi lại một phần máu hiện tại của bản thân." },
+      { phim: "W", loai: "Chủ động", ten: "Fire Spirits", mota: "Triệu hồi các linh hồn lửa có thể phóng vào kẻ địch, gây sát thương theo thời gian và giảm mạnh tốc độ đánh của mục tiêu." },
+      { phim: "E", loai: "Chủ động", ten: "Sun Ray", mota: "Bắn một luồng nắng có thể xoay hướng, gây sát thương theo phần trăm máu lên kẻ địch và hồi máu cho đồng minh trên đường tia. Phoenix bị bất động trong lúc dùng." },
+      { phim: "R", loai: "Chủ động", ten: "Supernova", mota: "Ulti: Phoenix hoá thành một mặt trời, làm choáng và đốt kẻ địch xung quanh. Kẻ địch phải đánh đủ số đòn để phá vỡ, nếu không Phoenix hồi sinh với máu đầy." }
     ],
     lenSkill: "Lên Fire Spirits sớm để quấy rối lane, thêm điểm Icarus Dive để cơ động, Sun Ray khi cần hồi máu đội, ulti lấy ngay khi mở.",
     doBuild: {
@@ -1517,10 +1517,10 @@ const HEROES_THEM = [
     danhHieu: "Azgalor",
     chuaChac: true,
     skills: [
-      { phim: "Q", ten: "Firestorm", mota: "Gọi mưa lửa xuống một khu vực, gây sát thương phép nhiều đợt và bỏng theo thời gian. Là công cụ dọn lính và đẩy lane rất mạnh." },
-      { phim: "W", ten: "Pit of Malice", mota: "Tạo một vùng nguyền rủa; kẻ địch bước vào bị trói chân không thể di chuyển trong vài giây. Hố tồn tại một lúc nên có thể trói nhiều lần." },
-      { phim: "E", ten: "Atrophy Aura", mota: "Hào quang bị động làm giảm sát thương đánh thường của kẻ địch xung quanh; mỗi đơn vị chết gần đó lại cộng thêm sát thương tạm thời cho Pit Lord." },
-      { phim: "R", ten: "Dark Rift", mota: "Ulti: mở cổng dịch chuyển đưa Pit Lord cùng toàn bộ đồng đội gần đó tới một đơn vị đồng minh ở bất cứ đâu trên bản đồ. Dùng để đánh úp hoặc rút chạy cả đội." }
+      { phim: "Q", loai: "Chủ động", ten: "Firestorm", mota: "Gọi mưa lửa xuống một khu vực, gây sát thương phép nhiều đợt và bỏng theo thời gian. Là công cụ dọn lính và đẩy lane rất mạnh." },
+      { phim: "W", loai: "Chủ động", ten: "Pit of Malice", mota: "Tạo một vùng nguyền rủa; kẻ địch bước vào bị trói chân không thể di chuyển trong vài giây. Hố tồn tại một lúc nên có thể trói nhiều lần." },
+      { phim: "E", loai: "Bị động", ten: "Atrophy Aura", mota: "Hào quang bị động làm giảm sát thương đánh thường của kẻ địch xung quanh; mỗi đơn vị chết gần đó lại cộng thêm sát thương tạm thời cho Pit Lord." },
+      { phim: "R", loai: "Chủ động", ten: "Dark Rift", mota: "Ulti: mở cổng dịch chuyển đưa Pit Lord cùng toàn bộ đồng đội gần đó tới một đơn vị đồng minh ở bất cứ đâu trên bản đồ. Dùng để đánh úp hoặc rút chạy cả đội." }
     ],
     lenSkill: "Tối đa Firestorm để kiểm soát lane và đẩy trụ, điểm sớm vào Pit of Malice để có khống chế, Atrophy Aura rải đều, ulti lấy khi mở.",
     doBuild: {
@@ -1544,10 +1544,10 @@ const HEROES_THEM = [
     icon: "🧚",
     danhHieu: "Faerie Dragon",
     skills: [
-      { phim: "Q", ten: "Illusory Orb", mota: "Phóng một quả cầu bay thẳng gây sát thương lên kẻ địch trên đường đi. Puck có thể bấm lại để dịch chuyển tới vị trí quả cầu." },
-      { phim: "W", ten: "Waning Rift", mota: "Nổ tung một vùng quanh bản thân, gây sát thương phép và làm câm lặng kẻ địch trúng phải trong vài giây." },
-      { phim: "E", ten: "Phase Shift", mota: "Tạm thời rời khỏi mặt phẳng hiện tại, hoàn toàn miễn nhiễm sát thương nhưng không thể hành động. Dùng để né combo và câu giờ hồi chiêu." },
-      { phim: "R", ten: "Dream Coil", mota: "Ulti: trói toàn bộ kẻ địch trong vùng bằng các sợi dây; nếu ai đi quá xa, dây đứt gây sát thương và làm choáng người đó." }
+      { phim: "Q", loai: "Chủ động", ten: "Illusory Orb", mota: "Phóng một quả cầu bay thẳng gây sát thương lên kẻ địch trên đường đi. Puck có thể bấm lại để dịch chuyển tới vị trí quả cầu." },
+      { phim: "W", loai: "Chủ động", ten: "Waning Rift", mota: "Nổ tung một vùng quanh bản thân, gây sát thương phép và làm câm lặng kẻ địch trúng phải trong vài giây." },
+      { phim: "E", loai: "Chủ động", ten: "Phase Shift", mota: "Tạm thời rời khỏi mặt phẳng hiện tại, hoàn toàn miễn nhiễm sát thương nhưng không thể hành động. Dùng để né combo và câu giờ hồi chiêu." },
+      { phim: "R", loai: "Chủ động", ten: "Dream Coil", mota: "Ulti: trói toàn bộ kẻ địch trong vùng bằng các sợi dây; nếu ai đi quá xa, dây đứt gây sát thương và làm choáng người đó." }
     ],
     lenSkill: "Lên Illusory Orb sớm để trade và cơ động, thêm điểm Waning Rift, giữ một điểm Phase Shift từ sớm, lấy Dream Coil ngay khi mở.",
     doBuild: {
@@ -1571,10 +1571,10 @@ const HEROES_THEM = [
     icon: "💀",
     danhHieu: "Oblivion",
     skills: [
-      { phim: "Q", ten: "Nether Blast", mota: "Gây sát thương phép diện rộng sau một khoảng trễ ngắn, đồng thời gây sát thương mạnh lên công trình. Là chiêu đẩy trụ chủ lực." },
-      { phim: "W", ten: "Decrepify", mota: "Biến mục tiêu thành dạng hồn ma: miễn nhiễm sát thương vật lý, di chuyển chậm và nhận thêm sát thương phép. Dùng lên địch để khoá, hoặc lên đồng đội để cứu." },
-      { phim: "E", ten: "Nether Ward", mota: "Đặt một trụ ma thuật, hút mana và gây sát thương lên kẻ địch mỗi khi chúng tung skill trong tầm. Trừng phạt nặng các tướng phép thuật." },
-      { phim: "R", ten: "Life Drain", mota: "Ulti: kênh một luồng sát thương liên tục hút máu mục tiêu và chuyển thành máu cho Pugna. Cũng có thể dùng ngược để truyền máu cho đồng đội." }
+      { phim: "Q", loai: "Chủ động", ten: "Nether Blast", mota: "Gây sát thương phép diện rộng sau một khoảng trễ ngắn, đồng thời gây sát thương mạnh lên công trình. Là chiêu đẩy trụ chủ lực." },
+      { phim: "W", loai: "Chủ động", ten: "Decrepify", mota: "Biến mục tiêu thành dạng hồn ma: miễn nhiễm sát thương vật lý, di chuyển chậm và nhận thêm sát thương phép. Dùng lên địch để khoá, hoặc lên đồng đội để cứu." },
+      { phim: "E", loai: "Chủ động", ten: "Nether Ward", mota: "Đặt một trụ ma thuật, hút mana và gây sát thương lên kẻ địch mỗi khi chúng tung skill trong tầm. Trừng phạt nặng các tướng phép thuật." },
+      { phim: "R", loai: "Chủ động", ten: "Life Drain", mota: "Ulti: kênh một luồng sát thương liên tục hút máu mục tiêu và chuyển thành máu cho Pugna. Cũng có thể dùng ngược để truyền máu cho đồng đội." }
     ],
     lenSkill: "Tối đa Nether Blast để đẩy lane và đẩy trụ, điểm sớm vào Decrepify, đặt một điểm Nether Ward khi gặp đội nhiều phép, lấy Life Drain ngay khi mở.",
     doBuild: {
@@ -1598,10 +1598,10 @@ const HEROES_THEM = [
     icon: "😈",
     danhHieu: "Akasha",
     skills: [
-      { phim: "Q", ten: "Shadow Strike", mota: "Phóng phi tiêu độc gây sát thương tức thì rồi tiếp tục gây sát thương theo thời gian, kèm làm chậm nặng lúc đầu. Chiêu quấy rối lane rất khó chịu." },
-      { phim: "W", ten: "Blink", mota: "Dịch chuyển tức thời một quãng ngắn, hồi chiêu rất nhanh. Vừa để lao vào giết mục tiêu vừa để thoát thân qua địa hình." },
-      { phim: "E", ten: "Scream of Pain", mota: "Hét vang gây sát thương phép lên mọi kẻ địch xung quanh. Chiêu dọn lính và gây sát thương chính trong combo." },
-      { phim: "R", ten: "Sonic Wave", mota: "Ulti: bắn một sóng âm hình nón gây sát thương phép rất lớn lên mọi kẻ địch trong đường sóng. Vũ khí kết liễu sau khi đã ép máu bằng combo." }
+      { phim: "Q", loai: "Chủ động", ten: "Shadow Strike", mota: "Phóng phi tiêu độc gây sát thương tức thì rồi tiếp tục gây sát thương theo thời gian, kèm làm chậm nặng lúc đầu. Chiêu quấy rối lane rất khó chịu." },
+      { phim: "W", loai: "Chủ động", ten: "Blink", mota: "Dịch chuyển tức thời một quãng ngắn, hồi chiêu rất nhanh. Vừa để lao vào giết mục tiêu vừa để thoát thân qua địa hình." },
+      { phim: "E", loai: "Chủ động", ten: "Scream of Pain", mota: "Hét vang gây sát thương phép lên mọi kẻ địch xung quanh. Chiêu dọn lính và gây sát thương chính trong combo." },
+      { phim: "R", loai: "Chủ động", ten: "Sonic Wave", mota: "Ulti: bắn một sóng âm hình nón gây sát thương phép rất lớn lên mọi kẻ địch trong đường sóng. Vũ khí kết liễu sau khi đã ép máu bằng combo." }
     ],
     lenSkill: "Ưu tiên Scream of Pain để dọn lính và gây sát thương, dùng Shadow Strike quấy rối, lấy một điểm Blink sớm, ulti mở khi có thể.",
     doBuild: {
@@ -1625,10 +1625,10 @@ const HEROES_THEM = [
     icon: "⚡",
     danhHieu: "Lightning Revenant",
     skills: [
-      { phim: "Q", ten: "Plasma Field", mota: "Phóng một vòng plasma lan rộng rồi thu lại, gây sát thương tăng dần theo khoảng cách. Đánh trúng lúc vòng đang thu về sẽ đau nhất." },
-      { phim: "W", ten: "Static Link", mota: "Nối một sợi dây điện với mục tiêu, liên tục hút sát thương đánh thường của nó sang cho Razor trong một khoảng thời gian. Dây đứt nếu mục tiêu chạy quá xa." },
-      { phim: "E", ten: "Unstable Current", mota: "Bị động tăng tốc độ di chuyển và gây sát thương kèm làm chậm lên kẻ địch tung skill gần Razor. Giúp Razor bám dính mục tiêu." },
-      { phim: "R", ten: "Eye of the Storm", mota: "Ulti: gọi một đám mây bão liên tục đánh xuống kẻ địch có máu thấp nhất xung quanh, gây sát thương và giảm giáp mục tiêu." }
+      { phim: "Q", loai: "Chủ động", ten: "Plasma Field", mota: "Phóng một vòng plasma lan rộng rồi thu lại, gây sát thương tăng dần theo khoảng cách. Đánh trúng lúc vòng đang thu về sẽ đau nhất." },
+      { phim: "W", loai: "Chủ động", ten: "Static Link", mota: "Nối một sợi dây điện với mục tiêu, liên tục hút sát thương đánh thường của nó sang cho Razor trong một khoảng thời gian. Dây đứt nếu mục tiêu chạy quá xa." },
+      { phim: "E", loai: "Bị động", ten: "Unstable Current", mota: "Bị động tăng tốc độ di chuyển và gây sát thương kèm làm chậm lên kẻ địch tung skill gần Razor. Giúp Razor bám dính mục tiêu." },
+      { phim: "R", loai: "Chủ động", ten: "Eye of the Storm", mota: "Ulti: gọi một đám mây bão liên tục đánh xuống kẻ địch có máu thấp nhất xung quanh, gây sát thương và giảm giáp mục tiêu." }
     ],
     lenSkill: "Lên Static Link sớm để trade lane và ăn sát thương của đối thủ, tối đa Plasma Field để dọn lính, Unstable Current rải đều, ulti lấy ngay khi mở.",
     doBuild: {
@@ -1652,10 +1652,10 @@ const HEROES_THEM = [
     icon: "🐍",
     danhHieu: "Rhasta",
     skills: [
-      { phim: "Q", ten: "Forked Lightning", mota: "Bắn tia sét hình nón gây sát thương phép lên nhiều kẻ địch cùng lúc. Chiêu dọn lính và quấy rối lane chủ lực từ đầu trận." },
-      { phim: "W", ten: "Voodoo", mota: "Biến mục tiêu thành con vật vô hại trong vài giây, mất hết skill và tốc độ. Là chiêu khống chế đơn mục tiêu mạnh bậc nhất giai đoạn đầu." },
-      { phim: "E", ten: "Shackles", mota: "Trói cứng mục tiêu tại chỗ và gây sát thương liên tục trong lúc kênh. Nối tiếp ngay sau Voodoo sẽ khoá địch cực lâu." },
-      { phim: "R", ten: "Mass Serpent Ward", mota: "Ulti: triệu hồi một dàn trụ rắn gây sát thương vật lý rất mạnh trong khu vực. Dùng để hạ trụ chớp nhoáng hoặc thiêu rụi địch trong giao tranh." }
+      { phim: "Q", loai: "Chủ động", ten: "Forked Lightning", mota: "Bắn tia sét hình nón gây sát thương phép lên nhiều kẻ địch cùng lúc. Chiêu dọn lính và quấy rối lane chủ lực từ đầu trận." },
+      { phim: "W", loai: "Chủ động", ten: "Voodoo", mota: "Biến mục tiêu thành con vật vô hại trong vài giây, mất hết skill và tốc độ. Là chiêu khống chế đơn mục tiêu mạnh bậc nhất giai đoạn đầu." },
+      { phim: "E", loai: "Chủ động", ten: "Shackles", mota: "Trói cứng mục tiêu tại chỗ và gây sát thương liên tục trong lúc kênh. Nối tiếp ngay sau Voodoo sẽ khoá địch cực lâu." },
+      { phim: "R", loai: "Chủ động", ten: "Mass Serpent Ward", mota: "Ulti: triệu hồi một dàn trụ rắn gây sát thương vật lý rất mạnh trong khu vực. Dùng để hạ trụ chớp nhoáng hoặc thiêu rụi địch trong giao tranh." }
     ],
     lenSkill: "Lên Forked Lightning và Voodoo xen kẽ ở lane, thêm điểm Shackles khi đi gank cùng đồng đội, lấy Mass Serpent Ward ngay khi mở.",
     doBuild: {
@@ -1680,10 +1680,10 @@ const HEROES_THEM = [
     icon: "🎩",
     danhHieu: "Grand Magus",
     skills: [
-      { phim: "Q", ten: "Telekinesis", mota: "Nhấc bổng mục tiêu lên không trung khiến nó bất động, sau đó ném xuống một điểm gần đó, gây choáng thêm cho các kẻ địch quanh chỗ rơi." },
-      { phim: "W", ten: "Fade Bolt", mota: "Phóng một tia phép nảy lần lượt qua nhiều kẻ địch, gây sát thương phép và giảm sát thương đánh thường của những mục tiêu trúng chiêu." },
-      { phim: "E", ten: "Null Field", mota: "Hào quang bị động tăng kháng phép cho bản thân và đồng đội xung quanh." },
-      { phim: "R", ten: "Spell Steal", mota: "Ulti: Cướp lấy chiêu thức cuối cùng mà một tướng địch vừa sử dụng và dùng lại nó với cấp độ của chính Rubick." }
+      { phim: "Q", loai: "Chủ động", ten: "Telekinesis", mota: "Nhấc bổng mục tiêu lên không trung khiến nó bất động, sau đó ném xuống một điểm gần đó, gây choáng thêm cho các kẻ địch quanh chỗ rơi." },
+      { phim: "W", loai: "Chủ động", ten: "Fade Bolt", mota: "Phóng một tia phép nảy lần lượt qua nhiều kẻ địch, gây sát thương phép và giảm sát thương đánh thường của những mục tiêu trúng chiêu." },
+      { phim: "E", loai: "Bị động", ten: "Null Field", mota: "Hào quang bị động tăng kháng phép cho bản thân và đồng đội xung quanh." },
+      { phim: "R", loai: "Chủ động", ten: "Spell Steal", mota: "Ulti: Cướp lấy chiêu thức cuối cùng mà một tướng địch vừa sử dụng và dùng lại nó với cấp độ của chính Rubick." }
     ],
     lenSkill: "Ưu tiên Telekinesis để khống chế, xen kẽ Fade Bolt để đẩy lính và quấy rối, lấy Spell Steal ngay khi đủ cấp, Null Field lên cuối.",
     doBuild: {
@@ -1707,10 +1707,10 @@ const HEROES_THEM = [
     icon: "🦂",
     danhHieu: "Crixalis",
     skills: [
-      { phim: "Q", ten: "Burrowstrike", mota: "Chui xuống đất lao thẳng về phía trước, hất tung và làm choáng mọi kẻ địch trên đường đi." },
-      { phim: "W", ten: "Sand Storm", mota: "Tạo cơn bão cát quanh mình, gây sát thương theo thời gian cho kẻ địch đứng trong vùng và giúp Sand King tàng hình khi đứng yên trong bão." },
-      { phim: "E", ten: "Caustic Finale", mota: "Bị động: đòn đánh tẩm độc khiến mục tiêu phát nổ khi chết, gây sát thương diện rộng cho các đơn vị xung quanh." },
-      { phim: "R", ten: "Epicenter", mota: "Ulti: Sau thời gian niệm chú, tạo ra nhiều đợt chấn động lan rộng dần, gây sát thương lớn và làm chậm toàn bộ kẻ địch trong vùng." }
+      { phim: "Q", loai: "Chủ động", ten: "Burrowstrike", mota: "Chui xuống đất lao thẳng về phía trước, hất tung và làm choáng mọi kẻ địch trên đường đi." },
+      { phim: "W", loai: "Chủ động", ten: "Sand Storm", mota: "Tạo cơn bão cát quanh mình, gây sát thương theo thời gian cho kẻ địch đứng trong vùng và giúp Sand King tàng hình khi đứng yên trong bão." },
+      { phim: "E", loai: "Bị động", ten: "Caustic Finale", mota: "Bị động: đòn đánh tẩm độc khiến mục tiêu phát nổ khi chết, gây sát thương diện rộng cho các đơn vị xung quanh." },
+      { phim: "R", loai: "Chủ động", ten: "Epicenter", mota: "Ulti: Sau thời gian niệm chú, tạo ra nhiều đợt chấn động lan rộng dần, gây sát thương lớn và làm chậm toàn bộ kẻ địch trong vùng." }
     ],
     lenSkill: "Max Burrowstrike để gank sớm, kết hợp Sand Storm giữ mana và cắm trại, lấy Epicenter ngay khi đủ cấp, Caustic Finale để dành đẩy lính về sau.",
     doBuild: {
@@ -1734,10 +1734,10 @@ const HEROES_THEM = [
     icon: "👿",
     danhHieu: "Eredar",
     skills: [
-      { phim: "Q", ten: "Disruption", mota: "Đẩy mục tiêu vào một chiều không gian khác trong vài giây, khiến nó biến mất hoàn toàn; khi trở lại sẽ sinh ra hai bản sao ảo tấn công theo Shadow Demon." },
-      { phim: "W", ten: "Soul Catcher", mota: "Đánh dấu một kẻ địch, khiến nó phải nhận thêm sát thương từ mọi nguồn trong thời gian ngắn." },
-      { phim: "E", ten: "Shadow Poison", mota: "Bắn luồng độc theo đường thẳng, cộng dồn nhiều lớp lên mục tiêu; có thể kích nổ để gây sát thương tăng vọt theo số lớp đã tích." },
-      { phim: "R", ten: "Demonic Purge", mota: "Ulti: Thanh tẩy mục tiêu, gỡ bỏ hiệu ứng tăng cường và làm chậm cực mạnh trong thời gian dài kèm sát thương theo thời gian." }
+      { phim: "Q", loai: "Chủ động", ten: "Disruption", mota: "Đẩy mục tiêu vào một chiều không gian khác trong vài giây, khiến nó biến mất hoàn toàn; khi trở lại sẽ sinh ra hai bản sao ảo tấn công theo Shadow Demon." },
+      { phim: "W", loai: "Chủ động", ten: "Soul Catcher", mota: "Đánh dấu một kẻ địch, khiến nó phải nhận thêm sát thương từ mọi nguồn trong thời gian ngắn." },
+      { phim: "E", loai: "Chủ động", ten: "Shadow Poison", mota: "Bắn luồng độc theo đường thẳng, cộng dồn nhiều lớp lên mục tiêu; có thể kích nổ để gây sát thương tăng vọt theo số lớp đã tích." },
+      { phim: "R", loai: "Chủ động", ten: "Demonic Purge", mota: "Ulti: Thanh tẩy mục tiêu, gỡ bỏ hiệu ứng tăng cường và làm chậm cực mạnh trong thời gian dài kèm sát thương theo thời gian." }
     ],
     lenSkill: "Max Shadow Poison để quấy rối và đẩy lính, giữ một điểm Disruption sớm để cứu đồng đội hoặc mở gank, lấy Demonic Purge đúng cấp.",
     doBuild: {
@@ -1761,10 +1761,10 @@ const HEROES_THEM = [
     icon: "💀",
     danhHieu: "Nevermore",
     skills: [
-      { phim: "Q", ten: "Shadowraze (near)", mota: "Đốt cháy một vùng nhỏ ngay phía trước Shadow Fiend, gây sát thương phép; đánh trúng liên tiếp bằng nhiều tầm Shadowraze sẽ cộng dồn sát thương." },
-      { phim: "W", ten: "Shadowraze (medium)", mota: "Cùng cơ chế nhưng nổ ở khoảng cách trung bình phía trước." },
-      { phim: "E", ten: "Shadowraze (far)", mota: "Cùng cơ chế nhưng nổ ở khoảng cách xa nhất phía trước." },
-      { phim: "R", ten: "Requiem of Souls", mota: "Ulti: Giải phóng toàn bộ linh hồn đã thu thập thành các làn sóng bóng tối lan ra mọi hướng, gây sát thương lớn và làm kẻ địch trúng chiêu bị suy yếu, chậm chạp." }
+      { phim: "Q", loai: "Chủ động", ten: "Shadowraze (near)", mota: "Đốt cháy một vùng nhỏ ngay phía trước Shadow Fiend, gây sát thương phép; đánh trúng liên tiếp bằng nhiều tầm Shadowraze sẽ cộng dồn sát thương." },
+      { phim: "W", loai: "Chủ động", ten: "Shadowraze (medium)", mota: "Cùng cơ chế nhưng nổ ở khoảng cách trung bình phía trước." },
+      { phim: "E", loai: "Chủ động", ten: "Shadowraze (far)", mota: "Cùng cơ chế nhưng nổ ở khoảng cách xa nhất phía trước." },
+      { phim: "R", loai: "Chủ động", ten: "Requiem of Souls", mota: "Ulti: Giải phóng toàn bộ linh hồn đã thu thập thành các làn sóng bóng tối lan ra mọi hướng, gây sát thương lớn và làm kẻ địch trúng chiêu bị suy yếu, chậm chạp." }
     ],
     lenSkill: "Max cả ba tầm Shadowraze song song để áp đảo đường giữa, kết hợp điểm vào Necromastery, lấy Requiem of Souls đúng cấp.",
     doBuild: {
@@ -1788,10 +1788,10 @@ const HEROES_THEM = [
     icon: "🤐",
     danhHieu: "Nortrom",
     skills: [
-      { phim: "Q", ten: "Curse of the Silent", mota: "Nguyền rủa kẻ địch trong một vùng, khiến chúng liên tục mất máu và mana nếu không dùng chiêu hoặc đánh thường để gỡ lời nguyền." },
-      { phim: "W", ten: "Glaives of Wisdom", mota: "Đòn đánh bồi thêm sát thương phép dựa trên trí tuệ của Silencer; kèm khả năng cộng dồn trí tuệ vĩnh viễn từ những tướng chết gần Silencer." },
-      { phim: "E", ten: "Last Word", mota: "Đánh dấu một mục tiêu; nếu nó dùng chiêu sẽ bị kích hoạt ngay, còn nếu không thì sau thời gian chờ vẫn phát nổ gây sát thương và làm im lặng." },
-      { phim: "R", ten: "Global Silence", mota: "Ulti: Làm im lặng toàn bộ tướng địch trên cả bản đồ, khiến chúng không thể dùng chiêu lẫn item kích hoạt trong vài giây." }
+      { phim: "Q", loai: "Chủ động", ten: "Curse of the Silent", mota: "Nguyền rủa kẻ địch trong một vùng, khiến chúng liên tục mất máu và mana nếu không dùng chiêu hoặc đánh thường để gỡ lời nguyền." },
+      { phim: "W", loai: "Tự đánh", ten: "Glaives of Wisdom", mota: "Đòn đánh bồi thêm sát thương phép dựa trên trí tuệ của Silencer; kèm khả năng cộng dồn trí tuệ vĩnh viễn từ những tướng chết gần Silencer." },
+      { phim: "E", loai: "Chủ động", ten: "Last Word", mota: "Đánh dấu một mục tiêu; nếu nó dùng chiêu sẽ bị kích hoạt ngay, còn nếu không thì sau thời gian chờ vẫn phát nổ gây sát thương và làm im lặng." },
+      { phim: "R", loai: "Chủ động", ten: "Global Silence", mota: "Ulti: Làm im lặng toàn bộ tướng địch trên cả bản đồ, khiến chúng không thể dùng chiêu lẫn item kích hoạt trong vài giây." }
     ],
     lenSkill: "Max Curse of the Silent để ép đường, thêm điểm Glaives of Wisdom để quấy rối và tích trí tuệ, lấy Global Silence ngay khi có thể.",
     doBuild: {
@@ -1816,10 +1816,10 @@ const HEROES_THEM = [
     danhHieu: "King Leoric",
     chuaChac: true,
     skills: [
-      { phim: "Q", ten: "Hellfire Blast", mota: "Phóng quả cầu lửa địa ngục gây sát thương, làm choáng và tiếp tục thiêu đốt mục tiêu theo thời gian kèm làm chậm." },
-      { phim: "W", ten: "Vampiric Aura", mota: "Hào quang giúp Skeleton King và các đơn vị đánh thường phe mình hút một phần sát thương gây ra thành máu." },
-      { phim: "E", ten: "Critical Strike", mota: "Bị động: có tỉ lệ tung ra đòn chí mạng gây sát thương nhân lên nhiều lần." },
-      { phim: "R", ten: "Reincarnation", mota: "Ulti: Khi chết, Skeleton King hồi sinh ngay tại chỗ sau vài giây với đầy máu và mana, đồng thời làm chậm kẻ địch xung quanh." }
+      { phim: "Q", loai: "Chủ động", ten: "Hellfire Blast", mota: "Phóng quả cầu lửa địa ngục gây sát thương, làm choáng và tiếp tục thiêu đốt mục tiêu theo thời gian kèm làm chậm." },
+      { phim: "W", loai: "Bị động", ten: "Vampiric Aura", mota: "Hào quang giúp Skeleton King và các đơn vị đánh thường phe mình hút một phần sát thương gây ra thành máu." },
+      { phim: "E", loai: "Bị động", ten: "Critical Strike", mota: "Bị động: có tỉ lệ tung ra đòn chí mạng gây sát thương nhân lên nhiều lần." },
+      { phim: "R", loai: "Bị động", ten: "Reincarnation", mota: "Ulti: Khi chết, Skeleton King hồi sinh ngay tại chỗ sau vài giây với đầy máu và mana, đồng thời làm chậm kẻ địch xung quanh." }
     ],
     lenSkill: "Max Hellfire Blast để gank và giữ chân, xen Critical Strike để farm, lấy Reincarnation đúng cấp, Vampiric Aura lên sau.",
     doBuild: {
@@ -1843,10 +1843,10 @@ const HEROES_THEM = [
     icon: "🦅",
     danhHieu: "Dragonus",
     skills: [
-      { phim: "Q", ten: "Arcane Bolt", mota: "Bắn viên đạn phép tự truy đuổi mục tiêu, sát thương tăng theo trí tuệ của Skywrath Mage." },
-      { phim: "W", ten: "Concussive Shot", mota: "Bắn một phát đạn vào tướng địch gần nhất trong tầm rất xa, gây sát thương diện nhỏ và làm chậm mục tiêu chính." },
-      { phim: "E", ten: "Ancient Seal", mota: "Phong ấn một mục tiêu, làm im lặng và khiến nó phải nhận thêm sát thương phép trong thời gian đó." },
-      { phim: "R", ten: "Mystic Flare", mota: "Ulti: Triệu hồi vùng năng lượng phép trút xuống một khu vực nhỏ, tổng sát thương rất lớn nhưng chia đều cho tất cả tướng địch đứng trong vùng." }
+      { phim: "Q", loai: "Chủ động", ten: "Arcane Bolt", mota: "Bắn viên đạn phép tự truy đuổi mục tiêu, sát thương tăng theo trí tuệ của Skywrath Mage." },
+      { phim: "W", loai: "Chủ động", ten: "Concussive Shot", mota: "Bắn một phát đạn vào tướng địch gần nhất trong tầm rất xa, gây sát thương diện nhỏ và làm chậm mục tiêu chính." },
+      { phim: "E", loai: "Chủ động", ten: "Ancient Seal", mota: "Phong ấn một mục tiêu, làm im lặng và khiến nó phải nhận thêm sát thương phép trong thời gian đó." },
+      { phim: "R", loai: "Chủ động", ten: "Mystic Flare", mota: "Ulti: Triệu hồi vùng năng lượng phép trút xuống một khu vực nhỏ, tổng sát thương rất lớn nhưng chia đều cho tất cả tướng địch đứng trong vùng." }
     ],
     lenSkill: "Max Arcane Bolt để sát thương ổn định, giữ sớm một điểm Ancient Seal để mở combo, thêm Concussive Shot khi cần đuổi, lấy Mystic Flare đúng cấp.",
     doBuild: {
@@ -1870,10 +1870,10 @@ const HEROES_THEM = [
     icon: "🐟",
     danhHieu: "Slithereen Guard",
     skills: [
-      { phim: "Q", ten: "Sprint", mota: "Tăng mạnh tốc độ chạy trong thời gian ngắn, đổi lại phải nhận thêm sát thương trong lúc chiêu còn hiệu lực." },
-      { phim: "W", ten: "Slithereen Crush", mota: "Đập mạnh xuống đất, làm choáng toàn bộ kẻ địch xung quanh và tiếp tục làm chậm chúng sau khi hết choáng." },
-      { phim: "E", ten: "Bash", mota: "Bị động: đòn đánh có tỉ lệ làm choáng ngắn mục tiêu kèm sát thương cộng thêm." },
-      { phim: "R", ten: "Amplify Damage", mota: "Ulti: Giảm mạnh giáp của một mục tiêu và soi rõ nó kể cả khi tàng hình trong suốt thời gian hiệu lực." }
+      { phim: "Q", loai: "Chủ động", ten: "Sprint", mota: "Tăng mạnh tốc độ chạy trong thời gian ngắn, đổi lại phải nhận thêm sát thương trong lúc chiêu còn hiệu lực." },
+      { phim: "W", loai: "Chủ động", ten: "Slithereen Crush", mota: "Đập mạnh xuống đất, làm choáng toàn bộ kẻ địch xung quanh và tiếp tục làm chậm chúng sau khi hết choáng." },
+      { phim: "E", loai: "Bị động", ten: "Bash", mota: "Bị động: đòn đánh có tỉ lệ làm choáng ngắn mục tiêu kèm sát thương cộng thêm." },
+      { phim: "R", loai: "Chủ động", ten: "Amplify Damage", mota: "Ulti: Giảm mạnh giáp của một mục tiêu và soi rõ nó kể cả khi tàng hình trong suốt thời gian hiệu lực." }
     ],
     lenSkill: "Max Slithereen Crush để khống chế, thêm điểm Sprint để đuổi và di chuyển, lấy Amplify Damage đúng cấp, Bash lên sau.",
     doBuild: {
@@ -1897,10 +1897,10 @@ const HEROES_THEM = [
     icon: "🦈",
     danhHieu: "Murloc Nightcrawler",
     skills: [
-      { phim: "Q", ten: "Dark Pact", mota: "Sau một khoảng trễ ngắn, bùng nổ năng lượng quanh mình gây sát thương diện rộng đồng thời gỡ bỏ phần lớn hiệu ứng bất lợi đang dính trên Slark." },
-      { phim: "W", ten: "Pounce", mota: "Lao vọt về phía trước, trói chân tướng địch đầu tiên chạm phải khiến nó không thể rời xa Slark trong thời gian ngắn." },
-      { phim: "E", ten: "Essence Shift", mota: "Mỗi đòn đánh lên tướng địch rút bớt chỉ số của nó và cộng tạm thời vào nhanh nhẹn của Slark, càng đánh lâu càng mạnh." },
-      { phim: "R", ten: "Shadow Dance", mota: "Ulti: Tàng hình trong thời gian ngắn, vẫn đánh và dùng chiêu bình thường, kèm hồi máu và tăng tốc; bị động cũng hồi máu nhanh khi Slark không bị đối phương nhìn thấy." }
+      { phim: "Q", loai: "Chủ động", ten: "Dark Pact", mota: "Sau một khoảng trễ ngắn, bùng nổ năng lượng quanh mình gây sát thương diện rộng đồng thời gỡ bỏ phần lớn hiệu ứng bất lợi đang dính trên Slark." },
+      { phim: "W", loai: "Chủ động", ten: "Pounce", mota: "Lao vọt về phía trước, trói chân tướng địch đầu tiên chạm phải khiến nó không thể rời xa Slark trong thời gian ngắn." },
+      { phim: "E", loai: "Bị động", ten: "Essence Shift", mota: "Mỗi đòn đánh lên tướng địch rút bớt chỉ số của nó và cộng tạm thời vào nhanh nhẹn của Slark, càng đánh lâu càng mạnh." },
+      { phim: "R", loai: "Chủ động", ten: "Shadow Dance", mota: "Ulti: Tàng hình trong thời gian ngắn, vẫn đánh và dùng chiêu bình thường, kèm hồi máu và tăng tốc; bị động cũng hồi máu nhanh khi Slark không bị đối phương nhìn thấy." }
     ],
     lenSkill: "Max Dark Pact để farm và gỡ khống chế, thêm điểm Pounce để bắt mục tiêu, lấy Shadow Dance đúng cấp, Essence Shift lên sau khi đã có đồ.",
     doBuild: {
@@ -1924,10 +1924,10 @@ const HEROES_THEM = [
     icon: "👻",
     danhHieu: "Mercurial",
     skills: [
-      { phim: "Q", ten: "Spectral Dagger", mota: "Phóng con dao để lại vệt đường ma; Spectre chạy trên vệt này được tăng tốc và đi xuyên địa hình, còn kẻ địch dính vệt thì bị làm chậm." },
-      { phim: "W", ten: "Desolate", mota: "Bị động: gây thêm sát thương khi đánh trúng kẻ địch đang đứng một mình, không có đơn vị đồng minh nào bên cạnh." },
-      { phim: "E", ten: "Dispersion", mota: "Bị động: phản lại một phần sát thương Spectre phải nhận lên các kẻ địch xung quanh." },
-      { phim: "R", ten: "Haunt", mota: "Ulti: Tạo ra ảnh ảo đuổi theo mọi tướng địch trên toàn bản đồ; Spectre có thể dịch chuyển tới vị trí một ảnh ảo bất kỳ trong thời gian chiêu còn hiệu lực." }
+      { phim: "Q", loai: "Chủ động", ten: "Spectral Dagger", mota: "Phóng con dao để lại vệt đường ma; Spectre chạy trên vệt này được tăng tốc và đi xuyên địa hình, còn kẻ địch dính vệt thì bị làm chậm." },
+      { phim: "W", loai: "Bị động", ten: "Desolate", mota: "Bị động: gây thêm sát thương khi đánh trúng kẻ địch đang đứng một mình, không có đơn vị đồng minh nào bên cạnh." },
+      { phim: "E", loai: "Bị động", ten: "Dispersion", mota: "Bị động: phản lại một phần sát thương Spectre phải nhận lên các kẻ địch xung quanh." },
+      { phim: "R", loai: "Chủ động", ten: "Haunt", mota: "Ulti: Tạo ra ảnh ảo đuổi theo mọi tướng địch trên toàn bản đồ; Spectre có thể dịch chuyển tới vị trí một ảnh ảo bất kỳ trong thời gian chiêu còn hiệu lực." }
     ],
     lenSkill: "Ưu tiên Desolate và Dispersion để farm an toàn, giữ một điểm Spectral Dagger sớm để thoát thân, lấy Haunt ngay khi đủ cấp.",
     doBuild: {
@@ -1951,10 +1951,10 @@ const HEROES_THEM = [
     icon: "⚡",
     danhHieu: "Raijin Thunderkeg",
     skills: [
-      { phim: "Q", ten: "Static Remnant", mota: "Tạo ra một hình nhân tĩnh điện đứng yên tại chỗ, phát nổ gây sát thương phép khi có kẻ địch tới gần." },
-      { phim: "W", ten: "Electric Vortex", mota: "Kéo một tướng địch về phía mình trong thời gian ngắn, đổi lại Storm Spirit phải mất một phần máu." },
-      { phim: "E", ten: "Overload", mota: "Bị động: sau mỗi lần dùng chiêu, đòn đánh kế tiếp phóng ra luồng điện gây sát thương diện nhỏ và làm chậm kẻ địch xung quanh." },
-      { phim: "R", ten: "Ball Lightning", mota: "Ulti: Biến thành quả cầu sét lao tới bất kỳ vị trí nào trên bản đồ, gây sát thương cho kẻ địch trên đường bay và tiêu tốn mana tỉ lệ theo quãng đường di chuyển." }
+      { phim: "Q", loai: "Chủ động", ten: "Static Remnant", mota: "Tạo ra một hình nhân tĩnh điện đứng yên tại chỗ, phát nổ gây sát thương phép khi có kẻ địch tới gần." },
+      { phim: "W", loai: "Chủ động", ten: "Electric Vortex", mota: "Kéo một tướng địch về phía mình trong thời gian ngắn, đổi lại Storm Spirit phải mất một phần máu." },
+      { phim: "E", loai: "Bị động", ten: "Overload", mota: "Bị động: sau mỗi lần dùng chiêu, đòn đánh kế tiếp phóng ra luồng điện gây sát thương diện nhỏ và làm chậm kẻ địch xung quanh." },
+      { phim: "R", loai: "Chủ động", ten: "Ball Lightning", mota: "Ulti: Biến thành quả cầu sét lao tới bất kỳ vị trí nào trên bản đồ, gây sát thương cho kẻ địch trên đường bay và tiêu tốn mana tỉ lệ theo quãng đường di chuyển." }
     ],
     lenSkill: "Max Static Remnant kết hợp Overload để đè đường giữa, giữ một điểm Electric Vortex để bắt người, nâng Ball Lightning đúng cấp.",
     doBuild: {
@@ -1979,10 +1979,10 @@ const HEROES_THEM = [
     danhHieu: "Cairne Bloodhoof",
     chuaChac: true,
     skills: [
-      { phim: "Q", ten: "Echo Stomp", mota: "Dậm mạnh xuống đất sau thời gian niệm, khiến kẻ địch xung quanh chìm vào giấc ngủ; chúng sẽ tỉnh dậy nếu bị đánh trúng." },
-      { phim: "W", ten: "Ancestral Spirit", mota: "Phóng linh hồn tổ tiên bay ra rồi quay về, gây sát thương cho kẻ địch trên đường đi và mang thêm chỉ số về cho Tauren Chieftain tuỳ theo số đơn vị mà nó đi qua." },
-      { phim: "E", ten: "Natural Order", mota: "Bị động: hào quang làm giảm giáp và kháng phép của toàn bộ kẻ địch trong vùng xung quanh." },
-      { phim: "R", ten: "Earth Splitter", mota: "Ulti: Xẻ một vết nứt dài trên mặt đất, sau độ trễ vết nứt bung ra gây sát thương theo lượng máu tối đa và làm chậm mạnh mọi kẻ địch trúng chiêu." }
+      { phim: "Q", loai: "Chủ động", ten: "Echo Stomp", mota: "Dậm mạnh xuống đất sau thời gian niệm, khiến kẻ địch xung quanh chìm vào giấc ngủ; chúng sẽ tỉnh dậy nếu bị đánh trúng." },
+      { phim: "W", loai: "Chủ động", ten: "Ancestral Spirit", mota: "Phóng linh hồn tổ tiên bay ra rồi quay về, gây sát thương cho kẻ địch trên đường đi và mang thêm chỉ số về cho Tauren Chieftain tuỳ theo số đơn vị mà nó đi qua." },
+      { phim: "E", loai: "Bị động", ten: "Natural Order", mota: "Bị động: hào quang làm giảm giáp và kháng phép của toàn bộ kẻ địch trong vùng xung quanh." },
+      { phim: "R", loai: "Chủ động", ten: "Earth Splitter", mota: "Ulti: Xẻ một vết nứt dài trên mặt đất, sau độ trễ vết nứt bung ra gây sát thương theo lượng máu tối đa và làm chậm mạnh mọi kẻ địch trúng chiêu." }
     ],
     lenSkill: "Max Echo Stomp để khống chế diện rộng, thêm Natural Order để tăng sát thương cho cả đội, lấy Earth Splitter đúng cấp.",
     doBuild: {
@@ -2007,10 +2007,10 @@ const HEROES_THEM = [
     icon: "💣",
     danhHieu: "Goblin Techies",
     skills: [
-      { phim: "Q", ten: "Land Mines", mota: "Đặt mìn tàng hình dưới đất, phát nổ gây sát thương lớn diện rộng khi địch bước vào bán kính kích hoạt. Có thể xếp chồng nhiều quả một chỗ để giết ngay lập tức." },
-      { phim: "W", ten: "Stasis Trap", mota: "Đặt bẫy tàng hình, khi địch đến gần sẽ nổ và làm choáng mọi kẻ địch xung quanh trong vài giây. Không gây sát thương, dùng để giữ chân cho mìn nổ." },
-      { phim: "E", ten: "Suicide Squad, Attack!", mota: "Techies tự sát, gây sát thương rất lớn cho toàn bộ địch xung quanh và làm chậm chúng. Techies chết nhưng địch cũng chết theo." },
-      { phim: "R", ten: "Remote Mines", mota: "Ulti: Đặt mìn điều khiển từ xa, tàng hình và chỉ nổ khi người chơi ra lệnh. Xếp chồng nhiều quả rồi kích nổ cùng lúc để bốc hơi mục tiêu." }
+      { phim: "Q", loai: "Chủ động", ten: "Land Mines", mota: "Đặt mìn tàng hình dưới đất, phát nổ gây sát thương lớn diện rộng khi địch bước vào bán kính kích hoạt. Có thể xếp chồng nhiều quả một chỗ để giết ngay lập tức." },
+      { phim: "W", loai: "Chủ động", ten: "Stasis Trap", mota: "Đặt bẫy tàng hình, khi địch đến gần sẽ nổ và làm choáng mọi kẻ địch xung quanh trong vài giây. Không gây sát thương, dùng để giữ chân cho mìn nổ." },
+      { phim: "E", loai: "Chủ động", ten: "Suicide Squad, Attack!", mota: "Techies tự sát, gây sát thương rất lớn cho toàn bộ địch xung quanh và làm chậm chúng. Techies chết nhưng địch cũng chết theo." },
+      { phim: "R", loai: "Chủ động", ten: "Remote Mines", mota: "Ulti: Đặt mìn điều khiển từ xa, tàng hình và chỉ nổ khi người chơi ra lệnh. Xếp chồng nhiều quả rồi kích nổ cùng lúc để bốc hơi mục tiêu." }
     ],
     lenSkill: "Max Land Mines trước để bảo vệ đường và farm, điểm sớm vào Stasis Trap, lấy Remote Mines ngay khi có thể.",
     doBuild: {
@@ -2034,10 +2034,10 @@ const HEROES_THEM = [
     icon: "🔮",
     danhHieu: "Lanaya",
     skills: [
-      { phim: "Q", ten: "Refraction", mota: "Tạo lớp khiên hấp thụ trọn vẹn một số đòn sát thương, đồng thời cộng thêm sát thương cho một số đòn đánh tiếp theo. Hai phần đếm riêng." },
-      { phim: "W", ten: "Meld", mota: "Tàng hình khi đứng yên; đòn đánh thoát khỏi trạng thái này gây thêm sát thương và giảm giáp mục tiêu." },
-      { phim: "E", ten: "Psi Blades", mota: "Đòn đánh xuyên qua mục tiêu, gây sát thương lan cho kẻ địch phía sau theo một đường thẳng. Cũng tăng tầm đánh." },
-      { phim: "R", ten: "Psionic Trap", mota: "Ulti: Đặt bẫy tàng hình ở xa, khi kích hoạt sẽ làm chậm mạnh kẻ địch trong vùng. Dùng để soi bản đồ và bắt mục tiêu chạy trốn." }
+      { phim: "Q", loai: "Chủ động", ten: "Refraction", mota: "Tạo lớp khiên hấp thụ trọn vẹn một số đòn sát thương, đồng thời cộng thêm sát thương cho một số đòn đánh tiếp theo. Hai phần đếm riêng." },
+      { phim: "W", loai: "Chủ động", ten: "Meld", mota: "Tàng hình khi đứng yên; đòn đánh thoát khỏi trạng thái này gây thêm sát thương và giảm giáp mục tiêu." },
+      { phim: "E", loai: "Bị động", ten: "Psi Blades", mota: "Đòn đánh xuyên qua mục tiêu, gây sát thương lan cho kẻ địch phía sau theo một đường thẳng. Cũng tăng tầm đánh." },
+      { phim: "R", loai: "Chủ động", ten: "Psionic Trap", mota: "Ulti: Đặt bẫy tàng hình ở xa, khi kích hoạt sẽ làm chậm mạnh kẻ địch trong vùng. Dùng để soi bản đồ và bắt mục tiêu chạy trốn." }
     ],
     lenSkill: "Ưu tiên Refraction để cầm đường an toàn, điểm Psi Blades để farm, lấy Psionic Trap đúng cấp và max Meld sau.",
     doBuild: {
@@ -2061,10 +2061,10 @@ const HEROES_THEM = [
     icon: "😈",
     danhHieu: "Soul Keeper",
     skills: [
-      { phim: "Q", ten: "Reflection", mota: "Tạo ảnh phản chiếu của kẻ địch tấn công chính chúng, đồng thời làm chậm mục tiêu trong thời gian ngắn." },
-      { phim: "W", ten: "Conjure Image", mota: "Tạo ra một ảnh ảo của bản thân gây một phần sát thương gốc. Dùng để farm nhanh và đẩy trụ." },
-      { phim: "E", ten: "Metamorphosis", mota: "Biến thành hình dạng ác quỷ tầm xa với sát thương tăng mạnh trong một khoảng thời gian, nhưng chậm chân hơn." },
-      { phim: "R", ten: "Sunder", mota: "Ulti: Hoán đổi tỉ lệ máu hiện tại với một tướng địch hoặc đồng minh. Vừa là công cụ thoát chết vừa là đòn kết liễu." }
+      { phim: "Q", loai: "Chủ động", ten: "Reflection", mota: "Tạo ảnh phản chiếu của kẻ địch tấn công chính chúng, đồng thời làm chậm mục tiêu trong thời gian ngắn." },
+      { phim: "W", loai: "Chủ động", ten: "Conjure Image", mota: "Tạo ra một ảnh ảo của bản thân gây một phần sát thương gốc. Dùng để farm nhanh và đẩy trụ." },
+      { phim: "E", loai: "Chủ động", ten: "Metamorphosis", mota: "Biến thành hình dạng ác quỷ tầm xa với sát thương tăng mạnh trong một khoảng thời gian, nhưng chậm chân hơn." },
+      { phim: "R", loai: "Chủ động", ten: "Sunder", mota: "Ulti: Hoán đổi tỉ lệ máu hiện tại với một tướng địch hoặc đồng minh. Vừa là công cụ thoát chết vừa là đòn kết liễu." }
     ],
     lenSkill: "Max Conjure Image để farm nhanh, điểm Metamorphosis vừa đủ, lấy Sunder ngay khi đủ cấp làm bùa hộ mệnh.",
     doBuild: {
@@ -2088,10 +2088,10 @@ const HEROES_THEM = [
     icon: "⚡",
     danhHieu: "Disruptor",
     skills: [
-      { phim: "Q", ten: "Thunder Strike", mota: "Giáng sét lên mục tiêu nhiều lần, mỗi lần gây sát thương diện rộng nhỏ quanh mục tiêu và soi sáng khu vực." },
-      { phim: "W", ten: "Glimpse", mota: "Kéo kẻ địch quay ngược về vị trí chúng đứng vài giây trước đó. Dùng để chặn đường chạy trốn hoặc kéo địch ra khỏi đội hình." },
-      { phim: "E", ten: "Kinetic Field", mota: "Tạo một vòng năng lượng sau một khoảng trễ, kẻ địch bên trong không thể ra ngoài." },
-      { phim: "R", ten: "Static Storm", mota: "Ulti: Tạo bão tĩnh điện gây sát thương tăng dần và khóa hoàn toàn phép của mọi kẻ địch trong vùng." }
+      { phim: "Q", loai: "Chủ động", ten: "Thunder Strike", mota: "Giáng sét lên mục tiêu nhiều lần, mỗi lần gây sát thương diện rộng nhỏ quanh mục tiêu và soi sáng khu vực." },
+      { phim: "W", loai: "Chủ động", ten: "Glimpse", mota: "Kéo kẻ địch quay ngược về vị trí chúng đứng vài giây trước đó. Dùng để chặn đường chạy trốn hoặc kéo địch ra khỏi đội hình." },
+      { phim: "E", loai: "Chủ động", ten: "Kinetic Field", mota: "Tạo một vòng năng lượng sau một khoảng trễ, kẻ địch bên trong không thể ra ngoài." },
+      { phim: "R", loai: "Chủ động", ten: "Static Storm", mota: "Ulti: Tạo bão tĩnh điện gây sát thương tăng dần và khóa hoàn toàn phép của mọi kẻ địch trong vùng." }
     ],
     lenSkill: "Điểm Glimpse sớm để bắt lẻ, max Thunder Strike hoặc Kinetic Field tùy nhu cầu, lấy Static Storm ngay khi đủ cấp.",
     doBuild: {
@@ -2115,10 +2115,10 @@ const HEROES_THEM = [
     icon: "🔧",
     danhHieu: "Boush",
     skills: [
-      { phim: "Q", ten: "Laser", mota: "Bắn tia laser gây sát thương phép lớn lên một mục tiêu và làm nó mù, đánh thường trượt hoàn toàn trong thời gian ngắn." },
-      { phim: "W", ten: "Heat-Seeking Missile", mota: "Phóng tên lửa tự tìm mục tiêu, bay đến các tướng địch gần nhất trong tầm và gây sát thương phép." },
-      { phim: "E", ten: "March of the Machines", mota: "Triệu hồi bầy máy bay càn quét một vùng rộng, gây sát thương lên mọi kẻ địch và lính đi qua." },
-      { phim: "R", ten: "Rearm", mota: "Ulti: Sau một khoảng niệm, hồi lại toàn bộ thời gian hồi của kỹ năng và phần lớn trang bị. Là trái tim của lối chơi Tinker." }
+      { phim: "Q", loai: "Chủ động", ten: "Laser", mota: "Bắn tia laser gây sát thương phép lớn lên một mục tiêu và làm nó mù, đánh thường trượt hoàn toàn trong thời gian ngắn." },
+      { phim: "W", loai: "Chủ động", ten: "Heat-Seeking Missile", mota: "Phóng tên lửa tự tìm mục tiêu, bay đến các tướng địch gần nhất trong tầm và gây sát thương phép." },
+      { phim: "E", loai: "Chủ động", ten: "March of the Machines", mota: "Triệu hồi bầy máy bay càn quét một vùng rộng, gây sát thương lên mọi kẻ địch và lính đi qua." },
+      { phim: "R", loai: "Chủ động", ten: "Rearm", mota: "Ulti: Sau một khoảng niệm, hồi lại toàn bộ thời gian hồi của kỹ năng và phần lớn trang bị. Là trái tim của lối chơi Tinker." }
     ],
     lenSkill: "Max March of the Machines để dọn lính và farm, điểm Laser để đối đầu, lấy Rearm ngay khi đủ cấp.",
     doBuild: {
@@ -2142,10 +2142,10 @@ const HEROES_THEM = [
     icon: "🌳",
     danhHieu: "Rooftrellen",
     skills: [
-      { phim: "Q", ten: "Nature's Grasp", mota: "Trói chân kẻ địch bằng rễ cây, khiến chúng không thể di chuyển và nhận sát thương theo thời gian." },
-      { phim: "W", ten: "Leech Seed", mota: "Gieo hạt lên kẻ địch, hút máu của chúng theo từng nhịp, làm chậm chúng và hồi máu cho đồng minh xung quanh." },
-      { phim: "E", ten: "Living Armor", mota: "Hồi máu cho một đơn vị đồng minh hoặc công trình bất kỳ trên bản đồ và tăng giáp cho nó. Dùng được cả để cứu trụ." },
-      { phim: "R", ten: "Overgrowth", mota: "Ulti: Cây cối mọc trói chặt toàn bộ kẻ địch quanh Treant, khiến chúng không di chuyển và không đánh thường được." }
+      { phim: "Q", loai: "Chủ động", ten: "Nature's Grasp", mota: "Trói chân kẻ địch bằng rễ cây, khiến chúng không thể di chuyển và nhận sát thương theo thời gian." },
+      { phim: "W", loai: "Chủ động", ten: "Leech Seed", mota: "Gieo hạt lên kẻ địch, hút máu của chúng theo từng nhịp, làm chậm chúng và hồi máu cho đồng minh xung quanh." },
+      { phim: "E", loai: "Chủ động", ten: "Living Armor", mota: "Hồi máu cho một đơn vị đồng minh hoặc công trình bất kỳ trên bản đồ và tăng giáp cho nó. Dùng được cả để cứu trụ." },
+      { phim: "R", loai: "Chủ động", ten: "Overgrowth", mota: "Ulti: Cây cối mọc trói chặt toàn bộ kẻ địch quanh Treant, khiến chúng không di chuyển và không đánh thường được." }
     ],
     lenSkill: "Max Leech Seed để quấy rối và hồi máu đường, rải điểm vào Living Armor để giữ đồng đội, lấy Overgrowth ngay khi đủ cấp.",
     doBuild: {
@@ -2170,10 +2170,10 @@ const HEROES_THEM = [
     icon: "🪓",
     danhHieu: "Jah'rakal",
     skills: [
-      { phim: "Q", ten: "Berserker's Rage", mota: "Chuyển giữa dạng cận chiến và tầm xa. Dạng cận chiến có thêm máu, giáp, tốc chạy và đòn đánh có cơ hội làm choáng." },
-      { phim: "W", ten: "Whirling Axes", mota: "Ném rìu xoáy; ở dạng tầm xa gây sát thương diện rộng và làm mù kẻ địch, ở dạng cận chiến gây sát thương và làm chậm xung quanh." },
-      { phim: "E", ten: "Fervor", mota: "Càng đánh liên tiếp cùng một mục tiêu thì tốc độ đánh càng tăng, cộng dồn tới một giới hạn." },
-      { phim: "R", ten: "Battle Trance", mota: "Ulti: Tăng mạnh tốc độ đánh cho Troll và toàn bộ đồng minh xung quanh trong thời gian ngắn." }
+      { phim: "Q", loai: "Chủ động", ten: "Berserker's Rage", mota: "Chuyển giữa dạng cận chiến và tầm xa. Dạng cận chiến có thêm máu, giáp, tốc chạy và đòn đánh có cơ hội làm choáng." },
+      { phim: "W", loai: "Chủ động", ten: "Whirling Axes", mota: "Ném rìu xoáy; ở dạng tầm xa gây sát thương diện rộng và làm mù kẻ địch, ở dạng cận chiến gây sát thương và làm chậm xung quanh." },
+      { phim: "E", loai: "Bị động", ten: "Fervor", mota: "Càng đánh liên tiếp cùng một mục tiêu thì tốc độ đánh càng tăng, cộng dồn tới một giới hạn." },
+      { phim: "R", loai: "Chủ động", ten: "Battle Trance", mota: "Ulti: Tăng mạnh tốc độ đánh cho Troll và toàn bộ đồng minh xung quanh trong thời gian ngắn." }
     ],
     lenSkill: "Max Whirling Axes hoặc Berserker's Rage để đối đầu đường, điểm Fervor để tăng lực đánh, lấy Battle Trance đúng cấp.",
     doBuild: {
@@ -2197,10 +2197,10 @@ const HEROES_THEM = [
     icon: "🐧",
     danhHieu: "Tusk",
     skills: [
-      { phim: "Q", ten: "Ice Shards", mota: "Ném một khối băng về phía trước, tạo thành bức tường băng chặn đường di chuyển của kẻ địch và gây sát thương." },
-      { phim: "W", ten: "Snowball", mota: "Cuộn thành quả cầu tuyết lăn về phía kẻ địch, cuốn theo đồng minh gần đó; khi trúng sẽ gây sát thương và làm choáng." },
-      { phim: "E", ten: "Frozen Sigil", mota: "Triệu hồi một linh vật bay làm chậm tốc độ di chuyển và tốc độ đánh của kẻ địch xung quanh nó." },
-      { phim: "R", ten: "Walrus Punch", mota: "Ulti: Đòn đánh kế tiếp gây sát thương chí mạng cực lớn, hất mục tiêu lên trời và làm chậm nặng khi rơi xuống." }
+      { phim: "Q", loai: "Chủ động", ten: "Ice Shards", mota: "Ném một khối băng về phía trước, tạo thành bức tường băng chặn đường di chuyển của kẻ địch và gây sát thương." },
+      { phim: "W", loai: "Chủ động", ten: "Snowball", mota: "Cuộn thành quả cầu tuyết lăn về phía kẻ địch, cuốn theo đồng minh gần đó; khi trúng sẽ gây sát thương và làm choáng." },
+      { phim: "E", loai: "Chủ động", ten: "Frozen Sigil", mota: "Triệu hồi một linh vật bay làm chậm tốc độ di chuyển và tốc độ đánh của kẻ địch xung quanh nó." },
+      { phim: "R", loai: "Chủ động", ten: "Walrus Punch", mota: "Ulti: Đòn đánh kế tiếp gây sát thương chí mạng cực lớn, hất mục tiêu lên trời và làm chậm nặng khi rơi xuống." }
     ],
     lenSkill: "Điểm Snowball sớm để gank, max Ice Shards để chặn đường, lấy Walrus Punch ngay khi đủ cấp.",
     doBuild: {
@@ -2224,10 +2224,10 @@ const HEROES_THEM = [
     icon: "💀",
     danhHieu: "Dirge",
     skills: [
-      { phim: "Q", ten: "Decay", mota: "Rút bớt sức mạnh của kẻ địch trong vùng và cộng số sức mạnh đó cho Undying trong một khoảng thời gian, có thể cộng dồn." },
-      { phim: "W", ten: "Soul Rip", mota: "Hút linh hồn từ các đơn vị xung quanh để hồi máu cho đồng minh hoặc gây sát thương cho kẻ địch; càng nhiều đơn vị quanh mục tiêu càng mạnh." },
-      { phim: "E", ten: "Tombstone", mota: "Dựng bia mộ liên tục sinh ra zombie bám theo kẻ địch gần đó, làm chậm chúng. Bia mộ phải bị đánh sập mới hết." },
-      { phim: "R", ten: "Flesh Golem", mota: "Ulti: Biến thành golem khổng lồ, làm chậm và tăng sát thương phải chịu của mọi kẻ địch xung quanh, đồng thời tăng máu và tốc chạy cho bản thân." }
+      { phim: "Q", loai: "Chủ động", ten: "Decay", mota: "Rút bớt sức mạnh của kẻ địch trong vùng và cộng số sức mạnh đó cho Undying trong một khoảng thời gian, có thể cộng dồn." },
+      { phim: "W", loai: "Chủ động", ten: "Soul Rip", mota: "Hút linh hồn từ các đơn vị xung quanh để hồi máu cho đồng minh hoặc gây sát thương cho kẻ địch; càng nhiều đơn vị quanh mục tiêu càng mạnh." },
+      { phim: "E", loai: "Chủ động", ten: "Tombstone", mota: "Dựng bia mộ liên tục sinh ra zombie bám theo kẻ địch gần đó, làm chậm chúng. Bia mộ phải bị đánh sập mới hết." },
+      { phim: "R", loai: "Chủ động", ten: "Flesh Golem", mota: "Ulti: Biến thành golem khổng lồ, làm chậm và tăng sát thương phải chịu của mọi kẻ địch xung quanh, đồng thời tăng máu và tốc chạy cho bản thân." }
     ],
     lenSkill: "Max Decay để mạnh dần và làm yếu đối thủ đường, điểm Tombstone sớm để đôi co, lấy Flesh Golem đúng cấp.",
     doBuild: {
@@ -2251,10 +2251,10 @@ const HEROES_THEM = [
     icon: "🐻",
     danhHieu: "Ulfsaar",
     skills: [
-      { phim: "Q", ten: "Earthshock", mota: "Nhảy lên và giáng xuống đất, gây sát thương và làm chậm mạnh mọi kẻ địch xung quanh. Cũng dùng để nhảy qua địa hình ngắn." },
-      { phim: "W", ten: "Overpower", mota: "Tăng vọt tốc độ đánh cho một số đòn đánh tiếp theo. Là chìa khóa để hạ Roshan và giết mục tiêu tức thì." },
-      { phim: "E", ten: "Fury Swipes", mota: "Mỗi đòn đánh liên tiếp lên cùng mục tiêu cộng thêm sát thương, chồng dần lên rất nhanh." },
-      { phim: "R", ten: "Enrage", mota: "Ulti: Giảm mạnh sát thương phải chịu trong thời gian ngắn, giúp Ursa sống sót qua đòn tập trung." }
+      { phim: "Q", loai: "Chủ động", ten: "Earthshock", mota: "Nhảy lên và giáng xuống đất, gây sát thương và làm chậm mạnh mọi kẻ địch xung quanh. Cũng dùng để nhảy qua địa hình ngắn." },
+      { phim: "W", loai: "Chủ động", ten: "Overpower", mota: "Tăng vọt tốc độ đánh cho một số đòn đánh tiếp theo. Là chìa khóa để hạ Roshan và giết mục tiêu tức thì." },
+      { phim: "E", loai: "Bị động", ten: "Fury Swipes", mota: "Mỗi đòn đánh liên tiếp lên cùng mục tiêu cộng thêm sát thương, chồng dần lên rất nhanh." },
+      { phim: "R", loai: "Chủ động", ten: "Enrage", mota: "Ulti: Giảm mạnh sát thương phải chịu trong thời gian ngắn, giúp Ursa sống sót qua đòn tập trung." }
     ],
     lenSkill: "Max Fury Swipes để sát thương chồng nhanh, điểm Overpower và Earthshock xen kẽ, lấy Enrage ngay khi đủ cấp.",
     doBuild: {
@@ -2278,10 +2278,10 @@ const HEROES_THEM = [
     icon: "🦇",
     danhHieu: "Shendelzare Silkwood",
     skills: [
-      { phim: "Q", ten: "Magic Missile", mota: "Phóng tên lửa phép vào một mục tiêu, gây sát thương và làm choáng trong vài giây." },
-      { phim: "W", ten: "Terrify", mota: "Khiến kẻ địch trong vùng khiếp sợ và bỏ chạy, không thể tấn công trong thời gian ngắn." },
-      { phim: "E", ten: "Vengeance Aura", mota: "Hào quang tăng sát thương cho toàn bộ đồng minh xung quanh." },
-      { phim: "R", ten: "Nether Swap", mota: "Ulti: Hoán đổi vị trí tức thì với một tướng bất kỳ. Kéo địch vào giữa đội bạn hoặc cứu đồng đội đang sắp chết." }
+      { phim: "Q", loai: "Chủ động", ten: "Magic Missile", mota: "Phóng tên lửa phép vào một mục tiêu, gây sát thương và làm choáng trong vài giây." },
+      { phim: "W", loai: "Chủ động", ten: "Terrify", mota: "Khiến kẻ địch trong vùng khiếp sợ và bỏ chạy, không thể tấn công trong thời gian ngắn." },
+      { phim: "E", loai: "Bị động", ten: "Vengeance Aura", mota: "Hào quang tăng sát thương cho toàn bộ đồng minh xung quanh." },
+      { phim: "R", loai: "Chủ động", ten: "Nether Swap", mota: "Ulti: Hoán đổi vị trí tức thì với một tướng bất kỳ. Kéo địch vào giữa đội bạn hoặc cứu đồng đội đang sắp chết." }
     ],
     lenSkill: "Max Magic Missile để khống chế, giữ Vengeance Aura ở mức vừa đủ cho đồng đội, lấy Nether Swap ngay khi đủ cấp.",
     doBuild: {
@@ -2306,10 +2306,10 @@ const HEROES_THEM = [
     icon: "🐍",
     danhHieu: "Lesale Deathbringer",
     skills: [
-      { phim: "Q", ten: "Venomous Gale", mota: "Phóng luồng độc theo đường thẳng, gây sát thương theo thời gian và làm chậm nặng mọi kẻ địch trúng phải." },
-      { phim: "W", ten: "Poison Sting", mota: "Đòn đánh thường nhiễm độc, gây sát thương theo thời gian và làm chậm mục tiêu." },
-      { phim: "E", ten: "Plague Ward", mota: "Triệu hồi một tháp độc nhỏ tấn công kẻ địch xung quanh, đòn đánh cũng mang độc. Dùng để chặn đường, đẩy trụ và soi bản đồ." },
-      { phim: "R", ten: "Poison Nova", mota: "Ulti: Tung sóng độc lan ra vòng tròn rộng, gây sát thương theo thời gian rất lớn lên toàn bộ kẻ địch trúng phải." }
+      { phim: "Q", loai: "Chủ động", ten: "Venomous Gale", mota: "Phóng luồng độc theo đường thẳng, gây sát thương theo thời gian và làm chậm nặng mọi kẻ địch trúng phải." },
+      { phim: "W", loai: "Bị động", ten: "Poison Sting", mota: "Đòn đánh thường nhiễm độc, gây sát thương theo thời gian và làm chậm mục tiêu." },
+      { phim: "E", loai: "Chủ động", ten: "Plague Ward", mota: "Triệu hồi một tháp độc nhỏ tấn công kẻ địch xung quanh, đòn đánh cũng mang độc. Dùng để chặn đường, đẩy trụ và soi bản đồ." },
+      { phim: "R", loai: "Chủ động", ten: "Poison Nova", mota: "Ulti: Tung sóng độc lan ra vòng tròn rộng, gây sát thương theo thời gian rất lớn lên toàn bộ kẻ địch trúng phải." }
     ],
     lenSkill: "Max Plague Ward để kiểm soát đường và farm, điểm Venomous Gale sớm để quấy rối, lấy Poison Nova ngay khi đủ cấp.",
     doBuild: {
@@ -2334,10 +2334,10 @@ const HEROES_THEM = [
     icon: "🐍",
     danhHieu: "Netherdrake",
     skills: [
-      { phim: "Q", ten: "Poison Attack", mota: "Tẩm độc vào đòn đánh tầm xa, gây sát thương theo thời gian và làm chậm tốc chạy lẫn tốc đánh của mục tiêu. Đây là hiệu ứng dạng orb nên không cộng dồn với các orb khác." },
-      { phim: "W", ten: "Nethertoxin", mota: "Nội tại: đòn đánh nhiễm độc gây thêm sát thương, mục tiêu càng mất nhiều máu thì càng đau, đồng thời vô hiệu hóa nội tại (passive) của mục tiêu trong lúc bị dính độc." },
-      { phim: "E", ten: "Corrosive Skin", mota: "Nội tại: tăng kháng phép cho Viper, đồng thời kẻ nào đánh hoặc dùng phép lên Viper sẽ bị dính độc, mất máu theo thời gian và bị chậm." },
-      { phim: "R", ten: "Viper Strike", mota: "Ulti: phun nọc cực mạnh lên một mục tiêu, làm chậm nặng cả tốc chạy lẫn tốc đánh và gây sát thương theo thời gian. Gần như án tử cho hero yếu máu vì không thể chạy thoát." }
+      { phim: "Q", loai: "Tự đánh", ten: "Poison Attack", mota: "Tẩm độc vào đòn đánh tầm xa, gây sát thương theo thời gian và làm chậm tốc chạy lẫn tốc đánh của mục tiêu. Đây là hiệu ứng dạng orb nên không cộng dồn với các orb khác." },
+      { phim: "W", loai: "Chủ động", ten: "Nethertoxin", mota: "Nội tại: đòn đánh nhiễm độc gây thêm sát thương, mục tiêu càng mất nhiều máu thì càng đau, đồng thời vô hiệu hóa nội tại (passive) của mục tiêu trong lúc bị dính độc." },
+      { phim: "E", loai: "Bị động", ten: "Corrosive Skin", mota: "Nội tại: tăng kháng phép cho Viper, đồng thời kẻ nào đánh hoặc dùng phép lên Viper sẽ bị dính độc, mất máu theo thời gian và bị chậm." },
+      { phim: "R", loai: "Chủ động", ten: "Viper Strike", mota: "Ulti: phun nọc cực mạnh lên một mục tiêu, làm chậm nặng cả tốc chạy lẫn tốc đánh và gây sát thương theo thời gian. Gần như án tử cho hero yếu máu vì không thể chạy thoát." }
     ],
     lenSkill: "Max Poison Attack trước để quấy rối lane, điểm lẻ vào Corrosive Skin cho lì đòn, lấy Viper Strike ngay khi đủ cấp.",
     doBuild: {
@@ -2363,10 +2363,10 @@ const HEROES_THEM = [
     icon: "🦅",
     danhHieu: "Necro'lic",
     skills: [
-      { phim: "Q", ten: "Grave Chill", mota: "Hút tốc chạy và tốc đánh của một mục tiêu rồi cộng vào cho bản thân trong thời gian ngắn, vừa để đuổi giết vừa để chạy thoát." },
-      { phim: "W", ten: "Soul Assumption", mota: "Tích tụ điện tích mỗi khi có hero gần đó nhận sát thương; khi tung ra sẽ bắn một luồng năng lượng gây sát thương càng lớn nếu tích được càng nhiều điện tích." },
-      { phim: "E", ten: "Gravekeeper's Cloak", mota: "Nội tại: tạo nhiều lớp giáp giảm sát thương; mỗi lần trúng đòn đủ mạnh sẽ mất một lớp, các lớp tự hồi lại sau một lúc không bị đánh." },
-      { phim: "R", ten: "Summon Familiars", mota: "Ulti: triệu hồi các Familiar bay được, điều khiển riêng và đánh rất đau. Chúng có thể hóa đá (Stone Form) để bất tử và hồi máu, khi đáp xuống gây choáng kẻ địch xung quanh." }
+      { phim: "Q", loai: "Chủ động", ten: "Grave Chill", mota: "Hút tốc chạy và tốc đánh của một mục tiêu rồi cộng vào cho bản thân trong thời gian ngắn, vừa để đuổi giết vừa để chạy thoát." },
+      { phim: "W", loai: "Chủ động", ten: "Soul Assumption", mota: "Tích tụ điện tích mỗi khi có hero gần đó nhận sát thương; khi tung ra sẽ bắn một luồng năng lượng gây sát thương càng lớn nếu tích được càng nhiều điện tích." },
+      { phim: "E", loai: "Bị động", ten: "Gravekeeper's Cloak", mota: "Nội tại: tạo nhiều lớp giáp giảm sát thương; mỗi lần trúng đòn đủ mạnh sẽ mất một lớp, các lớp tự hồi lại sau một lúc không bị đánh." },
+      { phim: "R", loai: "Chủ động", ten: "Summon Familiars", mota: "Ulti: triệu hồi các Familiar bay được, điều khiển riêng và đánh rất đau. Chúng có thể hóa đá (Stone Form) để bất tử và hồi máu, khi đáp xuống gây choáng kẻ địch xung quanh." }
     ],
     lenSkill: "Max Soul Assumption để gank và dọn lính, điểm sớm vào Grave Chill, lấy Summon Familiars ngay mỗi mốc ulti vì đó mới là sức mạnh chính.",
     doBuild: {
@@ -2392,10 +2392,10 @@ const HEROES_THEM = [
     icon: "👹",
     danhHieu: "Demnok Lannik",
     skills: [
-      { phim: "Q", ten: "Fatal Bonds", mota: "Trói liên kết nhiều kẻ địch lại với nhau; mỗi khi một mục tiêu nhận sát thương, phần lớn sát thương đó bị chia lây sang tất cả các mục tiêu còn lại trong liên kết." },
-      { phim: "W", ten: "Shadow Word", mota: "Đọc chú lên một đơn vị: nếu là đồng minh thì hồi máu theo thời gian, nếu là kẻ địch thì rút máu theo thời gian." },
-      { phim: "E", ten: "Upheaval", mota: "Kênh phép tạo vùng hỗn loạn làm chậm kẻ địch trong đó; kênh càng lâu thì mức làm chậm càng nặng, đủ lâu sẽ khiến địch gần như đứng yên." },
-      { phim: "R", ten: "Chaotic Offering", mota: "Ulti: mở cổng triệu hồi Golem, gây choáng diện rộng khi Golem xuất hiện. Golem có aura thiêu đốt và đòn đánh lửa, gây sát thương lớn lên đội hình địch." }
+      { phim: "Q", loai: "Chủ động", ten: "Fatal Bonds", mota: "Trói liên kết nhiều kẻ địch lại với nhau; mỗi khi một mục tiêu nhận sát thương, phần lớn sát thương đó bị chia lây sang tất cả các mục tiêu còn lại trong liên kết." },
+      { phim: "W", loai: "Chủ động", ten: "Shadow Word", mota: "Đọc chú lên một đơn vị: nếu là đồng minh thì hồi máu theo thời gian, nếu là kẻ địch thì rút máu theo thời gian." },
+      { phim: "E", loai: "Chủ động", ten: "Upheaval", mota: "Kênh phép tạo vùng hỗn loạn làm chậm kẻ địch trong đó; kênh càng lâu thì mức làm chậm càng nặng, đủ lâu sẽ khiến địch gần như đứng yên." },
+      { phim: "R", loai: "Chủ động", ten: "Chaotic Offering", mota: "Ulti: mở cổng triệu hồi Golem, gây choáng diện rộng khi Golem xuất hiện. Golem có aura thiêu đốt và đòn đánh lửa, gây sát thương lớn lên đội hình địch." }
     ],
     lenSkill: "Max Shadow Word hoặc Fatal Bonds tùy lane cần đổi máu hay cần sát thương giao tranh, điểm lẻ Upheaval, luôn lấy Chaotic Offering ngay khi đủ cấp.",
     doBuild: {
@@ -2421,10 +2421,10 @@ const HEROES_THEM = [
     icon: "🕷️",
     danhHieu: "Skitskurr",
     skills: [
-      { phim: "Q", ten: "The Swarm", mota: "Thả một đàn bọ bay về phía trước, bám vào kẻ địch chúng gặp; bọ bám sẽ trừ giáp và soi mục tiêu, phải đánh vài lần mới gỡ được." },
-      { phim: "W", ten: "Shukuchi", mota: "Tàng hình và tăng mạnh tốc chạy trong chốc lát; đi xuyên qua kẻ địch nào thì gây sát thương lên kẻ đó, nhưng đánh hoặc dùng phép sẽ hủy tàng hình." },
-      { phim: "E", ten: "Geminate Attack", mota: "Nội tại: thỉnh thoảng tung thêm một đòn đánh phụ ngay sau đòn đánh thường, tăng đáng kể sát thương thực tế." },
-      { phim: "R", ten: "Time Lapse", mota: "Ulti: quay ngược thời gian cho bản thân, trở về đúng vị trí, lượng máu và mana của vài giây trước. Không xóa được debuff dạng vĩnh viễn nhưng cứu mạng cực tốt." }
+      { phim: "Q", loai: "Chủ động", ten: "The Swarm", mota: "Thả một đàn bọ bay về phía trước, bám vào kẻ địch chúng gặp; bọ bám sẽ trừ giáp và soi mục tiêu, phải đánh vài lần mới gỡ được." },
+      { phim: "W", loai: "Chủ động", ten: "Shukuchi", mota: "Tàng hình và tăng mạnh tốc chạy trong chốc lát; đi xuyên qua kẻ địch nào thì gây sát thương lên kẻ đó, nhưng đánh hoặc dùng phép sẽ hủy tàng hình." },
+      { phim: "E", loai: "Bị động", ten: "Geminate Attack", mota: "Nội tại: thỉnh thoảng tung thêm một đòn đánh phụ ngay sau đòn đánh thường, tăng đáng kể sát thương thực tế." },
+      { phim: "R", loai: "Chủ động", ten: "Time Lapse", mota: "Ulti: quay ngược thời gian cho bản thân, trở về đúng vị trí, lượng máu và mana của vài giây trước. Không xóa được debuff dạng vĩnh viễn nhưng cứu mạng cực tốt." }
     ],
     lenSkill: "Max Shukuchi trước để farm và sống sót, kết hợp điểm vào The Swarm để quấy rối, lấy Time Lapse ngay khi đủ cấp và max Geminate Attack sau.",
     doBuild: {
@@ -2450,10 +2450,10 @@ const HEROES_THEM = [
     icon: "🏹",
     danhHieu: "Alleria",
     skills: [
-      { phim: "Q", ten: "Shackleshot", mota: "Bắn một mũi tên trói mục tiêu vào cây hoặc vào một đơn vị đứng ngay phía sau, làm choáng cả hai; nếu không có gì phía sau thì chỉ trói rất ngắn." },
-      { phim: "W", ten: "Powershot", mota: "Kênh phép giương cung: kênh càng đủ lâu thì mũi tên bay càng mạnh, xuyên thẳng một đường dài nhưng giảm dần sát thương qua mỗi đơn vị trúng phải." },
-      { phim: "E", ten: "Windrun", mota: "Tự bọc mình trong gió: né toàn bộ đòn đánh thường trong thời gian ngắn, tăng tốc chạy cho bản thân và làm chậm kẻ địch xung quanh." },
-      { phim: "R", ten: "Focus Fire", mota: "Ulti: khóa vào một mục tiêu và đánh với tốc đánh tối đa, đổi lại mỗi đòn bị giảm sát thương. Rất mạnh để hạ trụ hoặc thiêu rụi hero máu dày." }
+      { phim: "Q", loai: "Chủ động", ten: "Shackleshot", mota: "Bắn một mũi tên trói mục tiêu vào cây hoặc vào một đơn vị đứng ngay phía sau, làm choáng cả hai; nếu không có gì phía sau thì chỉ trói rất ngắn." },
+      { phim: "W", loai: "Chủ động", ten: "Powershot", mota: "Kênh phép giương cung: kênh càng đủ lâu thì mũi tên bay càng mạnh, xuyên thẳng một đường dài nhưng giảm dần sát thương qua mỗi đơn vị trúng phải." },
+      { phim: "E", loai: "Chủ động", ten: "Windrun", mota: "Tự bọc mình trong gió: né toàn bộ đòn đánh thường trong thời gian ngắn, tăng tốc chạy cho bản thân và làm chậm kẻ địch xung quanh." },
+      { phim: "R", loai: "Chủ động", ten: "Focus Fire", mota: "Ulti: khóa vào một mục tiêu và đánh với tốc đánh tối đa, đổi lại mỗi đòn bị giảm sát thương. Rất mạnh để hạ trụ hoặc thiêu rụi hero máu dày." }
     ],
     lenSkill: "Max Powershot để đẩy lane và gây sát thương từ xa, luôn giữ một điểm Shackleshot sớm để gank, lấy Focus Fire mỗi mốc ulti.",
     doBuild: {
@@ -2480,10 +2480,10 @@ const HEROES_THEM = [
     danhHieu: "",
     chuaChac: true,
     skills: [
-      { phim: "Q", ten: "Arctic Burn", mota: "Bay lên không trung, tăng tầm nhìn và tầm đánh; các đòn đánh trong lúc này gây sát thương theo lượng máu tối đa của mục tiêu và làm chậm nặng." },
-      { phim: "W", ten: "Splinter Blast", mota: "Bắn một khối băng vào một đơn vị rồi vỡ ra văng sang các kẻ địch xung quanh, gây sát thương và làm chậm chúng; mục tiêu bị nhắm ban đầu không nhận sát thương." },
-      { phim: "E", ten: "Cold Embrace", mota: "Bọc một đồng minh trong băng: đồng minh đó miễn nhiễm sát thương vật lý và được hồi máu liên tục, nhưng không thể di chuyển hay hành động." },
-      { phim: "R", ten: "Winter's Curse", mota: "Ulti: đóng băng một kẻ địch khiến nó bất khả xâm phạm, đồng thời ép các kẻ địch xung quanh buộc phải lao vào đánh chính đồng đội của mình với tốc đánh tăng vọt." }
+      { phim: "Q", loai: "Chủ động", ten: "Arctic Burn", mota: "Bay lên không trung, tăng tầm nhìn và tầm đánh; các đòn đánh trong lúc này gây sát thương theo lượng máu tối đa của mục tiêu và làm chậm nặng." },
+      { phim: "W", loai: "Chủ động", ten: "Splinter Blast", mota: "Bắn một khối băng vào một đơn vị rồi vỡ ra văng sang các kẻ địch xung quanh, gây sát thương và làm chậm chúng; mục tiêu bị nhắm ban đầu không nhận sát thương." },
+      { phim: "E", loai: "Chủ động", ten: "Cold Embrace", mota: "Bọc một đồng minh trong băng: đồng minh đó miễn nhiễm sát thương vật lý và được hồi máu liên tục, nhưng không thể di chuyển hay hành động." },
+      { phim: "R", loai: "Chủ động", ten: "Winter's Curse", mota: "Ulti: đóng băng một kẻ địch khiến nó bất khả xâm phạm, đồng thời ép các kẻ địch xung quanh buộc phải lao vào đánh chính đồng đội của mình với tốc đánh tăng vọt." }
     ],
     lenSkill: "Max Splinter Blast để dọn lính và quấy rối, giữ Cold Embrace ở mức đủ dùng để cứu đồng đội, lấy Winter's Curse ngay khi đủ cấp.",
     doBuild: {
@@ -2509,10 +2509,10 @@ const HEROES_THEM = [
     icon: "💫",
     danhHieu: "Guardian Wisp",
     skills: [
-      { phim: "Q", ten: "Tether", mota: "Nối một sợi dây năng lượng tới một đồng minh: đồng minh được kéo tốc chạy theo Wisp và nhận phần hồi máu, hồi mana mà Wisp đang có; kẻ địch chạm vào sợi dây bị làm chậm." },
-      { phim: "W", ten: "Spirits", mota: "Triệu hồi các linh hồn xoay quanh Wisp, gây sát thương cho kẻ địch chúng va phải; có thể ra lệnh cho chúng tỏa rộng ra hoặc thu hẹp lại để canh trúng mục tiêu." },
-      { phim: "E", ten: "Overcharge", mota: "Bật trạng thái tăng mạnh tốc đánh và giảm sát thương nhận vào cho cả Wisp lẫn đồng minh đang nối Tether, đổi lại liên tục hao máu và mana khi bật." },
-      { phim: "R", ten: "Relocate", mota: "Ulti: sau một nhịp chờ, dịch chuyển Wisp cùng đồng minh đang nối Tether tới bất kỳ điểm nào trên bản đồ, rồi tự đưa cả hai trở về chỗ cũ khi hết hiệu lực." }
+      { phim: "Q", loai: "Chủ động", ten: "Tether", mota: "Nối một sợi dây năng lượng tới một đồng minh: đồng minh được kéo tốc chạy theo Wisp và nhận phần hồi máu, hồi mana mà Wisp đang có; kẻ địch chạm vào sợi dây bị làm chậm." },
+      { phim: "W", loai: "Chủ động", ten: "Spirits", mota: "Triệu hồi các linh hồn xoay quanh Wisp, gây sát thương cho kẻ địch chúng va phải; có thể ra lệnh cho chúng tỏa rộng ra hoặc thu hẹp lại để canh trúng mục tiêu." },
+      { phim: "E", loai: "Chủ động", ten: "Overcharge", mota: "Bật trạng thái tăng mạnh tốc đánh và giảm sát thương nhận vào cho cả Wisp lẫn đồng minh đang nối Tether, đổi lại liên tục hao máu và mana khi bật." },
+      { phim: "R", loai: "Chủ động", ten: "Relocate", mota: "Ulti: sau một nhịp chờ, dịch chuyển Wisp cùng đồng minh đang nối Tether tới bất kỳ điểm nào trên bản đồ, rồi tự đưa cả hai trở về chỗ cũ khi hết hiệu lực." }
     ],
     lenSkill: "Lấy Tether và Spirits sớm để đi lane, tăng dần Overcharge khi bắt đầu đi cùng carry, luôn lấy Relocate mỗi mốc ulti.",
     doBuild: {
@@ -2538,10 +2538,10 @@ const HEROES_THEM = [
     icon: "🧿",
     danhHieu: "Zharvakko",
     skills: [
-      { phim: "Q", ten: "Paralyzing Cask", mota: "Ném một hũ độc nảy qua lại giữa các kẻ địch, mỗi lần nảy trúng đều gây sát thương và làm choáng; choáng lên lính rất lâu còn lên hero thì ngắn nhưng đủ để cắt nhịp." },
-      { phim: "W", ten: "Voodoo Restoration", mota: "Bật tắt vùng hồi máu quanh Witch Doctor, liên tục hồi máu cho đồng minh trong vùng nhưng ngốn mana đều đặn khi bật." },
-      { phim: "E", ten: "Maledict", mota: "Nguyền rủa các kẻ địch trong một vùng; sau từng nhịp, mỗi mục tiêu nhận thêm sát thương dựa trên lượng máu đã mất kể từ lúc bị nguyền, càng bị đánh nhiều thì càng đau." },
-      { phim: "R", ten: "Death Ward", mota: "Ulti: kênh phép dựng một mắt thần tấn công liên tục các hero địch xung quanh, gây sát thương rất lớn nếu được kênh trọn vẹn." }
+      { phim: "Q", loai: "Chủ động", ten: "Paralyzing Cask", mota: "Ném một hũ độc nảy qua lại giữa các kẻ địch, mỗi lần nảy trúng đều gây sát thương và làm choáng; choáng lên lính rất lâu còn lên hero thì ngắn nhưng đủ để cắt nhịp." },
+      { phim: "W", loai: "Chủ động", ten: "Voodoo Restoration", mota: "Bật tắt vùng hồi máu quanh Witch Doctor, liên tục hồi máu cho đồng minh trong vùng nhưng ngốn mana đều đặn khi bật." },
+      { phim: "E", loai: "Chủ động", ten: "Maledict", mota: "Nguyền rủa các kẻ địch trong một vùng; sau từng nhịp, mỗi mục tiêu nhận thêm sát thương dựa trên lượng máu đã mất kể từ lúc bị nguyền, càng bị đánh nhiều thì càng đau." },
+      { phim: "R", loai: "Chủ động", ten: "Death Ward", mota: "Ulti: kênh phép dựng một mắt thần tấn công liên tục các hero địch xung quanh, gây sát thương rất lớn nếu được kênh trọn vẹn." }
     ],
     lenSkill: "Max Maledict để tạo sát thương gank khủng, điểm sớm Paralyzing Cask để cắt combo, giữ một điểm Voodoo Restoration khi cần trụ lane, lấy Death Ward mỗi mốc ulti.",
     doBuild: {
